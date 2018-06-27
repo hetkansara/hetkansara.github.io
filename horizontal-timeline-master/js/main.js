@@ -13,7 +13,8 @@ jQuery(document).ready(function ($) {
 		$('#profile_img1').attr('src', data.profile_img)
 		$('#profile_img2').attr('src', data.profile_img)
 		$('#bio_text').html(data.bio_text)
-		$('#resume_link').attr('href', data.resume_link)
+		$('#resume_link_1').attr('href', data.resume_link)
+		$('#resume_link_2').attr('href', data.resume_link)
 		$('#achievements_and_projects_info').html(data.achievements_and_projects_info)
 		$('#about_img_url').attr('src', data.about_img_url)
 		var about = '';
