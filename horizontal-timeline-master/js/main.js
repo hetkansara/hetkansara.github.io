@@ -22,6 +22,9 @@ jQuery(document).ready(function ($) {
 		}
 		$('#about_user').html(about)
 		$('#place_to_talk_text').html(data.place_to_talk_text)
+		$('#facebook_link').attr('href', data.resume_link)
+		$('#twitter_link').attr('href', data.resume_link)
+		$('#linkedin_link').attr('href', data.resume_link)
 	});
 
 	$.getJSON("json/timeline.json", function (data) {
