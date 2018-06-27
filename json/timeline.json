@@ -210,6 +210,22 @@
             "drive_url":"https://my-daily-news.000webhostapp.com/#/"
         },
         {
+            "id": "28/08/2017",
+            "selected": false,
+            "display_date":"28th Aug, <br> 2017",
+            "image":{
+                "title": "1st Rank in C Programming - <CODE-A-THON>",
+                "paragraph": "",
+                "img_url": "img/My Certificates/201708032011151009.jpg",
+                "thumbnail_url":"img/My Certificates/PicsArt_06-27-08.34.06.jpg"
+            },
+            "title":"1st Rank in C Programming - <CODE-A-THON>",
+            "date":"28th Aug, <br> 2017",
+            "paragraphs":[
+                "1st Rank in Coding in C Programming(<CODE-A-THON> - 2017) held at LJ Institute of Computer Application, Organized by Japanese MNC - ACTY System."
+            ]
+        },
+        {
             "id": "22/09/2017",
             "selected": false,
             "display_date":"22nd Sept, <br> 2017",
