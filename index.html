@@ -1,305 +1,93 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-        Het Kansara | Portfolio
-    </title>
-    <meta name="description" content="">
-    <!-- 
-    	Volton Template
-    	http://www.templatemo.com/tm-441-volton
-        -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.3';i.angular='5.2.11';i.staticDir='build/';})(window);
+  </script>
+  <meta charset="UTF-8">
+  <title>Het Kansara | Portfolio</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+  
+  
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="horizontal-timeline-master/css/reset.css">
-    <!-- CSS reset -->
-    <link rel="stylesheet" href="horizontal-timeline-master/css/style.css">
-    <!-- Resource style -->
-    <script src="horizontal-timeline-master/js/modernizr.js"></script>
-    <!-- Modernizr -->
-    <link rel="shortcut icon" href="img/profile.jpg">
-    <style>
-        .ns-show {
-            left: 100% !important;
-        }
 
-        /* body {font: normal 0.9em Arial;margin:0;}
-            a {color:#1155CC;}
-            ul li {padding: 10px 0;}
-            
-            code {display:block;white-space:pre; background-color:#f6f6f6;padding:8px; overflow:auto;border:1px dotted #999;margin:6px 0;} */
-    </style>
+	<!-- Stylesheets -->
+	
+	<link href="assets/common-css/bootstrap.css" rel="stylesheet">
+	
+	<link href="assets/common-css/ionicons.css" rel="stylesheet">
+	
+	<link href="assets/common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="assets/css/styles.css" rel="stylesheet">
+	
+	<link href="assets/css/responsive.css" rel="stylesheet">
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+  <script src="cordova.js"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
 
 </head>
-
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!--start-->
-    <div class="responsive-header visible-xs visible-sm">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="top-section">
-                        <div class="profile-image">
-                            <img src="" id="profile_img1" alt="Volton">
-                        </div>
-                        <div class="profile-content">
-                            <h3 class="profile-title" id="name1"></h3>
-                            <p class="profile-description" id="designation1"></p>
-                        </div>
-                        <br>
-                        <p class="profile-description">
-                            <a href="#top" id="resume_link_1" target="_BLANK" style="text-decoration: none;color:white;">
-                                <i class="fa fa-file-text-o"></i> &nbsp;&nbsp;My Resume
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="toggle-menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <div class="main-navigation responsive-menu">
-                <ul class="navigation">
-                    <li>
-                        <a href="#top">
-                            <i class="fa fa-home"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href="#projects">
-                            <i class="fa fa-newspaper-o"></i>My Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            <i class="fa fa-user"></i>About Me</a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            <i class="fa fa-envelope"></i>Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <!-- SIDEBAR -->
-    <div class="sidebar-menu hidden-xs hidden-sm">
-        <div class="top-section">
-            <div class="profile-image">
-                <img src="" id="profile_img2" alt="Volton">
-            </div>
-            <h3 class="profile-title" id="name2"></h3>
-            <p class="profile-description" id="designation2"></p>
-            <br>
-            <p class="profile-description">
-                <a href="#top" id="resume_link_2" target="_BLANK" style="text-decoration: none;color:white;">
-                    <i class="fa fa-file-text-o"></i> &nbsp;&nbsp;My Resume
-                </a>
-            </p>
-        </div>
-        <!-- top-section -->
-        <div class="main-navigation">
-            <ul class="navigation">
-                <li>
-                    <a href="#top">
-                        <i class="fa fa-globe"></i>Welcome</a>
-                </li>
-                <li>
-                    <a href="#projects">
-                        <i class="fa fa-paperclip"></i>My Gallery</a>
-                </li>
-                <li>
-                    <a href="#about">
-                        <i class="fa fa-pencil"></i>About Me</a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <i class="fa fa-link"></i>Contact Me</a>
-                </li>
-            </ul>
-        </div>
-        <!-- .main-navigation -->
-        <div class="social-icons">
-            <ul>
-                <li>
-                    <a href="#" target="_BLANK" id="facebook_link">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_BLANK" id="twitter_link">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_BLANK" id="linkedin_link">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_BLANK" id="google_link">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_BLANK" id="youtube_link">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_BLANK" id="rss_link">
-                        <i class="fa fa-rss"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- .social-icons -->
-    </div>
-    <!-- .sidebar-menu -->
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
 
 
-    <div class="banner-bg" id="top">
-        <div class="banner-overlay"></div>
-        <div class="welcome-text">
-            <h2>
-                <span id="name3"></span> | Portfolio</h2>
-            <h5 id="bio_text"></h5>
-        </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-        <div class="fluid-container">
-
-            <div class="content-wrapper">
-
-                <!-- PROJECTS -->
-                <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">MY ACHIEVEMENTS & PROJECTS</h4>
-                            <p id="achievements_and_projects_info"></p>
-                            <section class="cd-horizontal-timeline">
-                                <div class="timeline">
-                                    <div class="events-wrapper">
-                                        <div class="events">
-                                            <ol id="timeline_links">
-                                            </ol>
-                                            <span class="filling-line" aria-hidden="true"></span>
-                                        </div>
-                                        <!-- .events -->
-                                    </div>
-                                    <!-- .events-wrapper -->
-
-                                    <ul class="cd-timeline-navigation">
-                                        <li>
-                                            <a href="#0" class="prev inactive">Prev</a>
-                                        </li>
-                                        <li>
-                                            <a href="#0" class="next">Next</a>
-                                        </li>
-                                    </ul>
-                                    <!-- .cd-timeline-navigation -->
-                                </div>
-                                <!-- .timeline -->
-
-                                <div class="events-content">
-                                    <ol id="timeline_element">
-                                    </ol>
-                                </div>
-                                <!-- .events-content -->
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="row projects-holder" id="gallary_thumbnails">
-                    </div>
-
-                    <hr>
-                    <!-- ABOUT -->
-                    <div class="page-section" id="about">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4 class="widget-title">Learn About Me</h4>
-                                <div class="about-image">
-                                    <img src="" id="about_img_url" alt="about me">
-                                </div>
-                                <div id="about_user">
-                                </div>
-                                <hr>
-                            </div>
-                        </div>
-                        <!-- #about -->
-                    </div>
-
-
-                    <!-- CONTACT -->
-                    <div class="page-section" id="contact">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
-                                <p id="place_to_talk_text"></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <form action="mailto:hetkansara.work@gmail.com" method="post" class="contact-form">
-                                <fieldset class="col-md-4 col-sm-6">
-                                    <input type="text" id="your-name" placeholder="Your Name...">
-                                </fieldset>
-                                <fieldset class="col-md-4 col-sm-6">
-                                    <input type="email" id="email" placeholder="Your Email...">
-                                </fieldset>
-                                <fieldset class="col-md-4 col-sm-12">
-                                    <input type="text" id="your-subject" placeholder="Subject...">
-                                </fieldset>
-                                <fieldset class="col-md-12 col-sm-12">
-                                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
-                                </fieldset>
-                                <fieldset class="col-md-12 col-sm-12">
-                                    <input type="submit" class="button big default" value="Send Message">
-                                </fieldset>
-                            </form>
-                        </div>
-                        <!-- .contact-form -->
-                    </div>
-                    <hr>
-
-                    <div class="row" id="footer">
-                        <div class="col-md-12 text-center">
-                            <p class="copyright-text">Copyright &copy; 2018 | Het Kansara</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="horizontal-timeline-master/js/jquery-2.1.4.js"></script>
-        <script src="horizontal-timeline-master/js/jquery.mobile.custom.min.js"></script>
-        <script src="horizontal-timeline-master/js/main.js"></script>
-
-        <!-- <script src="js/vendor/jquery-1.10.2.min.js"></script> -->
-        <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
+  <!-- SCIPTS -->
+	
+	<script src="assets/common-js/jquery-3.2.1.min.js"></script>
+	
+	<script src="assets/common-js/tether.min.js"></script>
+	
+	<script src="assets/common-js/bootstrap.js"></script>
+	
+	<script src="assets/common-js/isotope.pkgd.min.js"></script>
+	
+	<script src="assets/common-js/jquery.waypoints.min.js"></script>
+	
+	<script src="assets/common-js/progressbar.min.js"></script>
+	
+	<script src="assets/common-js/jquery.fluidbox.min.js"></script>
+	
+  <script src="assets/common-js/scripts.js"></script>
+  
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
 </body>
-
 </html>

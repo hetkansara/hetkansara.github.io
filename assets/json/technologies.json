@@ -1,0 +1,100 @@
+{
+    "technologies": [
+        {
+            "title": "Ionic",
+            "rating": 4,
+            "color": "#2F72E1",
+            "icon": "assets/imgs/icons/ionic.png"
+        },
+        {
+            "title": "Angular",
+            "rating": 4,
+            "color": "#b52e31",
+            "icon": "assets/imgs/icons/angular.png"
+        },
+        {
+            "title": "TypeScript",
+            "rating": 4,
+            "color": "#0078cf",
+            "icon": "assets/imgs/icons/typescript.png"
+        },
+        {
+            "title": "JavaScript",
+            "rating": 4,
+            "color": "#d6c44d",
+            "icon": "assets/imgs/icons/javascript.png"
+        },
+        {
+            "title": "JQuery",
+            "rating": 4,
+            "color": "#0769ad",
+            "icon": "assets/imgs/icons/jquery.png"
+        },
+        {
+            "title": "RxJS",
+            "rating": 3.5,
+            "color": "#e10d8d",
+            "icon": "assets/imgs/icons/rxjs.png"
+        },
+        {
+            "title": "Redux",
+            "rating": 3.5,
+            "color": "#764abc",
+            "icon": "assets/imgs/icons/redux.png"
+        },
+        {
+            "title": "HTML5",
+            "rating": 4,
+            "color": "#f16529",
+            "icon": "assets/imgs/icons/html.png"
+        },
+        {
+            "title": "CSS",
+            "rating": 4,
+            "color": "#157ffb",
+            "icon": "assets/imgs/icons/css.png"
+        },
+        {
+            "title": "PHP",
+            "rating": 4,
+            "color": "#8892be",
+            "icon": "assets/imgs/icons/php.png"
+        },
+        {
+            "title": "MYSQL",
+            "rating": 3,
+            "color": "#00546b",
+            "icon": "assets/imgs/icons/mysql.png"
+        },
+        {
+            "title": "Python",
+            "rating": 3.5,
+            "color": "#3770a1",
+            "icon": "assets/imgs/icons/python.png"
+        },
+        {
+            "title": "Android",
+            "rating": 3.5,
+            "color": "#90a64e",
+            "icon": "assets/imgs/icons/android.png"
+        },
+        {
+            "title": "C Language",
+            "rating": 4,
+            "color": "#0d65c1",
+            "icon": "assets/imgs/icons/c.png"
+        },
+        {
+            "title": "Java",
+            "rating": 4,
+            "color": "#0d65c1",
+            "icon": "assets/imgs/icons/java.png"
+        },
+        {
+            "title": "C++",
+            "rating": 4,
+            "color": "#303030",
+            "icon": "assets/imgs/icons/c++.png"
+        }
+    ]    
+}
