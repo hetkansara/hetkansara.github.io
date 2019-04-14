@@ -1,6 +1,21 @@
 {
     "timeline":[
         {
+            "id": "16/12/2018",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"16th Dec, <br> 2018",
+            "image":{
+                "title": "Certificate of Appreciation",
+                "paragraph": "",
+                "img_url": "assets/imgs/My Certificates/certificateOfAppreciation.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/certificateOfAppreciation.jpg"
+            },
+            "title":"Certificate of Appreciation - BiztechCS",
+            "date":"16th Dec, <br> 2018",
+            "paragraphs":[]
+        },
+        {
             "id": "17/02/2014",
             "selected": true,
             "type": "achievement",
@@ -9,7 +24,7 @@
                 "title": "TALAASH' 14",
                 "paragraph": "1st Rank in Web-Designing (Talaash-2014) held at Silver Oak Collage of Engineering & Technology.",
                 "img_url": "assets/imgs/My Certificates/201708032011151000.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-23-01.34.27.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151000.jpg"
             },
             "title":"1st Rank in Web Designing - TALAASH' 14",
             "date":"17th - 18th Feb, 2014",
@@ -29,7 +44,7 @@
                 "title": "ICT for Make in India' 15",
                 "paragraph": "2nd Rank in Web-Designing (ICT Make in India-2015) held at Ahmedabad University.",
                 "img_url": "assets/imgs/My Certificates/201708032011151002.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-23-01.35.01.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151002.jpg"
             },
             "title":"2nd Rank in Web Designing - ICT for Make in India' 15",
             "date":"20th - 21st Feb, 2015",
@@ -49,7 +64,7 @@
                 "title": "AVISHKAR' 15",
                 "paragraph": "1st Rank in Web Designing (Avishkar-2015) held at NSIT (Narnarayan Shastri Institute of Technology).",
                 "img_url": "assets/imgs/My Certificates/201708032011151001.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-23-01.31.29.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151001.jpg"
             },
             "title":"1st Rank in Web-Designing - AVISHKAR' 15",
             "date":"20th - 21st Feb, 2015",
@@ -70,7 +85,7 @@
                 "title": "TECHTUNE' 15",
                 "paragraph": "2nd Rank in Web-Designing (Tech Tune-2015) held at LJ Institute of Computer Applications.",
                 "img_url": "assets/imgs/My Certificates/201708032011151003.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-23-01.35.25.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151003.jpg"
             },
             "title":"2nd Rank in Web Designing - Tech Tune' 15",
             "date":"14th - 15th March, 2015",
@@ -90,7 +105,7 @@
                 "title": "TALAASH' 15",
                 "paragraph": "3rd Rank in Web-Designing (TALAASH-2015) held at Silver Oak College of Engineering and Technology.",
                 "img_url": "assets/imgs/My Certificates/201708032011151004.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-23-01.35.41.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151004.jpg"
             },
             "title":"3rd Rank in Web Designing - TALAASH' 15",
             "date":"24rth - 25th March, 2015",
@@ -110,7 +125,7 @@
                 "title": "Gujarat University - Transcript Issuance System",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/12729142_979363168820251_4030760472647035397_n.jpg",
-                "thumbnail_url":"assets/imgs/img/PicsArt_06-23-08.36.16.jpg"
+                "thumbnail_url": "assets/imgs/img/compressed/12729142_979363168820251_4030760472647035397_n.jpg"
             },
             "title":"Transcript Issuance System - Gujarat University",
             "date":"16th Feb, 2016",
@@ -151,7 +166,7 @@
                 "title": "TECH KAUSHALYA' 16",
                 "paragraph": "2rd Rank in Web-Designing (TECH KAUSHALYA-2015) held at Gujarat University.",
                 "img_url": "assets/imgs/My Certificates/201708032011151005.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-23-01.36.01.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151005.jpg"
             },
             "title":"2nd Rank in Web Designing - TECH KAUSHALYA' 16",
             "date":"10th - 11th March, 2016",
@@ -171,7 +186,7 @@
                 "title": "LJ Internship Fair",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/Internship Fair/Picture (4).png",
-                "thumbnail_url":"assets/imgs/img/Internship Fair/PicsArt_06-23-09.22.18.jpg"
+                "thumbnail_url": "assets/imgs/img/Internship Fair/compressed/Picture (4).png"
             },
             "title":"LJ Internship Fair",
             "date":"4rth Feb, 2017",
@@ -190,7 +205,7 @@
                 "title": "Twitter Users Analysis",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/twitter.jpg",
-                "thumbnail_url":"assets/imgs/img/PicsArt_06-24-07.47.35.jpg"
+                "thumbnail_url": "assets/imgs/img/compressed/twitter.jpg"
             },
             "title":"Twitter Users Analysis",
             "date":"21st April, 2017",
@@ -209,7 +224,7 @@
                 "title": "My Daily News",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/News.png",
-                "thumbnail_url":"assets/imgs/img/NewsThumbnail.png"
+                "thumbnail_url": "assets/imgs/img/compressed/News.png"
             },
             "title":"My Daily News",
             "date":"10th May, 2017",
@@ -228,7 +243,7 @@
                 "title": "1st Rank in C Programming - <CODE-A-THON>",
                 "paragraph": "",
                 "img_url": "assets/imgs/My Certificates/201708032011151009.jpg",
-                "thumbnail_url":"assets/imgs/My Certificates/PicsArt_06-27-08.34.06.jpg"
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151009.jpg"
             },
             "title":"1st Rank in C Programming - &lt;CODE-A-THON&gt;",
             "date":"28th Aug, <br> 2017",
@@ -245,7 +260,7 @@
                 "title": "Send My SMS",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/SendMySMS.png",
-                "thumbnail_url":"assets/imgs/img/SendMySMSThumbnail.png"
+                "thumbnail_url": "assets/imgs/img/compressed/SendMySMS.png"
             },
             "title":"Send My SMS - Bulk & Dynamic SMS System",
             "date":"22nd Sept, 2017",
@@ -264,7 +279,7 @@
                 "title": "LJ Innovation Village",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/ljiv.png",
-                "thumbnail_url":"assets/imgs/img/PicsArt_06-24-08.53.06.jpg"
+                "thumbnail_url": "assets/imgs/img/compressed/ljiv.png"
             },
             "title":"LJ Innovation Village",
             "date":"17th Feb, 2018",
@@ -284,7 +299,7 @@
                 "title": "Laboratory Resources Perusal",
                 "paragraph": "",
                 "img_url": "assets/imgs/img/Laboratory Management System.png",
-                "thumbnail_url":"assets/imgs/img/Laboratory Management System Thumbnail.jpg"
+                "thumbnail_url": "assets/imgs/img/compressed/Laboratory Management System.png"
             },
             "title":"Laboratory Resources Perusal",
             "date":"19th March, 2018",
