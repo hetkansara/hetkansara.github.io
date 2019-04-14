@@ -4,7 +4,7 @@
             "id": "16/12/2018",
             "selected": false,
             "type": "achievement",
-            "display_date":"16th Dec, <br> 2018",
+            "display_date":"16th Dec, 2018",
             "image":{
                 "title": "Certificate of Appreciation",
                 "paragraph": "",
@@ -12,14 +12,16 @@
                 "thumbnail_url": "assets/imgs/My Certificates/compressed/certificateOfAppreciation.jpg"
             },
             "title":"Certificate of Appreciation - BiztechCS",
-            "date":"16th Dec, <br> 2018",
-            "paragraphs":[]
+            "date":"16th Dec, 2018",
+            "paragraphs":[
+                "Appreciation Certificate for providing noteworthy contribution in the success of Biztech Consultancy durint the year 2018. Appreciated for efforts & dedication for Company."
+            ]
         },
         {
             "id": "17/02/2014",
             "selected": true,
             "type": "achievement",
-            "display_date":"17th Feb, <br> 2014",
+            "display_date":"17th Feb, 2014",
             "image":{
                 "title": "TALAASH' 14",
                 "paragraph": "1st Rank in Web-Designing (Talaash-2014) held at Silver Oak Collage of Engineering & Technology.",
@@ -39,7 +41,7 @@
             "id": "23/01/2015",
             "selected": false,
             "type": "achievement",
-            "display_date":"23rd Jan, <br> 2015",
+            "display_date":"23rd Jan, 2015",
             "image":{
                 "title": "ICT for Make in India' 15",
                 "paragraph": "2nd Rank in Web-Designing (ICT Make in India-2015) held at Ahmedabad University.",
@@ -59,7 +61,7 @@
             "id": "20/02/2015",
             "selected": false,
             "type": "achievement",
-            "display_date":"20th Feb, <br> 2015",
+            "display_date":"20th Feb, 2015",
             "image":{
                 "title": "AVISHKAR' 15",
                 "paragraph": "1st Rank in Web Designing (Avishkar-2015) held at NSIT (Narnarayan Shastri Institute of Technology).",
@@ -80,7 +82,7 @@
             "id": "14/03/2015",
             "selected": false,
             "type": "achievement",
-            "display_date":"14th March, <br> 2015",
+            "display_date":"14th March, 2015",
             "image":{
                 "title": "TECHTUNE' 15",
                 "paragraph": "2nd Rank in Web-Designing (Tech Tune-2015) held at LJ Institute of Computer Applications.",
@@ -100,7 +102,7 @@
             "id": "24/04/2015",
             "selected": false,
             "type": "achievement",
-            "display_date":"24rth March, <br> 2015",
+            "display_date":"24rth March, 2015",
             "image":{
                 "title": "TALAASH' 15",
                 "paragraph": "3rd Rank in Web-Designing (TALAASH-2015) held at Silver Oak College of Engineering and Technology.",
@@ -120,7 +122,7 @@
             "id": "16/02/2016",
             "selected": false,
             "type": "project",
-            "display_date":"16th Feb, <br> 2016",
+            "display_date":"16th Feb, 2016",
             "image":{
                 "title": "Gujarat University - Transcript Issuance System",
                 "paragraph": "",
@@ -161,7 +163,7 @@
             "id": "10/03/2016",
             "selected": false,
             "type": "achievement",
-            "display_date":"10th March, <br> 2016",
+            "display_date":"10th March, 2016",
             "image":{
                 "title": "TECH KAUSHALYA' 16",
                 "paragraph": "2rd Rank in Web-Designing (TECH KAUSHALYA-2015) held at Gujarat University.",
@@ -181,7 +183,7 @@
             "id": "04/02/2017",
             "selected": false,
             "type": "project",
-            "display_date":"4rth Feb, <br> 2017",
+            "display_date":"4rth Feb, 2017",
             "image":{
                 "title": "LJ Internship Fair",
                 "paragraph": "",
@@ -200,7 +202,7 @@
             "id": "21/04/2017",
             "selected": false,
             "type": "project",
-            "display_date":"21st April, <br> 2017",
+            "display_date":"21st April, 2017",
             "image":{
                 "title": "Twitter Users Analysis",
                 "paragraph": "",
@@ -219,7 +221,7 @@
             "id": "10/05/2017",
             "selected": false,
             "type": "project",
-            "display_date":"10th May, <br> 2017",
+            "display_date":"10th May, 2017",
             "image":{
                 "title": "My Daily News",
                 "paragraph": "",
@@ -238,24 +240,24 @@
             "id": "28/08/2017",
             "selected": false,
             "type": "achievement",
-            "display_date":"28th Aug, <br> 2017",
+            "display_date":"28th Aug, 2017",
             "image":{
                 "title": "1st Rank in C Programming - <CODE-A-THON>",
                 "paragraph": "",
                 "img_url": "assets/imgs/My Certificates/201708032011151009.jpg",
                 "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151009.jpg"
             },
-            "title":"1st Rank in C Programming - &lt;CODE-A-THON&gt;",
-            "date":"28th Aug, <br> 2017",
+            "title":"1st Rank in C Programming - <CODE-A-THON>",
+            "date":"28th Aug, 2017",
             "paragraphs":[
-                "1st Rank in Coding in C Programming(&lt;CODE-A-THON&gt; - 2017) held at LJ Institute of Computer Application, Organized by Japanese MNC - ACTY System."
+                "1st Rank in Coding in C Programming(<CODE-A-THON> - 2017) held at LJ Institute of Computer Application, Organized by Japanese MNC - ACTY System."
             ]
         },
         {
             "id": "22/09/2017",
             "selected": false,
             "type": "project",
-            "display_date":"22nd Sept, <br> 2017",
+            "display_date":"22nd Sept, 2017",
             "image":{
                 "title": "Send My SMS",
                 "paragraph": "",
@@ -274,7 +276,7 @@
             "id": "17/02/2018",
             "selected": false,
             "type": "project",
-            "display_date":"17th Feb, <br> 2018",
+            "display_date":"17th Feb, 2018",
             "image":{
                 "title": "LJ Innovation Village",
                 "paragraph": "",
@@ -294,7 +296,7 @@
             "id": "19/03/2018",
             "selected": false,
             "type": "project",
-            "display_date":"19th March, <br> 2018",
+            "display_date":"19th March, 2018",
             "image":{
                 "title": "Laboratory Resources Perusal",
                 "paragraph": "",
