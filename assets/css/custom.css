@@ -1,0 +1,191 @@
+.hk-logo {
+  /* filter: invert(8%) sepia(7%) saturate(2%) hue-rotate(317deg) brightness(97%) contrast(87%); */
+}
+
+.logo-footer{
+  height: 100px;
+}
+
+.logo-nav{
+  height: 50px;
+}
+.tech-logo{
+  height: 30px;
+  margin-right: 10px;
+}
+.single-work{
+  margin-bottom: 30px;
+}
+.hire-me-nav-link{
+  color: white;
+}
+.hire-me-nav-link::hover{
+  color: white;
+}
+.media-icon{
+  min-height: 50px;
+  min-width: 50px;
+}
+.contact-area-link{
+  color: #777777;
+}
+.contact-area-link::hover{
+  color: #777777;
+}
+
+.hero-img img {
+  /* position: relative; */
+  right: 0px !important;
+}
+.about-area .img-about img {
+  border-width: 0px 10px 0px 25px;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  /* background-color: #fff; */
+  border-radius: 2px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33); */
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 1050px) {
+  .modal-container {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .modal-container {
+    width: 750px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .modal-container {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modal-container {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .modal-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .modal-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .modal-container {
+    width: 300px;
+  }
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #e45447;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+  padding: 20px 10px;
+  padding: 5px;
+  border: 0;
+  color: #e45447;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.modal-thumbnail{
+  height: 70px;
+  margin-top: 10px;
+}
+
+.views-container .views-text{
+  padding: 10px !important;
+  margin: 5px;
+  color:#0056b3;
+  border: 1px solid lightgrey;
+}
+.views-count{
+  color: #e45447 !important;
+}
+.github-link {
+  color: #24292e !important;
+}
+.linkedin-link{
+  color:#0056b3 !important;
+}
+.follow-icon{ 
+  padding: 5px;
+  font-size: 17px;
+}
+
+.linkedin-link:hover{
+  color: #24292e !important;
+}
+.github-link:hover{
+  color: #0056b3 !important;
+}
+.slick-slide img {
+  margin-top: 15px;
+}

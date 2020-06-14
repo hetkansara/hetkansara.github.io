@@ -1,93 +1,974 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <script data-ionic="inject">
-    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.3';i.angular='5.2.11';i.staticDir='build/';})(window);
-  </script>
-  <meta charset="UTF-8">
-  <title>Het Kansara | Portfolio</title>
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-  
-  
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+    <!--<![endif]-->
 
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<!-- Font -->
-	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <head>
+        <!--- Basic Page Needs  -->
 
+        <!-- meta charec set -->
+        <meta charset="utf-8">
+        <!-- Page Title -->
+        <title>Het Kansara | Portfolio</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Author Meta -->
+        <meta name="author" content="Karim Ezzat">
+        <!-- Meta Description -->
+        <meta name="description" content="One Page Creative Personal HTML5 Template">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="onepage, responsive, cv, resume, business, html5, css3, css3 animation">
+        <!-- Mobile Specific Meta  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="shortcut icon" href="assets/img/HK9.png" type="image/x-icon">
 
-	<!-- Stylesheets -->
-	
-	<link href="assets/common-css/bootstrap.css" rel="stylesheet">
-	
-	<link href="assets/common-css/ionicons.css" rel="stylesheet">
-	
-	<link href="assets/common-css/fluidbox.min.css" rel="stylesheet">
-	
-	<link href="assets/css/styles.css" rel="stylesheet">
-	
-	<link href="assets/css/responsive.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
 
-  <!-- cordova.js required for cordova apps (remove if not needed) -->
-  <script src="cordova.js"></script>
+        <!-- CSS
+        ================================================== -->
+        <!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <!-- Simple Line Icon font -->
+        <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+        <!-- Slick Nav -->
+        <link rel="stylesheet" href="assets/css/slicknav.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Slick Slider -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- media-queries (Responsive File) -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Add custom css by Het Kansara-->
+        <link rel="stylesheet" href="assets/css/custom.css">
+    </head>
 
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
-    }
-  </script>-->
+    <body id="body" data-spy="scroll" data-target="#navigation" data-offset="300">
+        <script type="text/x-template" id="modal-template">
+            <transition name="work-modal">
+                <div class="modal-mask">
+                <div class="modal-wrapper">
+                    <div class="modal-container">
+                        <div class="blog-left mb-5 mb-lg-0">
+                            <div class="blog-text">
+                                <div class="blog-text-inner">
+                                    <slot name="modal-body">
+                                    </slot>
+                                    <button class="modal-default-button" @click="$emit('close')"> Close </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </transition>
+        </script>
+         <!-- Start Preloader Area -->
+        <div class="preloader-area">
+            <div class="loader">
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
 
-  <link href="build/main.css" rel="stylesheet">
+        <!-- Header Start -->
+        <header>
+            <div class="header-area header-transparrent">
+                <div class="main-header header-sticky">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2 col-md-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/HK9.png" class="hk-logo logo-nav" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10 col-md-10">
+                                <!-- Main-menu -->
+                                <div class="main-menu float-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li class="nav-item"><a class="nav-link transition active" href="#body"> Home</a></li>
+                                            <li class="nav-item"><a class="nav-link transition" href="#services">Services</a></li>
+                                            <li clazss="nav-item"><a class="nav-link transition" href="#about">About</a></li>
+                                            <li class="nav-item"><a class="nav-link transition" href="#works">Works</a></li>
+                                            <li class="nav-item"><a class="nav-link transition" href="#resume">Resume</a></li>
+                                            <!-- <li class="nav-item"><a class="nav-link transition" href="#blog">Blog</a>
+                                                <ul class="submenu transition">
+                                                    <li><a href="#">Blog</a></li>
+                                                    <li><a href="#">Blog Details</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <li class="nav-item"><a class="nav-link transition" href="#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
 
-</head>
-<body>
+        <!-- Welcome Area Start -->
+        <section class="hero-area sky-blue d-flex align-items-center">
+            <div id="hero-area" class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <!-- Start Hero Caption -->
+                        <div class="hero-caption">
+                            <span class="subheading">Hey! I am</span>
+                            <h1>{{heroTitle}} !</h1>
+                            <div>I'm a 
+                                <!-- Animated Text Writer -->
+                                <span class="txt-rotate" data-period="1000"
+                                             data-rotate='[ "Web Developer.", "Web Designer.", "Mobile App Developer.", "Freelancer."]'></span>
+                            </div>
+                            <p> {{initial_intro}} </p>
+                            <a v-bind:href="resume_link" target="_BLANK" class="btn radius-btn">Download Resume</a>
+                        </div>
+                        <!-- End Hero Caption -->
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <!-- Hero Right Image -->
+                        <div class="hero-img">
+                            <img src="assets/img/HK-img.png" height="560" alt="Hero image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Animated Shape -->
+            <div class="hero-shape custom-animation">
+                <img src="assets/img/hero/hero-shape.png" alt="animation shape">
+            </div>
+            
+        </section>
+        <!-- Welcome Area End -->
 
-  <!-- Ionic's root component and where the app will load -->
-  <ion-app></ion-app>
+        <!-- Services Area Start -->
+        <section class="service-area section-padding" id="services">
+            <div id="service-area" class="container">
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        
+                        <div class="process-block pl-4">
+                            <span class="text-uppercase text-sm letter-spacing">My Services</span>
+                            <h2 class="service-title mb-4 mt-3">I can make this awesome things</h2>
+                            <!-- <p>I understand what your business means to you,your requirements considering
+                                trends.Smet nemo excepturi voluptas eligendi .</p> -->
+                        </div>
+                    </div>
 
-  <!-- The polyfills js is generated during the build process -->
-  <script src="build/polyfills.js"></script>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <!-- Start Single Service Block -->
+                                <div class="service-block text-center mb-4 mb-lg-0">
+                                    <i :class="services[0].icon"></i>
+                                    <h4>{{services[0].title}}</h4>
+                                    <p>{{services[0].note}}</p>
+                                </div>
+                                <!-- End Single Service Block -->
+                            </div>
 
-  <!-- The vendor js is generated during the build process
-       It contains all of the dependencies in node_modules -->
-  <script src="build/vendor.js"></script>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                 <!-- Start Single Service Block -->
+                                <div class="service-block text-center mb-4 mb-lg-0">
+                                    <i :class="services[1].icon"></i>
+                                    <h4>{{services[1].title}}</h4>
+                                    <p>{{services[1].note}}</p>
+                                </div>
+                                 <!-- End Single Service Block -->
+                            </div>
 
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                 <!-- Start Single Service Block -->
+                                <div class="service-block text-center mt-4">
+                                    <i :class="services[2].icon"></i>
+                                    <h4>{{services[2].title}}</h4>
+                                    <p>{{services[2].note}}</p>
+                                </div>
+                                 <!-- End Single Service Block -->
+                            </div>
 
-  <!-- SCIPTS -->
-	
-	<script src="assets/common-js/jquery-3.2.1.min.js"></script>
-	
-	<script src="assets/common-js/tether.min.js"></script>
-	
-	<script src="assets/common-js/bootstrap.js"></script>
-	
-	<script src="assets/common-js/isotope.pkgd.min.js"></script>
-	
-	<script src="assets/common-js/jquery.waypoints.min.js"></script>
-	
-	<script src="assets/common-js/progressbar.min.js"></script>
-	
-	<script src="assets/common-js/jquery.fluidbox.min.js"></script>
-	
-  <script src="assets/common-js/scripts.js"></script>
-  
-  <!-- The main bundle js is generated during the build process -->
-  <script src="build/main.js"></script>
-</body>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                 <!-- Start Single Service Block -->
+                                <div class="service-block text-center mt-4">
+                                    <i :class="services[3].icon"></i>
+                                    <h4>{{services[3].title}}</h4>
+                                    <p>{{services[3].note}}</p>
+                                </div>
+                                 <!-- End Single Service Block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Area End -->
+
+        <!-- About Area Start -->
+        <section class="about-area section-padding sky-blue" id="about">
+            <div id="about-area" class="container">
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 d-none d-lg-block">
+                         <!-- Start About Area Image -->
+                        <div class="img-about">
+                            <img class="img-fluid" src="assets/img/HK-img-1.png" height="824">
+                        </div>
+                        <!-- End About Area Image -->
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <!-- Start About Detail -->
+                        <div class="about-details">
+                            <div class="section-title mb-50">
+                                <h2>About Me</h2>
+                            </div>
+                            <p v-for="about_para in user_profile.about_paragraphs">{{about_para}}</p>
+                            <ul class="about-info mt-4">
+                                <li><span>Name:</span> <span>{{user_profile.name}}</span></li>
+                                <li><span>Date of birth:</span> <span>{{user_profile.born}}</span></li>
+                                <li><span>Address:</span> <span>{{user_profile.address}}</span></li>
+                                <li><span>Zip code:</span> <span>{{user_profile.postal}}</span></li>
+                                <li><span>Email:</span> <span>{{user_profile.email}}</span></li>
+                                <li><span>Phone: </span> <span>{{user_profile.phone}}</span></li>
+                                <li><span>Follow me: </span>
+                                    <span><a :href="user_profile.linkedin_link" class="follow-icon linkedin-link" target="_BLANK"><i class="fa fa-linkedin transition"></i> | LinkedIn</a>
+                                    <a :href="user_profile.github_link" class="follow-icon github-link" target="_BLANK"><i class="fa fa-github transition"></i> | Github</a></span>
+                                </li>
+                            </ul>
+                            <div class="download-btn mt-5">
+                                <a class="btn radius-btn" v-bind:href="user_profile.resume_link" target="_BLANK">Download Resume</a>
+                            </div>
+                        </div>
+                        <!-- End About Detail -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+
+        <!-- Start Works Area -->
+        <section class="works-area section-padding sky-blue" id="works">
+            <div id="works-area" class="container">
+                <!-- use the modal component, pass in the prop -->
+                <work-modal v-if="showModal" @close="showModal = false">
+                    <!--
+                you can use custom content here to overwrite
+                default content
+                -->
+                    <div slot="modal-body" v-if="selectedWork">
+                        <div class="blog-date">
+                            <a href="#"><i class="icon-calendar"></i>{{selectedWork.display_date}}</a>
+                            <a href="#" v-if="selectedWork.contributors"><i class="fa fa-user" aria-hidden="true"></i>{{selectedWork.contributors}} <span v-if="selectedWork.contributors != 'Individual Project'"> contributors</span></a>
+                            <a v-if="selectedWork.drive_url" :href="selectedWork.drive_url" target="_BLANK">View {{ selectedWork.live_demo ? "live demo" : "documentation" }} </a>
+                        </div>
+                        <p><img class="modal-thumbnail" :src="selectedWork.image.thumbnail_url" height="70"></p>
+                        <h4>{{selectedWork.title}}</h4>
+                        <h5 v-if="selectedWork.technology">Technologies: {{selectedWork.technology}}</h5>
+                        <p v-for="paragraph in selectedWork.paragraphs">{{paragraph}}</p>
+                    </div>
+
+                </work-modal>
+                <!-- end single work item -->
+                <!-- Start Section Title -->
+                <div class="row mb-50">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section Title -->
+
+                <div class="row mb-4">
+                    <div class="col-xs-12">
+                        <div class="filters">
+                            <ul>
+                                <li class="active" data-filter=".all">All</li>
+                                <li data-filter=".project">Projects</li>
+                                <li data-filter=".achievement">Achievements</li>
+                                <!-- <li data-filter=".web-design">Web Design</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters-content">
+                    <div class="row grid">
+                        <!-- start single work item -->
+                        <div :class="'single-work col-lg-4 col-md-6 col-sm-12 all '+element.type" v-for="element in timeline" @click="showModal = true, selectedWork = element" onclick="return false;">
+                            <div class="position-relative">
+                                <div class="thumb">
+                                    <img class="image img-fluid" :src="element.image.img_url" alt="work">
+                                </div>
+                                <a class="overlay transition" href="#"></a>
+                                <div class="short-info transition">
+                                    <h4>{{element.title}}</h4>
+                                    <div class="cat">{{element.date}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Works Area -->
+
+                
+        <!-- Resume Area Start -->
+        <section class="resume-area section-padding" id="resume">
+            <div class="container">
+                <!-- Start Section Title -->
+                <div class="row mb-50">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Resume</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section Title -->
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <!-- Start Resume Nav -->
+                        <nav id="navi">
+                            <ul>
+                                <li><a href="#education-area">Education</a></li>
+                                <li><a href="#experience-area">Experience</a></li>
+                                <li><a href="#skills-area">Skills</a></li>
+                                <li><a href="#awards-area">Awards</a></li>
+                            </ul>
+                        </nav>
+                         <!-- End Resume Nav -->
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                         <!-- Start Education -->
+                        <div id="education-area" class="page one">
+                            <h3 class="heading">Education</h3>
+                            <div class="resume-wrap transition d-flex" v-for="education in educations">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-graduation"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">{{education.year}}</span>
+                                    <h4>{{education.university}}</h4>
+                                    <span class="position">{{education.degree}}</span>
+                                    <ul><li v-for="achievement in education.achievements">{{achievement}}</li></ul>
+                                </div>
+                            </div>
+                            <!-- <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-graduation"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">2014-2015</span>
+                                    <h4>Diploma in Computer</h4>
+                                    <span class="position">Mansoura University</span>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                        print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                        the 15th century who is thought to have.</p>
+                                </div>
+                            </div>
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-graduation"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">2014-2015</span>
+                                    <h4>Art &amp; Creative Director</h4>
+                                    <span class="position">Mansoura University</span>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                        print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                        the 15th century who is thought to have.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                         <!-- End Education -->
+
+                        <!-- Start Experience -->
+                        <div id="experience-area" class="page two">
+                            <h3 class="heading">Experience</h3>
+                            <div class="resume-wrap transition d-flex" v-for="experience in experiences">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-briefcase"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">{{experience.duration}}</span>
+                                    <h4>{{experience.designation}}</h4>
+                                    <span class="position">{{experience.company}}</span>
+                                    <p>{{experience.description}}</p>
+                                </div>
+                            </div>
+                            <!-- <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-briefcase"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">2014-2015</span>
+                                    <h4>Web Marketing</h4>
+                                    <span class="position">Mansoura University</span>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                        print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                        the 15th century who is thought to have.</p>
+                                </div>
+                            </div>
+
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-briefcase"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">2017-2018</span>
+                                    <h4>UI/UX Designer</h4>
+                                    <span class="position">Mansoura University</span>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                        print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                        the 15th century who is thought to have.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- End Experience -->
+                        
+                        <!-- Start Skills -->
+                        <div id="skills-area" class="page three">
+                            <h3 class="heading">Skills</h3>
+                            <div class="row">
+                                <div class="col-md-3" v-for="skill in skills">
+                                    <div class="progress-wrap">
+                                        <h5 :style="'color:'+skill.color+';'"><img :src="skill.icon" class="tech-logo"> {{skill.title}}</h5 :style="'color:'+skill.color+';'">
+                                        <!-- <div class="progress">
+                                            <div class="progress-bar" :style="'width:'+skill.confidence+'%'">
+                                                <span>{{skill.confidence}}%</span>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6" v-for="skill in skills">
+                                    <div class="progress-wrap">
+                                        <h5><img :src="skill.icon" class="tech-logo"> {{skill.title}}</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" :style="'width:'+skill.confidence+'%'">
+                                                <span>{{skill.confidence}}%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>jQuery</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:85%">
+                                                <span>85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>HTML5</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:95%">
+                                                <span>95%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>CSS3</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:90%">
+                                                <span>90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>WordPress</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:70%">
+                                                <span>70%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>SEO</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:80%">
+                                                <span>80%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- End Skills -->
+                        
+                        <!-- Start Awards -->
+                        <div id="awards-area" class="page four">
+                            <h3 class="heading">Awards</h3>
+                            <div class="resume-wrap transition d-flex" v-for="award in awards">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-badge"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">{{award.date}}</span>
+                                    <h4>{{award.title}}</h4>
+                                    <!-- <span class="position">Mansoura University</span> -->
+                                    <p v-for="paragraph in award.paragraphs">{{paragraph}}</p>
+                                </div>
+                            </div>
+                            <!-- <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-badge"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">2014-2015</span>
+                                    <h4>Top 5 LeaderShip Exellence Winner</h4>
+                                    <span class="position">Mansoura University</span>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                        print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                        the 15th century who is thought to have.</p>
+                                </div>
+                            </div>
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-badge"></span>
+                                </div>
+                                <div class="text pl-3">
+                                    <span class="date">2014-2015</span>
+                                    <h4>Top 4 Web Tester</h4>
+                                    <span class="position">Mansoura University</span>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                        print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                        the 15th century who is thought to have.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- End Awards -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Area End -->
+
+        <!-- <section class="price-area section-padding" id="price">
+            <div class="container">
+                <div class="row mb-50">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Price Table</h2>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="pricing-item text-center">
+                            <h4 class="title">Standard</h4>
+                            <span class="amount">$10</span>
+                            <span class="month">per month</span>
+                            <div class="icon"><i class="fa fa-calendar"></i></div>
+                            <ul class="pricing-content">
+                                <li>50GB Disk Space</li>
+                                <li>50 Email Accounts</li>
+                                <li>50GB Monthly Bandwidth</li>
+                                <li>10 Subdomains</li>
+                                <li>15 Domains</li>
+                            </ul>
+                            <a class="btn radius-btn" href="#">sign up</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="pricing-item middle text-center">
+                            <h4 class="title">Business</h4>
+                            <span class="amount">$20</span>
+                            <span class="month">per month</span>
+                            <div class="icon"><i class="fa fa-calendar"></i></div>
+                            <ul class="pricing-content">
+                                <li>60GB Disk Space</li>
+                                <li>60 Email Accounts</li>
+                                <li>60GB Monthly Bandwidth</li>
+                                <li>15 Subdomains</li>
+                                <li>20 Domains</li>
+                            </ul>
+                            <a class="btn radius-btn" href="#">sign up</a>
+                            <div class="pricing-shape">
+                                <img class="shape1" src="assets/img/price-shape1.png" alt="price shape">
+                                <img class="shape2" src="assets/img/price-shape2.png" alt="price shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="pricing-item text-center">
+                            <h4 class="title">Premium</h4>
+                            <span class="amount">$30</span>
+                            <span class="month">per month</span>
+                            <div class="icon"><i class="fa fa-calendar"></i></div>
+                            <ul class="pricing-content">
+                                <li>70GB Disk Space</li>
+                                <li>70 Email Accounts</li>
+                                <li>70GB Monthly Bandwidth</li>
+                                <li>20 Subdomains</li>
+                                <li>25 Domains</li>
+                            </ul>
+                            <a class="btn radius-btn" href="#">sign up</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+        
+        <!-- Start Hire Me Area -->
+        <section class="hire-me-area section-padding">
+            <div id="hire-me-area" class="container">
+                <div class="row mb-50">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Hire Me</h2>
+                            <p>“When you hire people that are smarter than you are, you prove that you are smarter than they are.” — R.H. Grant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="hire-box">
+                            <h4>{{user_profile.phone}}</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="hire-box">
+                            <h4><a class="hire-me-nav-link transition" :href="'mailto:'+user_profile.email">{{user_profile.email}}</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="hire-box">
+                            <h4><a class="hire-me-nav-link transition" href="#contact">Contact Me</a></h4>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="#" class="btn radius-btn  mt-50" data-text="Hire Me">
+                            Hire Me
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- End Hire Me Area -->
+
+        <section class="testimonial-area section-padding">
+            <div id="testimonial-area" class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 col-md-12">
+                        <div class="test-slider">
+                            <div class="test-item" v-for="testimonial in testimonials">
+                                <p>{{testimonial.testomonial_message}}</p>
+                                <div class="author-info">
+                                    <img :src="testimonial.profile_image" alt="client">
+                                    <h4>{{testimonial.author_name}}</h4>
+                                    <div class="position">{{testimonial.position}}
+                                        <span><a :href="testimonial.linkedin_url" class="follow-icon linkedin-link" target="_BLANK">LinkedIn | <i class="fa fa-linkedin transition"></i></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Blog Area -->
+        <!-- <section class="blog-area section-padding sky-blue" id="blog">
+            <div class="container">
+                <div class="row mb-50">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Latest Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row latest_blog_inner">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="blog-left mb-5 mb-lg-0">
+                            <div class="blog-items">
+                                <div class="blog-slider owl-carousel">
+                                    <div class="item">
+                                        <img src="https://via.placeholder.com/370x220" alt="blog image">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://via.placeholder.com/370x220" alt="blog image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <div class="blog-text-inner">
+                                    <div class="blog-date">
+                                        <a href="#"><i class="icon-calendar"></i>12 July 2016</a>
+                                        <a href="#"><i class="icon-heart"></i>235</a>
+                                        <a href="#">25 Comment</a>
+                                    </div>
+
+                                    <h4>Work For Success</h4>
+                                    <p>Lorem ipsum dolor sit amet, to consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna to liqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="blog-right">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="https://via.placeholder.com/138x133" alt="blog image">
+                                </div>
+                                <div class="media-body">
+                                    <h4>On UI Design Post</h4>
+                                    <a href="#">
+                                        <small><i class="icon-calendar"></i>16 JUNE 2016</small>
+                                    </a>
+                                    <p>It is a long established fact that a reader will be dis-tracted by the readable
+                                        content.</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="https://via.placeholder.com/138x133" alt="blog image">
+                                </div>
+                                <div class="media-body">
+                                    <h4>On Graphics Design Post</h4>
+                                    <a href="#">
+                                        <small><i class="icon-calendar"></i>16 JUNE 2016</small>
+                                    </a>
+                                    <p>It is a long established fact that a reader will be dis-tracted by the readable
+                                        content.</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="https://via.placeholder.com/138x133" alt="blog image">
+                                </div>
+                                <div class="media-body">
+                                    <h4>On Development Post</h4>
+                                    <a href="#">
+                                        <small><i class="icon-calendar"></i>16 JUNE 2016</small>
+                                    </a>
+                                    <p>It is a long established fact that a reader will be dis-tracted by the readable
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- End Blog Area -->
+
+        <!-- Start Contact Area -->
+        <section class="contact-area section-padding" id="contact">
+            <div id="contact-area" class="container">
+                <!-- Start Section Title -->
+                <div class="row mb-50">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section Title -->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+                        <div class="contact-left">
+                            <div class="media align-items-center">
+                                <div class="media-icon">
+                                    <i class="icon-envelope-letter"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Email</h4>
+                                    <span>{{user_profile.email}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+                        <div class="contact-left">
+                            <div class="media align-items-center">
+                                <div class="media-icon">
+                                    <i class="icon-screen-smartphone"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Phone</h4>
+                                    <span>{{user_profile.phone}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+                        <div class="contact-left">
+                            <div class="media align-items-center">
+                                <div class="media-icon">
+                                    <i class="icon-social-linkedin"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Linkedin</h4>
+                                    <span><a :href="user_profile.linkedin_link" class="contact-area-link" target="_BLANK">{{user_profile.linkedin_link}}</a></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-7 offset-lg-2 col-md-8">
+                         <form id="contact-form" class="row contact-form" action="#" method="POST">
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Your email address">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject"
+                                           placeholder="Enter the discussion title">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control"
+                                              placeholder="Write your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="button-field">
+                                    <button type="button" class="btn radius-btn">Send Message now</button>
+                                </div>
+
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contact Area -->
+
+        <!-- Start Footer -->
+        <footer class="footer-area sky-blue">
+            <div id="footer-area" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="footer-top flex-column">
+                            <div class="footer-logo text-center">
+                                <a href="#">
+                                    <img src="assets/img/HK9.png" class="hk-logo logo-footer" alt="logo">
+                                </a>
+                                <!-- <h4>Follow Me</h4> -->
+                            </div>
+                            <div class="footer-social text-center">
+                                <!-- <a :href="user_profile.linkedin_link" target="_BLANK"><i class="fa fa-linkedin transition"></i></a>
+                                <a :href="user_profile.github_link" target="_BLANK"><i class="fa fa-github transition"></i></a> -->
+                                <!-- <a href="#"><i class="fa fa-dribbble transition"></i></a>
+                                <a href="#"><i class="fa fa-behance transition"></i></a> -->
+                                <!-- <br><br> -->
+                                <p v-if="total_count" class="views-container"><span class="views-text">Portfolio Views: <span class="views-count">{{total_count}} </span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-bottom text-center justify-content-center">
+                    <p class="col-lg-8 col-sm-12 footer-text">
+                        Copyright ©All rights reserved | This theme is licensed with <a href="https://themeforest.net/item/cobra-html5-portfolio-template/26438532" target="_BLANK">Cobra - Theme Forest</a> 
+                    </p>
+                    <p class="col-lg-8 col-sm-12 footer-text">
+                        Developed with <i class="fa fa-heart-o" aria-hidden="true"></i> by Het Kansara | 
+                        <a href="assets/Licence/59031000-cobra-html5-portfolio-template-license.pdf" target="_BLANK">View License </a>
+                    </p>
+                    <p class="col-lg-8 col-sm-12 footer-text">
+                        <!-- Follow me,   -->
+                        <a :href="user_profile.linkedin_link" class="follow-icon linkedin-link" target="_BLANK"><i class="fa fa-linkedin transition"></i> | LinkedIn</a>
+                        <a :href="user_profile.github_link" class="follow-icon github-link" target="_BLANK"><i class="fa fa-github transition"></i> | Github</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        
+        <!-- Essential jQuery Plugins
+        ================================================== -->
+        
+        <!-- Main jQuery -->
+        <script src="assets/js/jquery-3.2.0.min.js"></script>
+
+        <!-- Popper js -->
+        <script src="assets/js/popper.min.js"></script>
+        
+        <!-- Twitter Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        
+        <!-- Slick Nav js -->
+        <script src="assets/js/jquery.slicknav.min.js"></script>
+        
+        <!-- Isotop js filter -->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        
+        <!-- Owl Slider -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        
+        <!-- Slick Slider -->
+        <script src="assets/js/slick.min.js"></script>
+        
+        <!-- Scroll Up js -->
+        <script src="assets/js/jquery.scrollUp.min.js"></script>
+        
+        <script src="assets/js/custom.js"></script>
+        
+        <!-- Custom Function js -->
+        <!-- <script src="assets/js/main.js"></script> -->
+        
+        <!-- Connect View.js -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> -->
+        
+        <!-- Custom Function js -->
+        <!-- <script src="assets/js/vue-logic.js"></script> -->
+        
+    </body>
+
 </html>

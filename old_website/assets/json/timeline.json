@@ -1,0 +1,316 @@
+{
+    "timeline":[
+        {
+            "id": "16/12/2018",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"16th Dec, 2018",
+            "image":{
+                "title": "Certificate of Appreciation",
+                "paragraph": "",
+                "img_url": "assets/imgs/My Certificates/certificateOfAppreciation.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/certificateOfAppreciation.jpg"
+            },
+            "title":"Certificate of Appreciation - BiztechCS",
+            "date":"16th Dec, 2018",
+            "paragraphs":[
+                "Appreciation Certificate for providing noteworthy contribution in the success of Biztech Consultancy durint the year 2018. Appreciated for efforts & dedication for Company."
+            ]
+        },
+        {
+            "id": "17/02/2014",
+            "selected": true,
+            "type": "achievement",
+            "display_date":"17th Feb, 2014",
+            "image":{
+                "title": "TALAASH' 14",
+                "paragraph": "1st Rank in Web-Designing (Talaash-2014) held at Silver Oak Collage of Engineering & Technology.",
+                "img_url": "assets/imgs/My Certificates/201708032011151000.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151000.jpg"
+            },
+            "title":"1st Rank in Web Designing - TALAASH' 14",
+            "date":"17th - 18th Feb, 2014",
+            "paragraphs":[
+                "Talaash '14 was a State Level Technical event organized by Silver Oak College of Engineering and Technology.",
+                "It was an Inter-College Technical festival where more than 5000 engineering students from different technical institutes of Gujarat participated and presented their technical skills. The whole event was organized to motivate students towards their technical expertise."
+            ],
+            "gallary":[
+            ]
+        },
+        {
+            "id": "23/01/2015",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"23rd Jan, 2015",
+            "image":{
+                "title": "ICT for Make in India' 15",
+                "paragraph": "2nd Rank in Web-Designing (ICT Make in India-2015) held at Ahmedabad University.",
+                "img_url": "assets/imgs/My Certificates/201708032011151002.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151002.jpg"
+            },
+            "title":"2nd Rank in Web Designing - ICT for Make in India' 15",
+            "date":"20th - 21st Feb, 2015",
+            "paragraphs":[
+                "ICT for Make in India' 15 was a State Level Technical event organized by, School of Computer Studies - Ahmedabad University.",
+                "It was an Inter-College Technical festival where around 7000 students from different technical institutes of Gujarat participated and presented their technical skills."
+            ],
+            "gallary":[
+            ]
+        },
+        {
+            "id": "20/02/2015",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"20th Feb, 2015",
+            "image":{
+                "title": "AVISHKAR' 15",
+                "paragraph": "1st Rank in Web Designing (Avishkar-2015) held at NSIT (Narnarayan Shastri Institute of Technology).",
+                "img_url": "assets/imgs/My Certificates/201708032011151001.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151001.jpg"
+            },
+            "title":"1st Rank in Web-Designing - AVISHKAR' 15",
+            "date":"20th - 21st Feb, 2015",
+            "paragraphs":[
+                "AVISHKAR '15 was a State Level Technical event organized by NSIT (Narnarayan Shastri Institute of Technology).",
+                "Narnarayan Shastri Institute Technology, Jetalpur is a premier institution of excellence Technical Education that develops professionals of high caliber imbued with values of entrepreneurship, ethics, and social responsibility.",
+                "It was an Inter-College Technical festival where students from different technical institutes of Gujarat participated and presented their technical skills."
+            ],
+            "gallary":[
+            ]
+        },
+        {
+            "id": "14/03/2015",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"14th March, 2015",
+            "image":{
+                "title": "TECHTUNE' 15",
+                "paragraph": "2nd Rank in Web-Designing (Tech Tune-2015) held at LJ Institute of Computer Applications.",
+                "img_url": "assets/imgs/My Certificates/201708032011151003.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151003.jpg"
+            },
+            "title":"2nd Rank in Web Designing - Tech Tune' 15",
+            "date":"14th - 15th March, 2015",
+            "paragraphs":[
+                "Tech Tune' 15 was a State Level Technical event organized by, LJ Institute of Applications - Lok Jagruti Kendra Trust.",
+                "It was an Inter-College Technical festival where students from different technical institutes of Gujarat participated and presented their technical skills."
+            ],
+            "gallary":[
+            ]
+        },
+        {
+            "id": "24/04/2015",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"24rth March, 2015",
+            "image":{
+                "title": "TALAASH' 15",
+                "paragraph": "3rd Rank in Web-Designing (TALAASH-2015) held at Silver Oak College of Engineering and Technology.",
+                "img_url": "assets/imgs/My Certificates/201708032011151004.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151004.jpg"
+            },
+            "title":"3rd Rank in Web Designing - TALAASH' 15",
+            "date":"24rth - 25th March, 2015",
+            "paragraphs":[
+                "Talaash '15 was a State Level Technical event organized by Silver Oak College of Engineering and Technology.",
+                "It was an Inter-College Technical festival where more than 5000 students from different technical institutes of Gujarat participated and presented their technical skills. The whole event was organized to motivate students towards their technical expertise."
+            ],
+            "gallary":[
+            ]
+        },
+        {
+            "id": "16/02/2016",
+            "selected": false,
+            "type": "project",
+            "display_date":"16th Feb, 2016",
+            "image":{
+                "title": "Gujarat University - Transcript Issuance System",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/12729142_979363168820251_4030760472647035397_n.jpg",
+                "thumbnail_url": "assets/imgs/img/compressed/12729142_979363168820251_4030760472647035397_n.jpg"
+            },
+            "title":"Transcript Issuance System - Gujarat University",
+            "date":"16th Feb, 2016",
+            "paragraphs":[
+                "Our team made transcript issuance system for Gujarat University as a part of our 6th Semester Project. It enabled students to get verified transcript by university online (Previously a manual process)."
+            ],
+            "gallary":[
+                "assets/imgs/img/Transcript/Picture1.png",
+                "assets/imgs/img/Transcript/Picture2.png",
+                "assets/imgs/img/Transcript/Picture3.png",
+                "assets/imgs/img/Transcript/Picture4.png",
+                "assets/imgs/img/Transcript/Picture5.png",
+                "assets/imgs/img/Transcript/Picture6.png",
+                "assets/imgs/img/Transcript/Picture7.png",
+                "assets/imgs/img/Transcript/Picture8.png",
+                "assets/imgs/img/Transcript/Picture9.png",
+                "assets/imgs/img/Transcript/Picture10.png",
+                "assets/imgs/img/Transcript/Picture11.png",
+                "assets/imgs/img/Transcript/Picture12.png",
+                "assets/imgs/img/Transcript/Picture13.png",
+                "assets/imgs/img/Transcript/Picture14.png",
+                "assets/imgs/img/Transcript/Picture15.png",
+                "assets/imgs/img/Transcript/Picture16.png",
+                "assets/imgs/img/Transcript/Picture17.png",
+                "assets/imgs/img/Transcript/Picture18.png",
+                "assets/imgs/img/Transcript/Picture19.png",
+                "assets/imgs/img/Transcript/Picture20.png"
+            ],
+            "technology": "KnockoutJS, Slim Framework, PHP",
+            "drive_url":"https://drive.google.com/drive/folders/1Zel5AcURFq0O-bNkP52n--keIZOVKu2D"
+        },
+        {
+            "id": "10/03/2016",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"10th March, 2016",
+            "image":{
+                "title": "TECH KAUSHALYA' 16",
+                "paragraph": "2rd Rank in Web-Designing (TECH KAUSHALYA-2015) held at Gujarat University.",
+                "img_url": "assets/imgs/My Certificates/201708032011151005.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151005.jpg"
+            },
+            "title":"2nd Rank in Web Designing - TECH KAUSHALYA' 16",
+            "date":"10th - 11th March, 2016",
+            "paragraphs":[
+                "TECH KAUSHALYA '16 was a State Level Technical event organized by Department of Computer Science Rolllwala, Gujarat University.",
+                "TechKaushalya was a state level IT fest which aims to showcase and assess technical and nontechnical skills of the participants from renowned institutes of Gujarat."
+            ],
+            "gallary":[
+            ]
+        },
+        {
+            "id": "04/02/2017",
+            "selected": false,
+            "type": "project",
+            "display_date":"4rth Feb, 2017",
+            "image":{
+                "title": "LJ Internship Fair",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/Internship Fair/Picture (4).png",
+                "thumbnail_url": "assets/imgs/img/Internship Fair/compressed/Picture (4).png"
+            },
+            "title":"LJ Internship Fair",
+            "date":"4rth Feb, 2017",
+            "paragraphs":[
+                "Live project from our college which involved stakeholders from multiple departments. Our role was to create a supporting IT infrastructure for an event held in our college. We also made a website and an Android application that communicated with a RESTful API written in Laravel"
+            ],
+            "technology": "Android, Laravel, REST API, Composer",
+            "drive_url":"https://drive.google.com/open?id=1WcaY-5t2KNPs2tS16bnm-Ji9Spjb3UYG"
+        },
+        {
+            "id": "21/04/2017",
+            "selected": false,
+            "type": "project",
+            "display_date":"21st April, 2017",
+            "image":{
+                "title": "Twitter Users Analysis",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/twitter.jpg",
+                "thumbnail_url": "assets/imgs/img/compressed/twitter.jpg"
+            },
+            "title":"Twitter Users Analysis",
+            "date":"21st April, 2017",
+            "paragraphs":[
+                "Twitter Users Analysis is a web application for analyzing users of Twitter. Users are analyzed by their daily activities like their Tweets, Hashtags used, User mentions, etc. All the analysis are displayed in graphical format, so it is easy to understand the analysis results."
+            ],
+            "technology": "PHP, MySQL, Twitter API, D3JS, Plotly",
+            "drive_url":"https://drive.google.com/open?id=1hUnBlO4T8pwZUXKcNzUxU_lzNriWHGQT"
+        },
+        {
+            "id": "10/05/2017",
+            "selected": false,
+            "type": "project",
+            "display_date":"10th May, 2017",
+            "image":{
+                "title": "My Daily News",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/News.png",
+                "thumbnail_url": "assets/imgs/img/compressed/News.png"
+            },
+            "title":"My Daily News",
+            "date":"10th May, 2017",
+            "paragraphs":[
+                "My Daily News is a web application to check daily news. It provides news from 70+ different sources (BBC News, CNBC, Google News and many more). The purpose of this website is to provide news from different sources at one place, so user don’t need to search for different places for different news."
+            ],
+            "technology": "AngularJS, News API",
+            "drive_url":"https://my-daily-news.000webhostapp.com/#/"
+        },
+        {
+            "id": "28/08/2017",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"28th Aug, 2017",
+            "image":{
+                "title": "1st Rank in C Programming - <CODE-A-THON>",
+                "paragraph": "",
+                "img_url": "assets/imgs/My Certificates/201708032011151009.jpg",
+                "thumbnail_url": "assets/imgs/My Certificates/compressed/201708032011151009.jpg"
+            },
+            "title":"1st Rank in C Programming - <CODE-A-THON>",
+            "date":"28th Aug, 2017",
+            "paragraphs":[
+                "1st Rank in Coding in C Programming(<CODE-A-THON> - 2017) held at LJ Institute of Computer Application, Organized by Japanese MNC - ACTY System."
+            ]
+        },
+        {
+            "id": "22/09/2017",
+            "selected": false,
+            "type": "project",
+            "display_date":"22nd Sept, 2017",
+            "image":{
+                "title": "Send My SMS",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/SendMySMS.png",
+                "thumbnail_url": "assets/imgs/img/compressed/SendMySMS.png"
+            },
+            "title":"Send My SMS - Bulk & Dynamic SMS System",
+            "date":"22nd Sept, 2017",
+            "paragraphs":[
+                "Send My SMS is a web application for sending bulk/individual message to any number. It is developed for local stores and Institutes. Later on, additional features like contacts and dynamic message using .csv file is also added to the website. By using these features institutes can generate dynamic messages (Attendance, Exam results, etc.) using .csv file."
+            ],
+            "technology": "PHP, MySQL, AngularJS, Text Local API",
+            "drive_url":"http://sendmysms.netau.net/agile-demo/"
+        },
+        {
+            "id": "17/02/2018",
+            "selected": false,
+            "type": "project",
+            "display_date":"17th Feb, 2018",
+            "image":{
+                "title": "LJ Innovation Village",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/ljiv.png",
+                "thumbnail_url": "assets/imgs/img/compressed/ljiv.png"
+            },
+            "title":"LJ Innovation Village",
+            "date":"17th Feb, 2018",
+            "paragraphs":[
+                "LJ Innovation Village was an event organized by LJ Institute. It was a platform to showcase innovative projects, products, start-ups by innovators. It provides anopportunity to innovators to interact with students, faculties, industry people and investors.",
+                "Our role was to create a supporting IT infrastructure for the event. We made a website in Angular for the event in which students can register and add their projects which is also evaluated by Professionals on the basis of different criteria. (Previously a mannual process)"
+            ],
+            "technology": "PHP, MySQL, AngularJS",
+            "drive_url":"http://www.ljinnovationvillage.org/#/"
+        },
+        {
+            "id": "19/03/2018",
+            "selected": false,
+            "type": "project",
+            "display_date":"19th March, 2018",
+            "image":{
+                "title": "Laboratory Resources Perusal",
+                "paragraph": "",
+                "img_url": "assets/imgs/img/Laboratory Management System.png",
+                "thumbnail_url": "assets/imgs/img/compressed/Laboratory Management System.png"
+            },
+            "title":"Laboratory Resources Perusal",
+            "date":"19th March, 2018",
+            "paragraphs":[
+                "Laboratory Resources Perusal is system developed for monitoring Laboratory Assets. It gives a dashboard of any PC connected to the same network.",
+                "System can be used by Laboratory Administrator to monitor user activity, CPU performance and CPU / Memory Usage. System logs & Reports are also generated and that can be used in further decision making."
+            ],
+            "technology": "Angular 5, PHP, MySQL, Python",
+            "drive_url":"https://drive.google.com/open?id=1X5IW-irZuhzxcI5TErQ6vXgP8eg2QqA-"
+        }
+    ]
+}

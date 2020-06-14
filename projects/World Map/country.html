@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>World Maps API</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/customStyle.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">World Map</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="apis.html">Libraries/API(s)</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row country-container">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" id="contryImage" src="" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title countryName">India </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Capital: <span id="capital"></span> </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Population: <span id="population"></span> </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Demonym: <span id="demonym"></span> </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Region: <span id="region"></span> </h6>
+              <h6 class="card-subtitle mb-2 text-muted">Sub Region: <span id="subregion"></span> </h6>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-12 col-lg-9">
+          <table class="table country-table">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2">About <span class="countryName"></span></th>
+                <!-- <th scope="col">Information</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Also Known As</th>
+                <td id="altSpellings">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Timezones</th>
+                <td id="timezones">
+                  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Languages</th>
+                <td id="languages">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Borders</th>
+                <td id="borders"></td>
+              </tr>
+              <tr>
+                <th scope="row">Currencies</th>
+                <td id="currencies"></td>
+              </tr>
+              <tr>
+
+                <th scope="row">Translate</th>
+                <td>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputText" class="sr-only">Enter any text</label>
+                    <input type="text" class="form-control" id="inputText" placeholder="Enter any text" value="Hello, How are you?">
+                  </div>
+                  <button type="submit" id="translateButton" class="btn btn-primary mb-2">Translate into <span id="language"></span></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Translated Text</th>
+                <td id="translatedText"></td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="scripts/country.js"></script>
+</body>
+</html>

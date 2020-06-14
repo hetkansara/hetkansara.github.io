@@ -1,11 +1,16 @@
 ﻿{
     "name": "Het Kansara",
+    "titles": ["Web Developer.", "Web Designer.", "Mobile Application Developer.", "Freelancer."],
+    "initial_intro": "Het Kansara is a Web & Mobile Application Developer located in Toronto, Ontario, Canada. He mainly works with front-end fameworks liks Angular, Ionic, Vue, React and (Any technology that you want him to work)! 😜",
     "designation": "Web & Mobile Application Developer",
     "profile_img": "assets/imgs/img/profile.jpg",
     "born": "19th June, 1996",
     "email": "hetkansara.work@gmail.com",
+    "phone": "+(437) 248-0902",
+    "address": "Etobicoke, ON, CANADA",
+    "postal": "M9V 2C5",
     "marital_status": "Single",
-    "resume_link": "assets/HK_RESUME_07042020.pdf",
+    "resume_link": "assets/documents/resume/HK_RESUME_07042020.pdf",
     "bio_text": "Web & Mobile Application Developer",
     "achievements_and_projects_info": "Hii!... <br><br>Me, Het Kansara welcomes you to quick introduction of my work and achievements. <br>Here are just few of them. <i class=\"fa fa-smile-o\"></i><br> Hope you like <i class=\"fa fa-thumbs-up\"></i> it.",
     "about_img_url": "assets/imgs/img/8.jpg",
@@ -39,7 +44,7 @@
     ],
     "education": [
         {
-            "degree": "Ontario College Graduate Certificate",
+            "degree": "Web Development - Ontario College Graduate Certificate",
             "university": "HUMBER COLLEGE",
             "year": "EXPECTED GRADUATION - AUG 2020",
             "achievements": []
@@ -47,7 +52,7 @@
         {
             "degree": "MASTER OF COMPUTER APPLICATIONS",
             "university": "GUJARAT TECHNOLOGICAL UNIVERSITY",
-            "year": "GRADUATED IN 2018 WITH 9.07 CGPA",
+            "year": "GRADUATED IN 2018",
             "achievements": [
                 "1st Rank in Coding in C Programming(<CODE-A-THON>) held at LJ Institute of Computer Application, Organized by Japanese MNC - ACTY System.",
                 "2nd Rank in Web-Designing (Tech Kaushalya-2016) held at Gujarat University."
@@ -55,7 +60,7 @@
         },{
             "degree": "BACHELOR OF COMPUTER APPLICATIONS",
             "university": "GUJARAT TECHNOLOGICAL UNIVERSITY",
-            "year": "GRADUATED IN 2016 WITH 9.05 CGPA",
+            "year": "GRADUATED IN 2016",
             "achievements": [
                 "1st Rank in Web-Designing (Talaash-2014) held at Silver Oak Collage of Engineering & Technology.",
                 "1st Rank in Web-Designing (Avishkar-2015) held at NSIT (Narnarayan Shastri Institute of Technology).",
@@ -66,17 +71,52 @@
         },{
             "degree": "HIGHER SECONDARY SCHOOL",
             "university": "GUJARAT BOARD",
-            "year": "GRADUATED IN 2013 WITH 58 PERCENTAGE",
+            "year": "GRADUATED IN 2013",
             "achievements": [
                 
             ]
         },{
             "degree": "SECONDARY SCHOOL",
             "university": "GUJARAT BOARD",
-            "year": "GRADUATED IN 2011 WITH 70 PERCENTAGE",
+            "year": "GRADUATED IN 2011",
             "achievements": [
                 
             ]
+        }
+    ],
+    "services": [{
+        "icon": "fa fa-dashboard",
+        "title": "Web Development",
+        "note": "A complete web app solution for business"
+    }, {
+        "icon": "fa fa-mobile",
+        "title": "Mobile App Development",
+        "note": "A complete mobile app solution for business"
+    }, {
+        "icon": "fa fa-paint-brush",
+        "title": "Web Designing",
+        "note": "A complete web designing solution for business"
+    }, {
+        "icon": "fa fa-laptop",
+        "title": "Software Development",
+        "note": "A complete software development solution for business"
+    }],
+    "testimonials": [
+        {
+            "author_name": "Dhaval Darji",
+            "profile_image": "assets/img/hk-imgs/img/dhaval_darji.jpg",
+            "testomonial_message": "Het is a problem solver, an intelligent developer and a professional person and a fun guy to work with. Always enjoyed working with him!",
+            "position": "Engineering Manager & Head of Innovation Lab @BiztechCS",
+            "relation": "Dhaval was team lead.",
+            "linkedin_url": "https://www.linkedin.com/in/dhavaldarji304/"
+        },
+        {
+            "author_name": "Bharat Nagdev",
+            "profile_image": "assets/img/hk-imgs/img/bharat-nagdev.jpg",
+            "testomonial_message": "Het is the funniest guy in room. If you're finding a problem solver in the room he is the guy. He is the best friend and co-worker at the same time.",
+            "position": "Software Engineer at BiztechCS",
+            "relation": "Het worked with Bharat in the same group",
+            "linkedin_url": "https://www.linkedin.com/in/bharat-nagdev-%F0%9F%A4%93-b71455128/"
         }
     ],
     "coder_degrees": 2,
