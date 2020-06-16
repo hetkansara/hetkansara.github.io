@@ -106,7 +106,7 @@ $(document).ready(function () {
             $('.planet-card h2').addClass(planets[planet]['title'].toLowerCase() + '-color');
             // $('#close-btn').addClass(planets[planet]['title'].toLowerCase()+'-color');
             $('#close-btn').addClass(planets[planet]['title'].toLowerCase() + '-border');
-            $('#planet-img').attr('src', 'Images/' + planets[planet]['title'] + '.png');
+            $('#planet-img').attr('src', 'Images/' + planets[planet]['title'].toLowerCase() + '.png');
             $('.planet-card').fadeIn();
         }
     })
