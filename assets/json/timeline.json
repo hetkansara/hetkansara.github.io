@@ -369,6 +369,27 @@
             "drive_url":"http://priyankakhadilkar.com/onlinetutor",
             "live_demo": true,
             "contributors": "5"
+        },
+        {
+            "id": "12/12/2019",
+            "selected": false,
+            "type": "project",
+            "display_date":"12th Dec, 2019",
+            "image":{
+                "title": "Solar System - CSS Animation Project",
+                "paragraph": "",
+                "img_url": "assets/img/hk-imgs/img/compressed/solar.png",
+                "thumbnail_url": "assets/img/hk-imgs/img/compressed/solar.png"
+            },
+            "title":"Solar System - CSS Animation Project",
+            "date":"12th Dec, 2019",
+            "paragraphs":[
+                "Solar system CSS Animation developed for final assignment of the Digital Desgin Class."
+            ],
+            "technology": "HTML, CSS, Javascript",
+            "drive_url":"https://hetkansara.github.io/projects/Solar%20System/",
+            "live_demo": true,
+            "contributors": "Individual"
         }
     ]
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Solar System</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/jquery-3.4.1.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <!-- Orbit Animation Reference: https://codepen.io/alandunning/pen/bNNRvQ -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>Solar System</h2>
+      <ul>
+        <li><a href="#" id="solarSystemLink" class="nav-link">Home</a></li>
+        <li><a href="#" id="allPlanetsLink" class="nav-link">All Planets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="circle-orbit-container">
+      <div id="sun" class="sun planet-container">
+
+      </div>
+      <div id="mercury" class="planet-container">
+        <div class="mercury-cirlces planet">
+        </div>
+      </div>
+      <div id="venus" class="planet-container">
+        <div class="venus-cirlces planet">
+        </div>
+      </div>
+      <div id="earth" class="planet-container">
+        <div class="earth-cirlces planet">
+        </div>
+      </div>
+      <div id="mars" class="planet-container">
+        <div class="mars-cirlces planet">
+        </div>
+      </div>
+
+      <div id="jupiter" class="planet-container">
+        <div class="jupiter-cirlces planet">
+        </div>
+      </div>
+
+      <div id="saturn" class="planet-container">
+        <div class="outline">
+
+        </div>
+        <div class="saturn-cirlces planet">
+        </div>
+      </div>
+
+      <div id="uranus" class="planet-container">
+        <div class="uranus-cirlces planet">
+        </div>
+      </div>
+
+      <div id="neptune" class="planet-container">
+        <div class="neptune-cirlces planet">
+        </div>
+      </div>
+    </div>
+    <div class="planets-list">
+    </div>
+    <div>
+      <div class="planet-card">
+        <button id="close-btn">Close</button>
+        <img id="planet-img" src="Images/earth.png" alt="planet-image">
+        <h2 id="planet-title">Planet</h2>
+        <p>Rotation period: <span id="rotation-period-text">365 days</span></p>
+        <p>Revolution period: <span id="revolution-period-text">365 days</span></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Developed by - Het Kansara - N01330009 - Digital Design - Final Assignment
+    </p>
+  </footer>
+
+</body>
+
+</html>
