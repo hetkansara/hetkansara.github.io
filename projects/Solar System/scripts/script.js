@@ -58,7 +58,7 @@ $(document).ready(function () {
     let htmlContent = "";
     for (let eachPlanet of Object.keys(planets)) {
         htmlContent += "<div class='planet-list-card'>";
-        htmlContent += "<img class='planet-img' src='" + 'Images/' + planets[eachPlanet]['title'] + '.png' + "' alt=''>";
+        htmlContent += "<img class='planet-img' src='" + 'Images/' + planets[eachPlanet]['title'].toLowerCase() + '.png' + "' alt=''>";
         htmlContent += "<h2 class='" + eachPlanet + "-color capitalize'>" + eachPlanet + "</h2>";
         htmlContent += "<p>Rotation period: <span class='rotation-period-text'>"+planets[eachPlanet]['rotation']+"</span></p>";
         htmlContent += "<p>Revolution period: <span class='revolution-period-text'>"+planets[eachPlanet]['revolution']+"</span></p></div>";
