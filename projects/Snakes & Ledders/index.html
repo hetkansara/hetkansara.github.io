@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakes & Ladders</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div :class="!players[0].disabledDice ? 'dice-1-container active' : 'dice-1-container'">
+      <button class="dice-btn" v-on:click="rollDice(players[0])" :disabled="players[0].disabledDice">
+        <p>Player 1 </p><img src="assets/images/dice.png" class="dice">
+      </button>
+      <p class="dice-result-1" v-if="players[0].diceNum">Dice rolled to {{players[0].diceNum}}</p>
+    </div>
+    <div :class="!players[1].disabledDice ? 'dice-2-container active' : 'dice-2-container'">
+      <button class="dice-btn" v-on:click="rollDice(players[1])" :disabled="players[1].disabledDice">
+        <p>Player 2 </p><img src="assets/images/dice.png" class="dice">
+      </button>
+      <p class="dice-result-2" v-if="players[1].diceNum">Dice rolled to {{players[1].diceNum}}</p>
+    </div>
+    <table id="table-board" :style="'background: url(' + selectedBoard.boardURL + '),background-repeat:no-repeat;'">
+      <tr v-for="row in boardData">
+        <td v-for="cell in row">
+          <span v-for="player in players">
+            <img v-if="cell == player.currentNum" :src="player.img" class="chip" height="25">  
+          </span>  
+          <!-- <span v-if="cell != c urrentNum">{{cell}}</span> -->
+        </td>
+      </tr>
+    </table>
+    <div class="board-btns">
+      <button v-on:click="switchBoard(0)">Board 1</button>
+      <button v-on:click="switchBoard(1)">Board 2</button>
+      <button v-on:click="switchBoard(2)">Board 3</button>
+    </div>
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
