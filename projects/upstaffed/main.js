@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<!-- <div *ngFor=\"let employer of employerData\">\n    <p>Company Name: {{employer.company_name}}</p>\n    <p>Company Location: {{employer.company_location}}</p>\n</div> -->\n\n<!-- <p id=\"abc\">employer works!</p> -->\n<div class=\"main-content\">\n  <div class=\"container-fluid\">\n    <div class=\"card\">\n      <div class=\"row\">\n          <div class=\"col-lg-2 col-md-2\">\n                <qrcode [qrdata]=\"candidateData?._id\" [width]=\"150\" [errorCorrectionLevel]=\"'M'\" [elementType]=\"'svg'\"></qrcode>\n          </div>\n          <div class=\"col-lg-10 col-md-10\">\n              <h3>{{candidateData?.first_name}} {{candidateData?.last_name}}</h3>\n              <h4>Email: <strong>{{candidateData?.email}}</strong></h4>\n              <h4>Conatct: <strong>{{candidateData?.phone_number}}</strong></h4>\n          </div>\n           <div class=\"col-lg-12 col-md-12\">\n              <p class=\"bio\">I am a developer and I don't know many programming languages.</p>\n           </div>\n            <div class=\"col-lg-2 col-md-2\">\n                <h4 class=\"bio\"><strong>Skills</strong></h4>\n                <ul>\n                  <!-- <li *ngFor=\"let skill of candidateData.skills\">{{skill}}</li> -->\n                  <li>HTML</li> \n                  <li>CSS</li>\n                  <li>JavaScript</li>\n                  <li>TypeScript</li>\n                </ul>\n          </div>\n          <div class=\"col-lg-10 col-md-10\">\n            <h4 class=\"bio\"><strong>Experience</strong></h4>\n            <ul>\n              <li>\n                <h5>Jr. Web & Movile Application Developer</h5>\n                <p>BiztechCS (Dec 2017 - Jun 2019)</p>\n              </li>\n              <li>\n                <h5>Jr. Web & Movile Application Developer</h5>\n                <p>BiztechCS (Dec 2017 - Jun 2019)</p>\n              </li>\n            </ul>\n          </div>\n          <div class=\"col-lg-2 col-md-2\"></div>\n          <div class=\"col-lg-10 col-md-10\">\n            <h4 class=\"bio\"><strong>Education</strong></h4>\n            <ul>\n              <li>\n                <h5>Master of Computer Applications</h5>\n                <p>Gujarat Technological Universiry (June 2018)</p>\n              </li>\n              <li>\n                <h5>Bachelor of Computer Applications</h5>\n                <p>Gujarat Technological Universiry (June 2016)</p>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n  </div>\n</div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<!-- <div *ngFor=\"let employer of employerData\">\n    <p>Company Name: {{employer.company_name}}</p>\n    <p>Company Location: {{employer.company_location}}</p>\n</div> -->\n\n<!-- <p id=\"abc\">employer works!</p> -->\n<div class=\"main-content\">\n  <div class=\"container-fluid\">\n    <div class=\"card\">\n      <div class=\"row\">\n          <div class=\"col-lg-2 col-md-2\">\n                <qrcode [qrdata]=\"candidateData?._id\" [width]=\"150\" [errorCorrectionLevel]=\"'M'\" [elementType]=\"'svg'\"></qrcode>\n          </div>\n          <div class=\"col-lg-10 col-md-10\">\n              <h3>{{candidateData?.first_name}} {{candidateData?.last_name}}</h3>\n              <h4>Email: <strong>{{candidateData?.email}}</strong></h4>\n              <h4>Conatct: <strong>{{candidateData?.phone_number}}</strong></h4>\n          </div>\n           <div class=\"col-lg-12 col-md-12\">\n              <p class=\"bio\">I am a developer and I don't know many programming languages.</p>\n           </div>\n            <div class=\"col-lg-2 col-md-2\">\n                <h4 class=\"bio\"><strong>Skills</strong></h4>\n                <ul>\n                  <li *ngFor=\"let skill of skills\">{{skill}}</li>\n                  <!-- <li>HTML</li> \n                  <li>CSS</li>\n                  <li>JavaScript</li>\n                  <li>TypeScript</li> -->\n                </ul>\n          </div>\n          <div class=\"col-lg-10 col-md-10\">\n            <h4 class=\"bio\"><strong>Experience</strong></h4>\n            <ul>\n              <li *ngFor=\"let experience of workExperiences\">\n                <h5>{{experience.job_title}}</h5>\n                <p>{{experience.description}}</p>\n                <p>{{experience.company_name}} ({{experience.start_date}} - {{experience.end_date}})</p>\n              </li>\n            </ul>\n          </div>\n          <div class=\"col-lg-2 col-md-2\"></div>\n          <div class=\"col-lg-10 col-md-10\">\n            <h4 class=\"bio\"><strong>Education</strong></h4>\n            <ul>\n              <li *ngFor=\"let education of educations\">\n                <h5>{{education.certificate_name}}</h5>\n                <p>{{education.institute}} ({{education.passing_year}})</p>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n  </div>\n</div>\n\n");
 
 /***/ }),
 
@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Add Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-6\">\r\n                                        <input formControlName=\"title\" placeholder=\"Title\" type=\"text\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                        <textarea formControlName=\"description\"\r\n                                            placeholder=\"Description of the Assessment.\"></textarea>\r\n                                    <!-- <div class=\"form-group\">\r\n  \r\n                                        <div class=\"form-group\">\r\n                                            <label class=\"bmd-label-floating\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\r\n                                            <textarea class=\"form-control\" rows=\"5\"></textarea>\r\n                                        </div>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <div>\r\n                                <input formControlName=\"additional_files\" type=\"file\" ng2FileSelect accept=\".pdf\"\r\n                                    [uploader]=\"uploader\" multiple /><br />\r\n                            </div>\r\n                            <!-- <div class=\"drop-zone\">\r\n                                <div ng2FileDrop (click)=\"fileinput.click()\" [uploader]=\"uploader\" class=\"drop-zone\">\r\n                                    Drag and drop files to upload\r\n                                </div>\r\n                            </div> -->\r\n                            <table>\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th width=\"90%\">\r\n                                            File Name\r\n                                        </th>\r\n                                        <th width=\"10%\">\r\n                                            Remove\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let item of uploader.queue\">\r\n                                        <th width=\"90%\">\r\n                                            {{item._file.name}}\r\n                                        </th>\r\n                                        <th class=\"text-center\" width=\"10%\">\r\n                                            <mat-icon (click)=\"item.remove()\">delete</mat-icon>\r\n                                        </th>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                            \r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add\r\n                                Assessment</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Add Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row margintop\">\r\n                                <div class=\"col-md-2\">Title</div>\r\n                                <div class=\"col-md-6\">\r\n                                    <input formControlName=\"title\" placeholder=\"Title\" type=\"text\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-2\">Description</div>\r\n                                <div class=\"col-md-6\">\r\n                                    <textarea formControlName=\"description\"\r\n                                        placeholder=\"Description of the Assessment.\"></textarea>\r\n                                    <!-- <div class=\"form-group\">\r\n  \r\n                                        <div class=\"form-group\">\r\n                                            <label class=\"bmd-label-floating\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\r\n                                            <textarea class=\"form-control\" rows=\"5\"></textarea>\r\n                                        </div>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row margintop\">\r\n                                <div class=\"col-md-6\">\r\n                                <input formControlName=\"additional_files\" type=\"file\" ng2FileSelect accept=\".pdf\"\r\n                                    [uploader]=\"uploader\" multiple /></div>\r\n                            </div>\r\n                            <!-- <div class=\"drop-zone\">\r\n                                <div ng2FileDrop (click)=\"fileinput.click()\" [uploader]=\"uploader\" class=\"drop-zone\">\r\n                                    Drag and drop files to upload\r\n                                </div>\r\n                            </div> -->\r\n                            <table>\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th width=\"90%\">\r\n                                            File Name\r\n                                        </th>\r\n                                        <th width=\"10%\">\r\n                                            Remove\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let item of uploader.queue\">\r\n                                        <th width=\"90%\">\r\n                                            {{item._file.name}}\r\n                                        </th>\r\n                                        <th class=\"text-center\" width=\"10%\">\r\n                                            <mat-icon (click)=\"item.remove()\">delete</mat-icon>\r\n                                        </th>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add\r\n                                Assessment</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -48,7 +48,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <!-- <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Assessments</h4>\r\n                        <a routerLink=\"/admin/addassessment\">\r\n                            <mat-icon>playlist_add</mat-icon> Add Assessment\r\n                        </a>\r\n                    </div> -->\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Assessments\r\n                            <a [routerLink]=\"'../addassessment'\"><span class=\"material-icons\">add</span></a>\r\n                        </h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Title</th>\r\n                                <th>Employer Name</th>\r\n                                <th>Description</th>\r\n                                <th>Action</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let assessment of assessmentData\">\r\n                                    <td> <a [routerLink]=\"['../viewassessment', assessment._id]\">{{assessment.title}}</a>\r\n                                    </td>\r\n                                    <td>{{assessment.employer_id.company_name}}</td>\r\n                                    <td>{{assessment.description}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"\r\n                                            (click)=\"onClickMeToUpdate(assessment._id)\" matTooltip=\"Edit assessment\"\r\n                                            [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(assessment._id)\"\r\n                                            matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <!-- <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Assessments</h4>\r\n                        <a routerLink=\"/admin/addassessment\">\r\n                            <mat-icon>playlist_add</mat-icon> Add Assessment\r\n                        </a>\r\n                    </div> -->\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Assessments\r\n                            <a  *ngIf=\"userInfo?.user?.role == 'Employer'\" [routerLink]=\"'../addassessment'\"><span class=\"material-icons\">add</span></a>\r\n                        </h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Title</th>\r\n                                <th>Employer Name</th>\r\n                                <th>Description</th>\r\n                                <th>Action</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let assessment of assessmentData\">\r\n                                    <td> <a [routerLink]=\"['../viewassessment', assessment._id]\">{{assessment.title}}</a>\r\n                                    </td>\r\n                                    <td>{{assessment.employer_id.company_name}}</td>\r\n                                    <td>{{assessment.description}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"\r\n                                            (click)=\"onClickMeToUpdate(assessment._id)\" matTooltip=\"Edit assessment\"\r\n                                            [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                     `       <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(assessment._id)\"\r\n                                            matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/assessment/reviewassessment/reviewassessment.component.html":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/assessment/reviewassessment/reviewassessment.component.html ***!
+  \******************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Review Submitted assessment - {{assessmentData[0].title}}\r\n                        </h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n            \r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Candidate Name</th>\r\n                                <th>Submission date</th>\r\n                                <th>Submitted file</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let assessment of assessmentData\">\r\n                                    <td>{{assessment.candidate_id.first_name}} {{assessment.candidate_id.last_name}}\r\n                                    </td>\r\n                                    <td>{{assessment.submission_date}}</td>\r\n                                    <td><span *ngFor=\"let submittedassessment of assessment.assessement_file\"><a\r\n                                                target=\"_blank\"\r\n                                                href=\"{{submittedassessment.file_url}}\">{{submittedassessment.original_filename}}</a></span>\r\n                                    </td>\r\n                                    <!-- <td> <a [routerLink]=\"['../viewassessment', assessment._id]\">{{assessment.title}}</a>\r\n                                    </td>\r\n                                    <td>{{assessment.employer_id.company_name}}</td>\r\n                                    <td>{{assessment.description}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"\r\n                                            (click)=\"onClickMeToUpdate(assessment._id)\" matTooltip=\"Edit assessment\"\r\n                                            [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(assessment._id)\"\r\n                                            matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td> -->\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -61,7 +74,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Submit Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div><label>Title : </label>\r\n                            {{assessmentData.title}}\r\n                        </div>\r\n                        <div><label>Employer Name : </label>\r\n                            {{assessmentData.employer_id.company_name}}\r\n                        </div>\r\n                        <div><label>Description : </label>\r\n                            {{assessmentData.description}}\r\n                        </div>\r\n                        <div><label>Assessment Files : </label>\r\n                            <div>\r\n                                <div *ngFor=\"let assessmentfile of assessmentData.additional_files\">\r\n                                    <a target=\"_blank\"\r\n                                        href=\"{{assessmentfile.file_url}}\">{{assessmentfile.original_filename}}</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    <textarea formControlName=\"shortnote\"\r\n                                            placeholder=\"Short note\"></textarea>\r\n                                    <!-- <div class=\"form-group\">\r\n\r\n                                    <div class=\"form-group\">\r\n                                        <label class=\"bmd-label-floating\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\r\n                                        <textarea class=\"form-control\" rows=\"5\"></textarea>\r\n                                    </div>\r\n                                </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <input formControlName=\"additional_files\" type=\"file\" ng2FileSelect\r\n                                    accept=\".zip\" /><br />\r\n                            </div>\r\n                            <div>\r\n                                <label>Please upload .zip files only</label>\r\n                            </div>\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add\r\n                                Assessment</button>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Submit Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div><label>Title : </label>\r\n                            {{assessmentData.title}}\r\n                        </div>\r\n                        <div><label>Employer Name : </label>\r\n                            {{assessmentData.employer_id.company_name}}\r\n                        </div>\r\n                        <div><label>Description : </label>\r\n                            {{assessmentData.description}}\r\n                        </div>\r\n                        <div><label>Assessment Files : </label>\r\n                            <div>\r\n                                <div *ngFor=\"let assessmentfile of assessmentData.additional_files\">\r\n                                    <a target=\"_blank\"\r\n                                        href=\"{{assessmentfile.file_url}}\">{{assessmentfile.original_filename}}</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    <textarea formControlName=\"shortnote\"\r\n                                            placeholder=\"Short note\"></textarea>\r\n                                    <!-- <div class=\"form-group\">\r\n\r\n                                    <div class=\"form-group\">\r\n                                        <label class=\"bmd-label-floating\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\r\n                                        <textarea class=\"form-control\" rows=\"5\"></textarea>\r\n                                    </div>\r\n                                </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <input formControlName=\"additional_files\" type=\"file\" (change)=\"uploadFile($event)\"\r\n                                    accept=\".zip\" /><br />\r\n                            </div>\r\n                            <div>\r\n                                <label>Please upload .zip files only</label>\r\n                            </div>\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Submit\r\n                                Assessment</button>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -74,7 +87,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Update Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-6\">\r\n                                    \r\n                                        <input formControlName=\"title\" placeholder=\"Title\" type=\"text\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    \r\n                                        <textarea formControlName=\"description\"\r\n                                            placeholder=\"Description of the Assessment.\"></textarea>\r\n                                    <!-- <div class=\"form-group\">\r\n  \r\n                                        <div class=\"form-group\">\r\n                                            <label class=\"bmd-label-floating\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\r\n                                            <textarea class=\"form-control\" rows=\"5\"></textarea>\r\n                                        </div>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <div>\r\n                                <input formControlName=\"additional_files\" type=\"file\" ng2FileSelect accept=\".pdf\"\r\n                                    [uploader]=\"uploader\" multiple /><br />\r\n                            </div>\r\n                            <!-- <div class=\"drop-zone\">\r\n                                <div ng2FileDrop (click)=\"fileinput.click()\" [uploader]=\"uploader\" class=\"drop-zone\">\r\n                                    Drag and drop files to upload\r\n                                </div>\r\n                            </div> -->\r\n                            <table>\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th width=\"30%\">\r\n                                            File Name\r\n                                        </th>\r\n                                        <th></th>\r\n                                        <th width=\"10%\">\r\n                                            Remove\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let item of uploader.queue\">\r\n                                        <td width=\"30%\">\r\n                                            {{item._file.name}}\r\n                                        </td>\r\n                                        <td>\r\n                                            Newly added\r\n                                        </td>\r\n                                        <td class=\"text-center\" width=\"10%\">\r\n                                            <mat-icon (click)=\"item.remove()\">delete</mat-icon>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <tr *ngFor=\"let item of uploadedFiles\">\r\n                                        <td width=\"30%\">\r\n                                            {{item.original_filename}}\r\n                                        </td>\r\n                                        <td>\r\n                                            Already uploaded\r\n                                        </td>\r\n                                        <td class=\"text-center\" width=\"10%\">\r\n                                            <mat-icon (click)=\"removeFromArray(item._id)\">delete</mat-icon>\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Update\r\n                                Assessment</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Update Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row margintop\">\r\n                                <div class=\"col-md-2\">Title</div>\r\n                                <div class=\"col-md-8\">\r\n                                    <input formControlName=\"title\" placeholder=\"Title\" type=\"text\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row margintop\">\r\n                                <div class=\"col-md-2\">Description</div>\r\n                                <div class=\"col-md-8\">\r\n\r\n                                    <textarea formControlName=\"description\"\r\n                                        placeholder=\"Description of the Assessment.\"></textarea>\r\n                                    <!-- <div class=\"form-group\">\r\n  \r\n                                        <div class=\"form-group\">\r\n                                            <label class=\"bmd-label-floating\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\r\n                                            <textarea class=\"form-control\" rows=\"5\"></textarea>\r\n                                        </div>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row margintop\">\r\n                                <div class=\"col-md-6\">\r\n                                    <input formControlName=\"additional_files\" type=\"file\" ng2FileSelect accept=\".pdf\"\r\n                                        [uploader]=\"uploader\" multiple /></div>\r\n                            </div>\r\n                            <!-- <div class=\"drop-zone\">\r\n                                <div ng2FileDrop (click)=\"fileinput.click()\" [uploader]=\"uploader\" class=\"drop-zone\">\r\n                                    Drag and drop files to upload\r\n                                </div>\r\n                            </div> -->\r\n                            <table>\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th width=\"30%\">\r\n                                            File Name\r\n                                        </th>\r\n                                        <th></th>\r\n                                        <th width=\"10%\">\r\n                                            Remove\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let item of uploader.queue\">\r\n                                        <td width=\"30%\">\r\n                                            {{item._file.name}}\r\n                                        </td>\r\n                                        <td>\r\n                                            Newly added\r\n                                        </td>\r\n                                        <td class=\"text-center\" width=\"10%\">\r\n                                            <mat-icon (click)=\"item.remove()\">delete</mat-icon>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <tr *ngFor=\"let item of uploadedFiles\">\r\n                                        <td width=\"30%\">\r\n                                            {{item.original_filename}}\r\n                                        </td>\r\n                                        <td>\r\n                                            Already uploaded\r\n                                        </td>\r\n                                        <td class=\"text-center\" width=\"10%\">\r\n                                            <mat-icon (click)=\"removeFromArray(item._id)\">delete</mat-icon>\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Update\r\n                                Assessment</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -87,7 +100,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">View Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div><label>Title : </label>\r\n                            {{assessmentData.title}}\r\n                        </div>\r\n                        <div><label>Employer Name : </label>\r\n                            {{assessmentData.employer_id.company_name}}\r\n                        </div>\r\n                        <div><label>Description : </label>\r\n                            {{assessmentData.description}}\r\n                        </div>\r\n                        <div><label>Assessment Files : </label>\r\n                            <div>\r\n                                <div *ngFor=\"let assessmentfile of assessmentData.additional_files\">\r\n                                    <a target=\"_blank\"\r\n                                        href=\"{{assessmentfile.file_url}}\">{{assessmentfile.original_filename}}</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">View Assessment</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div><label>Title : </label>\r\n                            {{assessmentData.title}}\r\n                        </div>\r\n                        <div><label>Employer Name : </label>\r\n                            {{assessmentData.employer_id.company_name}}\r\n                        </div>\r\n                        <div><label>Description : </label>\r\n                            {{assessmentData.description}}\r\n                        </div>\r\n                        <div><label>Assessment Files : </label>\r\n                            <div>\r\n                                <div *ngFor=\"let assessmentfile of assessmentData.additional_files\">\r\n                                    <a target=\"_blank\"\r\n                                        href=\"{{assessmentfile.file_url}}\">{{assessmentfile.original_filename}}</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <button  mat-raised-button (click)=\"ReviewSubmission(assessmentData._id)\" type=\"button\" class=\"btn btn-danger\">Review\r\n                            Assessment Submission</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/candidate/candidate-profile/candidate-profile.component.html":
+/*!*******************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/candidate/candidate-profile/candidate-profile.component.html ***!
+  \*******************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Candidate {{ candidateid ? 'Profile' : 'Edit' }}</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [(formGroup)]=\"candidateForm\" (ngSubmit)=\"submitForm()\">\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Firstname:</label>\r\n                                <input formControlName=\"first_name\" placeholder=\"Enter your firstname\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Lastname: </label>\r\n                                <input formControlName=\"last_name\" placeholder=\"Enter your lastname\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Email: </label>\r\n                                <input formControlName=\"email\" placeholder=\"Enter your email\" type=\"email\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Phone Number: </label>\r\n                                <input formControlName=\"phone_number\" placeholder=\"Enter your phone number\" type=\"text\">\r\n\r\n                            </div>\r\n\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Date of Birth: </label>\r\n                                <input formControlName=\"date_of_birth\" type=\"date\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\"> Resume Link :</label>\r\n                                <input formControlName=\"resume_link\" placeholder=\"Ex. resume\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\"> Bio :</label>\r\n                                <textarea formControlName=\"bio\"\r\n                                    placeholder=\"Ex. It a toronto based company..\"></textarea>\r\n\r\n                            </div>\r\n\r\n\r\n                            <button mat-raised-button type=\"submit\"\r\n                                class=\"btn btn-danger pull-right\">{{ candidateid ? 'Edit' : 'Add' }} Candidate</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n\r\n                        <div>\r\n\r\n                            <label class=\"col-md-2\"> Skills :</label>\r\n                            <input [(ngModel)]=\"newSkill\" placeholder=\"Ex. html\">\r\n\r\n                            <button mat-raised-button type=\"button\" (click)=\"addSkill()\">Add</button>\r\n                        </div>\r\n                        <div class=\"col-md-2\">\r\n                            <ul>\r\n                                <li *ngFor=\"let skill of candidateData?.candidateDetails?.skills\">\r\n                                    {{skill}}\r\n                                    <button (click)=\"removeSkill(skill)\">Delete</button>\r\n                                </li>\r\n                            </ul>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Education</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <table class=\"table table-hover\" *ngIf=\"educationData && educationData.length\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Degree</th>\r\n                                <th>Institute</th>\r\n                                <th>Passing Year</th>\r\n                                <th>Delete</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let education of educationData\">\r\n                                    <td>{{education.certificate_name}}</td>\r\n                                    <td>{{education.institute}}</td>\r\n                                    <td>{{education.passing_year}}</td>\r\n                                    <td><button mat-raised-button\r\n                                            (click)=\"deleteEducation(education._id)\">Delete</button></td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                        <form [(formGroup)]=\"educationForm\" (ngSubmit)=\"submitEducationForm()\">\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Degree Name:</label>\r\n                                <input formControlName=\"certificate_name\" placeholder=\"Enter degree name\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Institute: </label>\r\n                                <input formControlName=\"institute\" placeholder=\"Enter institute name\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">passing_year: </label>\r\n                                <input formControlName=\"passing_year\" placeholder=\"Enter passing year\" type=\"text\">\r\n\r\n                            </div>\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add\r\n                                Education</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Work Experiemce</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <table class=\"table table-hover\" *ngIf=\"workexperienceData && workexperienceData.length\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Job Title</th>\r\n                                <th>Company</th>\r\n                                <th>Description</th>\r\n                                <th>Start Date</th>\r\n                                <th>End Date</th>\r\n                                <th>Delete</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let workexperience of workexperienceData\">\r\n                                    <td>{{workexperience.job_title}}</td>\r\n                                    <td>{{workexperience.company_name}}</td>\r\n                                    <td>{{workexperience.description}}</td>\r\n                                    <td>{{workexperience.start_date}}</td>\r\n                                    <td>{{workexperience.end_date}}</td>\r\n                                    <td><button mat-raised-button\r\n                                            (click)=\"deleteWorkExperience(workexperience._id)\">Delete</button></td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                        <form [(formGroup)]=\"workexperienceForm\" (ngSubmit)=\"submitWorkExperienceForm()\">\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Job Title:</label>\r\n                                <input formControlName=\"job_title\" placeholder=\"Enter job title\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Company Name: </label>\r\n                                <input formControlName=\"company_name\" placeholder=\"Enter company name\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Description: </label>\r\n                                <input formControlName=\"description\" placeholder=\"Enter job description\" type=\"text\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">Start Date: </label>\r\n                                <input formControlName=\"start_date\" placeholder=\"Enter start date\" type=\"date\"\r\n                                    max=\"today\">\r\n\r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-2\">End Date: </label>\r\n                                <input formControlName=\"end_date\" placeholder=\"Enter end date\" type=\"date\">\r\n\r\n                            </div>\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add\r\n                                Work Experince</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/candidate/candidate.component.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/candidate/candidate.component.html ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Candidates</h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Candidate Name</th>\r\n                                <th>E-mail</th>\r\n                                <th>Bio</th>\r\n                                <th>Actions</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let candidate of candidateData\">\r\n                                    <td>{{candidate.userDetails?.first_name}} {{candidate.userDetails?.last_name}}</td>\r\n                                    <td>{{candidate.userDetails?.email}}</td>\r\n                                    <td>{{candidate.bio}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"  matTooltip=\"Edit assessment\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\" (click)=\"editCandidate(candidate._id)\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(candidate._id)\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -113,7 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">{{ employerid ? 'Edit' : 'Add' }} Employer</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [([formGroup])]=\"employerForm\" (ngSubmit)=\"submitForm()\">\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input matNativeControl formControlName=\"first_name\" placeholder=\"Enter your firstname\" type=\"text\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input matNativeControl formControlName=\"last_name\" placeholder=\"Enter your lastname\" type=\"text\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input matNativeControl formControlName=\"email\" placeholder=\"Enter your email\" type=\"email\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input matNativeControl formControlName=\"phone_number\" placeholder=\"Enter your phone number\" type=\"text\">\r\n                                \r\n                            </div>\r\n\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input matNativeControl formControlName=\"date_of_birth\" type=\"date\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input formControlName=\"company_name\" matNativeControl placeholder=\"Ex. xyz\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input formControlName=\"company_location\" matNativeControl placeholder=\"Ex. toronto\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                    \r\n                                    <input matNativeControl formControlName=\"company_website\" placeholder=\"Ex. www.xyz.com\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n\r\n                                \r\n                                    \r\n                                    <textarea matNativeControl formControlName=\"company_description\"\r\n                                        placeholder=\"Ex. It a toronto based company..\"></textarea>\r\n                                \r\n                            </div>\r\n\r\n                            <button mat-raised-button type=\"submit\"\r\n                                class=\"btn btn-danger pull-right\">{{ employerid ? 'Edit' : 'Add' }} Employer</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Employer {{ employerid ? 'Profile' : 'Edit' }}</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [(formGroup)]=\"employerForm\" (ngSubmit)=\"submitForm()\">\r\n                            <div>\r\n                                <label class=\"col-md-4\">First name: </label>\r\n                                <input  formControlName=\"first_name\" placeholder=\"Enter your firstname\" type=\"text\">\r\n                            </div>\r\n                            <div>\r\n                                \r\n                                <label class=\"col-md-4\">Last name: </label>\r\n                                    <input  formControlName=\"last_name\" placeholder=\"Enter your lastname\" type=\"text\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                <label class=\"col-md-4\">Email: </label>\r\n                                    <input  formControlName=\"email\" placeholder=\"Enter your email\" type=\"email\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                <label class=\"col-md-4\">Phone number: </label>\r\n                                    <input  formControlName=\"phone_number\" placeholder=\"Enter your phone number\" type=\"text\">\r\n                                \r\n                            </div>\r\n\r\n                            <div>\r\n                                \r\n                                <label class=\"col-md-4\">Date of Birth: </label>\r\n                                    <input  formControlName=\"date_of_birth\" type=\"date\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                <label class=\"col-md-4\">Company Name: </label>    \r\n                                    <input  formControlName=\"company_name\" placeholder=\"Ex. xyz\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                <label class=\"col-md-4\">Company Location: </label> \r\n                                    \r\n                                    <input  formControlName=\"company_location\" placeholder=\"Ex. toronto\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n                                \r\n                                <label class=\"col-md-4\">Company Website: </label> \r\n                                    <input  formControlName=\"company_website\" placeholder=\"Ex. www.xyz.com\">\r\n                                \r\n                            </div>\r\n                            <div>\r\n\r\n                                <label class=\"col-md-4\">Company Description: </label> \r\n                                    \r\n                                    <textarea formControlName=\"company_description\"\r\n                                        placeholder=\"Ex. It a toronto based company..\"></textarea>\r\n                                \r\n                            </div>\r\n                            \r\n                            <button mat-raised-button type=\"submit\"\r\n                                class=\"btn btn-danger pull-right\">{{ employerid ? 'Edit' : 'Add' }} Employer</button>\r\n                            <div class=\"clearfix\"></div>\r\n                            <div>\r\n                                <p [class]=\"messageClass\">{{message}}</p>\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -126,7 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div *ngFor=\"let employer of employerData\">\r\n    <p>Company Name: {{employer.company_name}}</p>\r\n    <p>Company Location: {{employer.company_location}}</p>\r\n</div> -->\r\n\r\n<!-- <p id=\"abc\">employer works!</p> -->\r\n\r\n<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <!-- <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Employers</h4>\r\n                    </div> -->\r\n                    <div class=\"card-header card-header-warning\">\r\n                                <!-- <a [routerLink]=\"'../addemployer'\"><span class=\"material-icons\">add</span>Add Employer</a> -->\r\n                             \r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Company Name</th>\r\n                                <th>Location</th>\r\n                                <th>Description</th>\r\n                                <th>Actions</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let employer of employerData\">\r\n                                    <td>{{employer.company_name}}</td>\r\n                                    <td>{{employer.company_location}}</td>\r\n                                    <td>{{employer.company_description}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"  matTooltip=\"Edit assessment\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\" (click)=\"editEmployer(employer._id)\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(employer._id)\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Employers</h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Employer Name</th>\r\n                                <th>Company Name</th>\r\n                                <th>Location</th>\r\n                                <th>Description</th>\r\n                                <th>Actions</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let employer of employerData\">\r\n                                    <td>{{employer.userDetails?.first_name}} {{employer.userDetails?.last_name}}</td>\r\n                                    <td>{{employer.company_name}}</td>\r\n                                    <td>{{employer.company_location}}</td>\r\n                                    <td>{{employer.company_description}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"  matTooltip=\"Edit assessment\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\" (click)=\"editEmployer(employer._id)\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(employer._id)\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -178,7 +217,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Add Job Post</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    Job Post Title :  \r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"title\" placeholder=\"Title\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Additional Information:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"additional_info\" placeholder=\"additional information\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                             Position:\r\n                                                <select name=\"position\" id=\"position\" ngModel>\r\n                                                    <option value=\"Intern\">Intern</option>\r\n                                                    <option value=\"Intermediate\">Intermediate</option>\r\n                                                    <option value=\"Senior\">Senior</option>\r\n                                                    <option value=\"Associate\">Associate</option>\r\n                                                </select>\r\n                                            <!-- <input formControlName=\"position\" placeholder=\"Position\" type=\"text\"> -->\r\n                                        </div>\r\n                                    </div>\r\n                                    Post Date:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"post_date\" placeholder=\"Post Date\" type=\"date\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Post Expiry:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"post_expiry\" placeholder=\"Post Expiry\" type=\"date\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Requirement:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"requirement\" placeholder=\"Requirement\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Job id:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"job_id\" placeholder=\"Job id\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Assessment:\r\n                                    <select formControlName=\"assessment_id\">\r\n                                        <option [ngValue]=\"null\" disabled>Choose Assessment</option>\r\n                                        <option class=\"dropdown-item\" *ngFor=\"let assessment of assessmentData\" [value]=\"assessment._id\"> {{assessment.title}} </option>\r\n                                    </select>\r\n                                    <br/><br/>\r\n                                    Employer:\r\n                                    <select formControlName=\"employer_id\">\r\n                                        <option [ngValue]=\"null\" disabled>Choose Employer</option>\r\n                                        <option class=\"dropdown-item\" *ngFor=\"let employer of employerData\" [value]=\"employer._id\">{{employer.company_name}}</option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add Job Post</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- <header> -->\r\n    <!-- <h2> Add Job Post</h2> -->\r\n<!-- </header>\r\n<form #addJobPostForm=\"ngForm\"\r\n     (ngSubmit)=\"onSubmit(addJobPostForm.value)\">\r\n    <ul>\r\n        <li>\r\n            <label for=\"title\">Title:</label>\r\n            <input type=\"text\" name=\"title\" id=\"title\">\r\n        </li>\r\n        <li>\r\n            <label for=\"additional_info\">Additional Information:</label>\r\n            <input type=\"text\" name=\"additional_info\" id=\"additional_info\">\r\n        </li>\r\n        <li>\r\n            <label for=\"position\">Position:</label>\r\n            <select name=\"position\" id=\"position\" ngModel>\r\n                <option value=\"Intern\">Intern</option>\r\n                <option value=\"Intermediate\">Intermediate</option>\r\n                <option value=\"Senior\">Senior</option>\r\n                <option value=\"Associate\">Associate</option>\r\n            </select>\r\n        </li>\r\n        <li>\r\n            <label for=\"post_date\">Post Date:</label>\r\n            <input type=\"date\" name=\"post_date\" id=\"post_date\">\r\n        </li>\r\n        <li>\r\n            <label for=\"post_expiry\">Post Expiry:</label>\r\n            <input type=\"date\" name=\"post_expiry\" id=\"post_expiry\">\r\n        </li>\r\n        <li>\r\n            <label for=\"requirement\">Requirement:</label>\r\n            <input type=\"text\" name=\"requirement\" id=\"requirement\">\r\n        </li>\r\n        <li>\r\n            <label for=\"job_id\">Job Id:</label>\r\n            <input type=\"text\" name=\"job_id\" id=\"job_id\">\r\n        </li>\r\n        <li>\r\n            <label for=\"assessment\">Assessment:</label>\r\n            <select formControlName=\"assessment_id\">\r\n                <option [ngValue]=\"null\" disabled>Choose Assessment</option>\r\n                <option class=\"dropdown-item\" *ngFor=\"let assessment of assessmentData\" [value]=\"assessment._id\">{{assessment.title}}</option>\r\n            </select>\r\n        </li>\r\n        <li>\r\n            <label for=\"employeer\">Employeer:</label>\r\n            <select formControlName=\"employer_id\">\r\n                <option [ngValue]=\"null\" disabled>Choose Employer</option>\r\n                <option class=\"dropdown-item\" *ngFor=\"let employer of employerData\" [value]=\"employer._id\">{{employer.company_name}}</option>\r\n            </select>\r\n        </li>\r\n    </ul>\r\n    <button type=\"submit\">Submit</button>\r\n</form> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Add Job Post</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    Job Post Title :  \r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"title\" placeholder=\"Title\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Additional Information:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"additional_info\" placeholder=\"additional information\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                             Position:\r\n                                                <select formControlName=\"position\" id=\"position\">\r\n                                                    <option value=\"Intern\">Intern</option>\r\n                                                    <option value=\"Intermediate\">Intermediate</option>\r\n                                                    <option value=\"Senior\">Senior</option>\r\n                                                    <option value=\"Associate\">Associate</option>\r\n                                                </select>\r\n                                            <!-- <input formControlName=\"position\" placeholder=\"Position\" type=\"text\"> -->\r\n                                        </div>\r\n                                    </div>\r\n                                    Post Date:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"post_date\" placeholder=\"Post Date\" type=\"date\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Post Expiry:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"post_expiry\" placeholder=\"Post Expiry\" type=\"date\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Requirement:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"requirement\" placeholder=\"Requirement\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Job id:\r\n                                    <div class=\"row\">\r\n                                        <div class=\"col-md-6\">\r\n                                            <input formControlName=\"job_id\" placeholder=\"Job id\" type=\"text\">\r\n                                        </div>\r\n                                    </div>\r\n                                    Assessment:\r\n                                    <select formControlName=\"assessment_id\" (change)=\"selectAssessmentHandler($event)\">\r\n                                        <option [ngValue]=\"null\" disabled>Choose Assessment</option>\r\n                                        <option class=\"dropdown-item\" *ngFor=\"let assessment of assessmentData\" [value]=\"assessment._id\"> {{assessment.title}} </option>\r\n                                    </select>\r\n                                    <br/><br/>\r\n                                    Employer:\r\n                                    <select formControlName=\"employer_id\" (change)=\"selectEmployerHandler($event)\">\r\n                                        <option [ngValue]=\"null\" disabled>Choose Employer</option>\r\n                                        <option class=\"dropdown-item\" *ngFor=\"let employer of employerData\" [value]=\"employer._id\">{{employer.company_name}}</option>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n                            <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Add Job Post</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -191,7 +230,33 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div *ngFor=\"let jobpost of jobPostData\">\r\n    <p>Title: {{jobpost.title}}</p>\r\n    <p>Position: {{jobpost.position}}</p>\r\n</div> -->\r\n<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Job Post\r\n                            <a [routerLink]=\"'../add-job-post'\"><span class=\"material-icons\">add</span></a>\r\n                        </h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Title</th>\r\n                                <th>Position</th>\r\n                                <th>Posting Date</th>\r\n                                <th>Action</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let jobPost of jobPostData\">\r\n                                    <td>{{jobPost.title}}</td>\r\n                                    <td>{{jobPost.position}}</td>\r\n                                    <td>{{jobPost.post_date}}</td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button mat-raised-button type=\"button\"  matTooltip=\"Edit jobPost\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button mat-raised-button type=\"button\" (click)=\"onClickMe(jobPost._id)\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div *ngFor=\"let jobpost of jobPostData\">\r\n    <p>Title: {{jobpost.title}}</p>\r\n    <p>Position: {{jobpost.position}}</p>\r\n</div> -->\r\n<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">Job Post\r\n                            <a *ngIf=\"userInfo?.user?.role == 'Admin'\" [routerLink]=\"'../add-job-post'\"><span class=\"material-icons\">add</span></a>\r\n                        </h4>\r\n                    </div>\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Title</th>\r\n                                <th>Position</th>\r\n                                <th>Posting Date</th>\r\n                                <th>Assessment</th>\r\n                                <th *ngIf=\"userInfo?.user?.role == 'Admin' || 'Employer'\">Action</th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let jobPost of jobPostData\">\r\n                                    <td><a [routerLink]=\"['../view-job-post', jobPost._id]\"> {{jobPost.title}}</a></td>\r\n                                    <td>{{jobPost.position}}</td>\r\n                                    <td>{{jobPost.post_date}}</td>\r\n                                    <td><a\r\n                                            [routerLink]=\"'../submitassessment/'+jobPost.assessment_id?._id\">{{jobPost.assessment_id?.title}}</a>\r\n                                    </td>\r\n                                    <td class=\"td-actions\">\r\n                                        <button *ngIf=\"userInfo?.user?.role == 'Admin' || 'Employer'\" mat-raised-button type=\"button\" matTooltip=\"Edit jobPost\"\r\n                                            [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-primary btn-link btn-sm btn-just-icon\"\r\n                                            (click)=\"editJobPost(jobPost._id)\">\r\n                                            <i class=\"material-icons\">edit</i>\r\n                                        </button>\r\n                                        <button *ngIf=\"userInfo?.user?.role == 'Admin' || 'Employer'\" mat-raised-button type=\"button\" (click)=\"onClickMe(jobPost._id)\"\r\n                                            matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\"\r\n                                            class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/update-job-post/update-job-post.component.html":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/update-job-post/update-job-post.component.html ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Edit Job Post</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                    <form [(formGroup)]=\"updateJobPostForm\" (ngSubmit)=\"updateForm()\">\r\n                        <div>\r\n                                <label>Job Post Title:</label>\r\n                                <input matNativeControl formControlName=\"title\" placeholder=\"Enter job post title\" type=\"text\">\r\n                        </div>\r\n                        <div>\r\n                                <label>Additional Information: </label>\r\n                                <input matNativeControl formControlName=\"additional_info\" placeholder=\"Enter additional information\" type=\"text\">\r\n                        </div>\r\n                        <div>\r\n                                <label>Position: </label>\r\n                                <select formControlName=\"position\">\r\n                                    <option value=\"Intern\">Intern</option>\r\n                                    <option value=\"Intermediate\">Intermediate</option>\r\n                                    <option value=\"Senior\">Senior</option>\r\n                                    <option value=\"Associate\">Associate</option>\r\n                                </select>\r\n                        </div>\r\n                        <div>\r\n                                <label>Post Date: </label>\r\n                                <input matNativeControl formControlName=\"post_date\" type=\"date\">\r\n                        </div>\r\n                        <div>\r\n                                <label>Post Expiry: </label>\r\n                                <input matNativeControl formControlName=\"post_expiry\" type=\"date\">\r\n                        </div>\r\n                        <div>\r\n                                <label>Requirement: </label>\r\n                                <input matNativeControl formControlName=\"requirement\" type=\"text\">\r\n                        </div>\r\n                        <div>\r\n                                <label>Job id: </label>\r\n                                <input matNativeControl formControlName=\"job_id\" type=\"text\">\r\n                        </div>\r\n                        <div>\r\n                                <label>Assessment: </label>\r\n                                <select formControlName=\"assessment_id\">\r\n                                    <option [ngValue]=\"null\" disabled>Choose Assessment</option>\r\n                                    <option class=\"dropdown-item\" *ngFor=\"let assessment of assessmentData\" [value]=\"assessment._id\"> {{assessment.title}} </option>\r\n                                </select>\r\n                        </div>\r\n                        <div>\r\n                                <label>Employer:</label>\r\n                                <select formControlName=\"employer_id\">\r\n                                    <option [ngValue]=\"null\" disabled>Choose Employer</option>\r\n                                    <option class=\"dropdown-item\" *ngFor=\"let employer of employerData\" [value]=\"employer._id\">{{employer.company_name}}</option>\r\n                                </select>\r\n                        </div>\r\n                        <button mat-raised-button type=\"submit\" class=\"btn btn-danger pull-right\">Update Job Post</button>\r\n                        <div class=\"clearfix\"></div>\r\n                    </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/view-job-post/view-job-post.component.html":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/view-job-post/view-job-post.component.html ***!
+  \**********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">View Job Post</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div><label>Job Post Title : </label>\r\n                            {{jobPostData.title}}\r\n                        </div>\r\n                        <div><label>Additional Information : </label>\r\n                            {{jobPostData.additional_info}}\r\n                        </div>\r\n                        <div><label>Position: </label>\r\n                            {{jobPostData.position}}\r\n                        </div>\r\n                        <div><label>Post Date: </label>\r\n                            {{jobPostData.post_date}}\r\n                        </div>\r\n                        <div><label>Post Expiry: </label>\r\n                            {{jobPostData.post_expiry}}\r\n                        </div>\r\n                        <div><label>Requirement: </label>\r\n                            {{jobPostData.requirement}}\r\n\r\n                        <div><label>Job id: </label>\r\n                            {{jobPostData.job_id}}\r\n                        </div>\r\n                        <div><label>Assessment: </label>\r\n                            {{jobPostData.assessment.title}}\r\n                        </div>\r\n                        <div><label>Employer: </label>\r\n                            {{jobPostData.employer.company_name}}\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -204,7 +269,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Add Application</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    <input formControlName=\"jobPost_id\" type=\"hidden\" value={{jobpostdata._id}}/>\r\n                                     <div><strong>Job Post :</strong> {{jobpostdata.title}}</div><br/>\r\n                                     <div><strong>Position : </strong>{{jobpostdata.position}}</div><br/>\r\n                                     <div><strong>Requirement : </strong>{{jobpostdata.requirement}}</div><br/>\r\n                                     <!-- <mat-form-field class=\"example-full-width\">\r\n                                        <textarea matInput formControlName=\"description\"\r\n                                            placeholder=\"Additional Information.\"></textarea>\r\n                                    </mat-form-field> -->\r\n                                     \r\n                                    <br><br>\r\n                                    <!-- <div>Candidate : \r\n                                        <select formControlName=\"candidate_id\">\r\n                                            <option [ngValue]=\"null\" disabled>Choose Candidate</option>\r\n                                            <option *ngFor=\"let candidate of candidateData\"  [value]=\"candidate._id\">{{candidate.bio}} </option>\r\n                                        </select>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <button mat-raised-button  type=\"submit\" class=\"btn btn-danger pull-right\">Quick Apply</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-8\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-danger\">\r\n                        <h4 class=\"card-title\">Add Application</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <form [formGroup]=\"form\" (ngSubmit)=\"submitForm()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-md-12\">\r\n                                    <input formControlName=\"jobPost_id\" type=\"hidden\" value={{jobpostdata._id}}/>\r\n                                     <div><strong>Job Post :</strong> {{jobpostdata.title}}</div><br/>\r\n                                     <div><strong>Position : </strong>{{jobpostdata.position}}</div><br/>\r\n                                     <div><strong>Requirement : </strong>{{jobpostdata.requirement}}</div><br/>\r\n                                     <!-- <textarea formControlName=\"description\"\r\n                                            placeholder=\"Additional Information.\"></textarea>\r\n                                     -->\r\n                                     \r\n                                    <br><br>\r\n                                    <!-- <div>Candidate : \r\n                                        <select formControlName=\"candidate_id\">\r\n                                            <option [ngValue]=\"null\" disabled>Choose Candidate</option>\r\n                                            <option *ngFor=\"let candidate of candidateData\"  [value]=\"candidate._id\">{{candidate.bio}} </option>\r\n                                        </select>\r\n                                    </div> -->\r\n                                </div>\r\n                            </div>\r\n                            <button mat-raised-button  type=\"submit\" class=\"btn btn-danger pull-right\">Quick Apply</button>\r\n                            <div class=\"clearfix\"></div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/jobApplication/all-applications/all-applications.component.html":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/jobApplication/all-applications/all-applications.component.html ***!
+  \**********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-12 col-md-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title\">All Applications</h4>\r\n                    </div>\r\n                    <!-- <select formControlName=\"dropdownStatus\" >\r\n                        <option value=\"\" selected disabled>--Select Status--</option>\r\n                        <option class=\"dropdown-item\" *ngFor=\"let state of status\">{{state}}</option>\r\n                    </select> -->\r\n                    <div class=\"card-body table-responsive\">\r\n                        <table class=\"table table-hover\">\r\n                            <thead class=\"text-warning\">\r\n                                <th>Candidate(User ID)</th>\r\n                                <th>Job Post</th>\r\n                                <th>Position</th>\r\n                                <th>Status</th>\r\n                                <th>Application Date</th>\r\n                                <th></th>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let appdata of jobApplicationData\">\r\n                                    \r\n                                    <td>{{appdata.candidate_id}}</td>\r\n\r\n                                    <td>{{appdata.jobPost_id.title}}</td>\r\n                                    <td>{{appdata.jobPost_id.position}}</td>\r\n                                    <td>{{appdata.application_status}}</td>\r\n                                    <td>{{appdata.application_date}}</td>\r\n                                     <td class=\"td-actions\">\r\n                                    <!-- <a  [routerLink]=\"['../updateJobApplication/',appdata._id]\">Update</a>   -->\r\n\r\n                                       \r\n                                         <!-- <button mat-raised-button type=\"button\" (click)=\"delete(appdata._id)\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                            <i class=\"material-icons\">close</i>\r\n                                        </button> -->\r\n                                    </td>\r\n                                </tr>\r\n                                \r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -269,7 +347,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-wrapper\">\n          <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\n        </div>\n        <button mat-raised-button class=\"navbar-toggler\" type=\"button\" (click)=\"sidebarToggle()\">\n            <span class=\"sr-only\">Toggle navigation</span>\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse justify-content-end\" id=\"navigation\">\n            <form class=\"navbar-form\">\n                <div class=\"input-group no-border\">\n                    <input type=\"text\" value=\"\" class=\"form-control\" placeholder=\"Search...\">\n                    <button mat-raised-button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n                        <i class=\"material-icons\">search</i>\n                        <div class=\"ripple-container\"></div>\n                    </button>\n                </div>\n            </form>\n            <ul class=\"navbar-nav\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"javascript:void(0)\">\n                        <i class=\"material-icons\">dashboard</i>\n                        <p>\n                            <span class=\"d-lg-none d-md-block\">Stats</span>\n                        </p>\n                    </a>\n                </li>\n                <li class=\"nav-item dropdown\">\n                    <a class=\"nav-link\" href=\"javascript:void(0)\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                        <i class=\"material-icons\">notifications</i>\n                        <span class=\"notification\">5</span>\n                        <p>\n                            <span class=\"d-lg-none d-md-block\">Some Actions</span>\n                        </p>\n                    </a>\n                    <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">Mike John responded to your email</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">You have 5 new tasks</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">You're now friend with Andrew</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">Another Notification</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">Another One</a>\n                    </div>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"javascript:void(0)\">\n                        <i class=\"material-icons\">person</i>\n                        <p>\n                            <span class=\"d-lg-none d-md-block\">Account</span>\n                        </p>\n                    </a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!--\n\n<nav class=\"navbar navbar-transparent navbar-absolute\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button mat-raised-button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" (click)=\"sidebarToggle()\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a href=\"javascript:void(0)\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">dashboard</i>\n                        <p class=\"hidden-lg hidden-md\">Dashboard</p>\n                    </a>\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"javascript:void(0)\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">notifications</i>\n                        <span class=\"notification\">5</span>\n                        <p class=\"hidden-lg hidden-md\">Notifications</p>\n                    </a>\n                    <ul class=\"dropdown-menu\">\n                        <li><a href=\"javascript:void(0)\">Mike John responded to your email</a></li>\n                        <li><a href=\"javascript:void(0)\">You have 5 new tasks</a></li>\n                        <li><a href=\"javascript:void(0)\">You're now friend with Andrew</a></li>\n                        <li><a href=\"javascript:void(0)\">Another Notification</a></li>\n                        <li><a href=\"javascript:void(0)\">Another One</a></li>\n                    </ul>\n                </li>\n                <li>\n                    <a href=\"javascript:void(0)\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                       <i class=\"material-icons\">person</i>\n                       <p class=\"hidden-lg hidden-md\">Profile</p>\n                    </a>\n                </li>\n            </ul>\n\n            <form class=\"navbar-form navbar-right\" role=\"search\">\n                <div class=\"form-group form-black is-empty\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n                    <span class=\"material-input\"></span>\n                </div>\n                <button mat-raised-button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n                    <i class=\"material-icons\">search</i><div class=\"ripple-container\"></div>\n                </button>\n            </form>\n        </div>\n    </div>\n</nav> -->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top\">\n    <div class=\"container-fluid\">\n        <!-- <div class=\"navbar-wrapper\">\n          <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\n        </div> -->\n        <button mat-raised-button class=\"navbar-toggler\" type=\"button\" (click)=\"sidebarToggle()\">\n            <span class=\"sr-only\">Toggle navigation</span>\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse justify-content-end\" id=\"navigation\">\n            <form class=\"navbar-form\">\n                <div class=\"input-group no-border\">\n                    <input type=\"text\" value=\"\" class=\"form-control\" placeholder=\"Search...\">\n                    <button mat-raised-button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n                        <i class=\"material-icons\">search</i>\n                        <div class=\"ripple-container\"></div>\n                    </button>\n                </div>\n            </form>\n            <ul class=\"navbar-nav\">\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"javascript:void(0)\">\n                        <i class=\"material-icons\">dashboard</i>\n                        <p>\n                            <span class=\"d-lg-none d-md-block\">Stats</span>\n                        </p>\n                    </a>\n                </li>\n                <li class=\"nav-item dropdown\">\n                    <a class=\"nav-link\" href=\"javascript:void(0)\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                        <i class=\"material-icons\">notifications</i>\n                        <span class=\"notification\">5</span>\n                        <p>\n                            <span class=\"d-lg-none d-md-block\">Some Actions</span>\n                        </p>\n                    </a>\n                    <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">Mike John responded to your email</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">You have 5 new tasks</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">You're now friend with Andrew</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">Another Notification</a>\n                        <a class=\"dropdown-item\" href=\"javascript:void(0)\">Another One</a>\n                    </div>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"javascript:void(0)\">\n                        <i class=\"material-icons\">person</i>\n                        <p>\n                            <span class=\"d-lg-none d-md-block\">Account</span>\n                        </p>\n                    </a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</nav>\n\n<!--\n\n<nav class=\"navbar navbar-transparent navbar-absolute\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button mat-raised-button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" (click)=\"sidebarToggle()\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a href=\"javascript:void(0)\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">dashboard</i>\n                        <p class=\"hidden-lg hidden-md\">Dashboard</p>\n                    </a>\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"javascript:void(0)\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">notifications</i>\n                        <span class=\"notification\">5</span>\n                        <p class=\"hidden-lg hidden-md\">Notifications</p>\n                    </a>\n                    <ul class=\"dropdown-menu\">\n                        <li><a href=\"javascript:void(0)\">Mike John responded to your email</a></li>\n                        <li><a href=\"javascript:void(0)\">You have 5 new tasks</a></li>\n                        <li><a href=\"javascript:void(0)\">You're now friend with Andrew</a></li>\n                        <li><a href=\"javascript:void(0)\">Another Notification</a></li>\n                        <li><a href=\"javascript:void(0)\">Another One</a></li>\n                    </ul>\n                </li>\n                <li>\n                    <a href=\"javascript:void(0)\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                       <i class=\"material-icons\">person</i>\n                       <p class=\"hidden-lg hidden-md\">Profile</p>\n                    </a>\n                </li>\n            </ul>\n\n            <form class=\"navbar-form navbar-right\" role=\"search\">\n                <div class=\"form-group form-black is-empty\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n                    <span class=\"material-input\"></span>\n                </div>\n                <button mat-raised-button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n                    <i class=\"material-icons\">search</i><div class=\"ripple-container\"></div>\n                </button>\n            </form>\n        </div>\n    </div>\n</nav> -->\n");
 
 /***/ }),
 
@@ -753,6 +831,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumeComponent", function() { return ResumeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
 /* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
+/* harmony import */ var app_data_education_education_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/data/education/education.service */ "./src/app/data/education/education.service.ts");
+/* harmony import */ var app_data_workexperience_workexperience_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/data/workexperience/workexperience.service */ "./src/app/data/workexperience/workexperience.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -767,17 +847,43 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 };
 
 
+
+
 var ResumeComponent = /** @class */ (function () {
-    function ResumeComponent(storage) {
+    function ResumeComponent(storage, educationService, workExperienceService) {
+        var _this = this;
         this.storage = storage;
-        this.candidateData = this.storage.get('userInfo');
-        this.candidateData = this.candidateData.user;
-        console.log(this.candidateData);
+        this.educationService = educationService;
+        this.workExperienceService = workExperienceService;
+        var userData = this.storage.get('userInfo');
+        this.candidateData = userData.user;
+        this.skills = userData.candidate.skills;
+        this.educationService.fetchEducation(userData.candidate._id);
+        this.educationSubscriber = this.educationService.educationSubscriber().subscribe(function (response) {
+            if (response && response.status == 'success') {
+                _this.educations = response.data;
+            }
+        });
+        this.workExperienceService.fetchWorkExperience(userData.candidate._id);
+        this.weSubscriber = this.workExperienceService.workexperienceSubscriber().subscribe(function (response) {
+            if (response && response.status == 'success') {
+                _this.workExperiences = response.data;
+                console.log(_this.workExperiences);
+            }
+        });
     }
     ResumeComponent.prototype.ngOnInit = function () {
     };
+    ResumeComponent.prototype.ngOnDestroy = function () {
+        if (this.educationSubscriber)
+            this.educationSubscriber.unsubscribe();
+        if (this.weSubscriber)
+            this.weSubscriber.unsubscribe();
+    };
     ResumeComponent.ctorParameters = function () { return [
-        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_1__["StorageService"] }
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_1__["StorageService"] },
+        { type: app_data_education_education_service__WEBPACK_IMPORTED_MODULE_2__["EducationService"] },
+        { type: app_data_workexperience_workexperience_service__WEBPACK_IMPORTED_MODULE_3__["WorkexperienceService"] }
     ]; };
     ResumeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -785,7 +891,7 @@ var ResumeComponent = /** @class */ (function () {
             template: __importDefault(__webpack_require__(/*! raw-loader!./resume.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/Resume/resume.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./resume.component.css */ "./src/app/components/Resume/resume.component.css")).default]
         }),
-        __metadata("design:paramtypes", [app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_1__["StorageService"]])
+        __metadata("design:paramtypes", [app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_1__["StorageService"], app_data_education_education_service__WEBPACK_IMPORTED_MODULE_2__["EducationService"], app_data_workexperience_workexperience_service__WEBPACK_IMPORTED_MODULE_3__["WorkexperienceService"]])
     ], ResumeComponent);
     return ResumeComponent;
 }());
@@ -803,7 +909,7 @@ var ResumeComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYXNzZXNzbWVudC9hZGRhc3Nlc3NtZW50L2FkZGFzc2Vzc21lbnQuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".margintop{\r\n    margin-bottom: 1em;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hc3Nlc3NtZW50L2FkZGFzc2Vzc21lbnQvYWRkYXNzZXNzbWVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9hc3Nlc3NtZW50L2FkZGFzc2Vzc21lbnQvYWRkYXNzZXNzbWVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hcmdpbnRvcHtcclxuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcclxufSJdfQ== */");
 
 /***/ }),
 
@@ -868,8 +974,9 @@ var AddassessmentComponent = /** @class */ (function () {
     };
     AddassessmentComponent.prototype.submitForm = function () {
         var _this = this;
-        this.form.value.employer_id = "5ef54ecb30b0c84d38354f5f";
-        //this.form.value.employer_id = this.userInfo.user._id;
+        //this.form.value.employer_id = "5ef54ecb30b0c84d38354f5f";
+        this.form.value.employer_id = this.userInfo.employer._id;
+        console.log("emploer id" + this.userInfo.user._id);
         console.log("test" + this.form.value.additional_files);
         for (var j = 0; j < this.uploader.queue.length; j++) {
             var data = new FormData();
@@ -894,7 +1001,8 @@ var AddassessmentComponent = /** @class */ (function () {
                 case _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpEventType"].Response:
                     console.log('Assessment successfully created!', event.body);
                     _this.percentDone = false;
-                    _this.router.navigate(['admin/assessment']);
+                    _this.assessmentService.fetchAssessments();
+                    _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/assessment']);
             }
         });
     };
@@ -948,6 +1056,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
 /* harmony import */ var app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/assessment/assessment.service */ "./src/app/data/assessment/assessment.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -963,32 +1072,40 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 var AssessmentComponent = /** @class */ (function () {
-    function AssessmentComponent(assessmentService, router) {
-        var _this = this;
+    function AssessmentComponent(assessmentService, router, StorageService) {
         this.assessmentService = assessmentService;
         this.router = router;
+        this.StorageService = StorageService;
+    }
+    AssessmentComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.assessmentSubscriber = this.assessmentService.assessmentSubscriber().subscribe(function (data) {
             console.log(data);
             _this.assessmentData = data ? data.data : undefined;
             console.log(_this.assessmentData);
         });
         this.assessmentService.fetchAssessments();
-    }
-    AssessmentComponent.prototype.ngOnInit = function () {
+        this.userInfo = this.StorageService.get('userInfo');
+        console.log("init");
     };
     AssessmentComponent.prototype.onClickMe = function (id) {
         this.assessmentService.removeAssessments(id);
     };
     AssessmentComponent.prototype.onClickMeToUpdate = function (id) {
-        this.router.navigate(['admin/updateassessment', id]);
+        this.router.navigate(['/' + this.userInfo.user.role.toLowerCase() + '/updateassessment', id]);
     };
     AssessmentComponent.prototype.ngOnDestroy = function () {
-        this.assessmentSubscriber.unsubscribe();
+        console.log("Destroy");
+        if (this.assessmentSubscriber) {
+            this.assessmentSubscriber.unsubscribe();
+        }
     };
     AssessmentComponent.ctorParameters = function () { return [
         { type: app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__["AssessmentService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] }
     ]; };
     AssessmentComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -997,9 +1114,94 @@ var AssessmentComponent = /** @class */ (function () {
             styles: [__importDefault(__webpack_require__(/*! ./assessment.component.css */ "./src/app/components/assessment/assessment.component.css")).default]
         }),
         __metadata("design:paramtypes", [app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__["AssessmentService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
     ], AssessmentComponent);
     return AssessmentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/assessment/reviewassessment/reviewassessment.component.css":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/assessment/reviewassessment/reviewassessment.component.css ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYXNzZXNzbWVudC9yZXZpZXdhc3Nlc3NtZW50L3Jldmlld2Fzc2Vzc21lbnQuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/components/assessment/reviewassessment/reviewassessment.component.ts":
+/*!**************************************************************************************!*\
+  !*** ./src/app/components/assessment/reviewassessment/reviewassessment.component.ts ***!
+  \**************************************************************************************/
+/*! exports provided: ReviewassessmentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReviewassessmentComponent", function() { return ReviewassessmentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/assessment/assessment.service */ "./src/app/data/assessment/assessment.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+var ReviewassessmentComponent = /** @class */ (function () {
+    function ReviewassessmentComponent(assessmentService, router, activeRoute) {
+        var _this = this;
+        this.assessmentService = assessmentService;
+        this.router = router;
+        this.activeRoute = activeRoute;
+        this.assessmentSubscriber = this.assessmentService.submittedAssessmentSubscriber().subscribe(function (data) {
+            //console.log(data);
+            _this.assessmentData = data ? data.data : undefined;
+            console.log("Review Assessment");
+            console.log(_this.assessmentData);
+        });
+    }
+    ReviewassessmentComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activeRoute.paramMap.subscribe(function (params) {
+            _this.id = params.get('id');
+            _this.assessmentService.fetchSubmittedAssessment(_this.id);
+        });
+    };
+    ReviewassessmentComponent.prototype.ngOnDestroy = function () {
+        this.assessmentSubscriber.unsubscribe();
+    };
+    ReviewassessmentComponent.ctorParameters = function () { return [
+        { type: app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__["AssessmentService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+    ]; };
+    ReviewassessmentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-reviewassessment',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./reviewassessment.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/assessment/reviewassessment/reviewassessment.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./reviewassessment.component.css */ "./src/app/components/assessment/reviewassessment/reviewassessment.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__["AssessmentService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+    ], ReviewassessmentComponent);
+    return ReviewassessmentComponent;
 }());
 
 
@@ -1033,6 +1235,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm5/forms.js");
 /* harmony import */ var app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/data/assessment/assessment.service */ "./src/app/data/assessment/assessment.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1049,13 +1253,17 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
+
 var SubmitassessmentComponent = /** @class */ (function () {
-    function SubmitassessmentComponent(assessmentService, router, fb, activeRoute) {
+    function SubmitassessmentComponent(assessmentService, router, fb, activeRoute, storageService) {
         var _this = this;
         this.assessmentService = assessmentService;
         this.router = router;
         this.fb = fb;
         this.activeRoute = activeRoute;
+        this.storageService = storageService;
+        this.percentDone = 0;
         this.assessmentSubscriber = this.assessmentService
             .assessmentOneSubscriber()
             .subscribe(function (data) {
@@ -1063,6 +1271,7 @@ var SubmitassessmentComponent = /** @class */ (function () {
             _this.assessmentData = data ? data.data : undefined;
             //console.log(this.assessmentData);
         });
+        this.userInfo = this.storageService.get('userInfo');
     }
     SubmitassessmentComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1076,6 +1285,40 @@ var SubmitassessmentComponent = /** @class */ (function () {
             _this.assessmentService.fetchAssessment(_this.id);
         });
     };
+    SubmitassessmentComponent.prototype.uploadFile = function (event) {
+        this.file = event.target.files[0];
+        // console.log(file);
+        // this.form.patchValue({
+        //   avatar: file,
+        // });
+        // this.form.get("additional_files").updateValueAndValidity();
+    };
+    SubmitassessmentComponent.prototype.submitForm = function () {
+        var _this = this;
+        var candidateId = this.userInfo.user._id;
+        console.log(this.file);
+        this.assessmentService
+            .submitAssessment(this.id, candidateId, this.file, this.form.value.shortnote)
+            .subscribe(function (event) {
+            console.log(_this.form.value);
+            switch (event.type) {
+                case _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpEventType"].Sent:
+                    console.log("Request has been made!");
+                    break;
+                case _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpEventType"].ResponseHeader:
+                    console.log("Response header has been received!");
+                    break;
+                case _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpEventType"].UploadProgress:
+                    _this.percentDone = Math.round((event.loaded / event.total) * 100);
+                    console.log("Uploaded! " + _this.percentDone + "%");
+                    break;
+                case _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpEventType"].Response:
+                    console.log("Assessment successfully created!", event.body);
+                    _this.percentDone = false;
+                    _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/job-posts']);
+            }
+        });
+    };
     SubmitassessmentComponent.prototype.ngOnDestroy = function () {
         this.assessmentSubscriber.unsubscribe();
     };
@@ -1083,7 +1326,8 @@ var SubmitassessmentComponent = /** @class */ (function () {
         { type: app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_2__["AssessmentService"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
         { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_5__["StorageService"] }
     ]; };
     SubmitassessmentComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1094,7 +1338,8 @@ var SubmitassessmentComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_2__["AssessmentService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_5__["StorageService"]])
     ], SubmitassessmentComponent);
     return SubmitassessmentComponent;
 }());
@@ -1112,7 +1357,7 @@ var SubmitassessmentComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYXNzZXNzbWVudC91cGRhdGVhc3Nlc3NtZW50L3VwZGF0ZWFzc2Vzc21lbnQuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = (".margintop{\r\n    margin-bottom: 1em;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hc3Nlc3NtZW50L3VwZGF0ZWFzc2Vzc21lbnQvdXBkYXRlYXNzZXNzbWVudC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9hc3Nlc3NtZW50L3VwZGF0ZWFzc2Vzc21lbnQvdXBkYXRlYXNzZXNzbWVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hcmdpbnRvcHtcclxuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcclxufSJdfQ== */");
 
 /***/ }),
 
@@ -1219,7 +1464,7 @@ var UpdateassessmentComponent = /** @class */ (function () {
                 case _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpEventType"].Response:
                     console.log('Assessment successfully created!', event.body);
                     _this.percentDone = false;
-                    _this.router.navigate(['admin/assessment']);
+                    _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/assessment']);
             }
         });
     };
@@ -1291,6 +1536,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
 /* harmony import */ var app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/assessment/assessment.service */ "./src/app/data/assessment/assessment.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1306,18 +1552,24 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 var ViewassessmentComponent = /** @class */ (function () {
-    function ViewassessmentComponent(assessmentService, router, activeRoute) {
+    function ViewassessmentComponent(assessmentService, router, activeRoute, storageService) {
         var _this = this;
         this.assessmentService = assessmentService;
         this.router = router;
         this.activeRoute = activeRoute;
+        this.storageService = storageService;
         this.assessmentSubscriber = this.assessmentService.assessmentOneSubscriber().subscribe(function (data) {
             //console.log(data);
             _this.assessmentData = data ? data.data : undefined;
             //console.log(this.assessmentData);
         });
+        this.userInfo = this.storageService.get("userInfo");
     }
+    ViewassessmentComponent.prototype.ReviewSubmission = function (id) {
+        this.router.navigate(['/' + this.userInfo.user.role.toLowerCase() + '/reviewassessment', id]);
+    };
     ViewassessmentComponent.prototype.ngOnInit = function () {
         var _this = this;
         //Fetch assessment Id from the query string parameters
@@ -1332,7 +1584,8 @@ var ViewassessmentComponent = /** @class */ (function () {
     ViewassessmentComponent.ctorParameters = function () { return [
         { type: app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__["AssessmentService"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] }
     ]; };
     ViewassessmentComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1341,9 +1594,320 @@ var ViewassessmentComponent = /** @class */ (function () {
             styles: [__importDefault(__webpack_require__(/*! ./viewassessment.component.css */ "./src/app/components/assessment/viewassessment/viewassessment.component.css")).default]
         }),
         __metadata("design:paramtypes", [app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_1__["AssessmentService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
     ], ViewassessmentComponent);
     return ViewassessmentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/candidate/candidate-profile/candidate-profile.component.css":
+/*!****************************************************************************************!*\
+  !*** ./src/app/components/candidate/candidate-profile/candidate-profile.component.css ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2FuZGlkYXRlL2NhbmRpZGF0ZS1wcm9maWxlL2NhbmRpZGF0ZS1wcm9maWxlLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/candidate/candidate-profile/candidate-profile.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/candidate/candidate-profile/candidate-profile.component.ts ***!
+  \***************************************************************************************/
+/*! exports provided: CandidateProfileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CandidateProfileComponent", function() { return CandidateProfileComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm5/forms.js");
+/* harmony import */ var app_data_candidate_candidate_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/data/candidate/candidate.service */ "./src/app/data/candidate/candidate.service.ts");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var app_data_education_education_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/data/education/education.service */ "./src/app/data/education/education.service.ts");
+/* harmony import */ var app_data_workexperience_workexperience_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! app/data/workexperience/workexperience.service */ "./src/app/data/workexperience/workexperience.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+
+
+
+var CandidateProfileComponent = /** @class */ (function () {
+    function CandidateProfileComponent(fb, candidateService, router, route, storageServive, educationService, workexperienceService) {
+        var _this = this;
+        this.fb = fb;
+        this.candidateService = candidateService;
+        this.router = router;
+        this.route = route;
+        this.storageServive = storageServive;
+        this.educationService = educationService;
+        this.workexperienceService = workexperienceService;
+        this.candidateid = undefined;
+        this.newSkill = "";
+        this.userInfo = this.storageServive.get("userInfo");
+        this.sub = this.route.params.subscribe(function (params) {
+            _this.candidateid = params["id"];
+            if (_this.candidateid) {
+                _this.candidateService
+                    .fetchCandidate(_this.candidateid)
+                    .subscribe(function (response) {
+                    _this.candidateData = response.data;
+                    _this.candidateData.candidateDetails.skills = _this.candidateData
+                        .candidateDetails.skills
+                        ? _this.candidateData.candidateDetails.skills
+                        : [];
+                    _this.candidateForm = _this.fb.group({
+                        resume_link: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.candidateDetails.resume_link, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        bio: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.candidateDetails.bio, {
+                            validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+                        }),
+                        skills: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.candidateDetails.skills, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        first_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.userDetails.first_name, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        last_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.userDetails.last_name, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.userDetails.email, {
+                            validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+                        }),
+                        phone_number: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.userDetails.phone_number, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        date_of_birth: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.candidateData.userDetails.date_of_birth, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                    });
+                });
+                _this.educationService.fetchEducation(_this.candidateid);
+                _this.workexperienceService.fetchWorkExperience(_this.candidateid);
+            }
+        });
+        this.candidateForm = this.fb.group({
+            resume_link: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            bio: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            skills: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            first_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            last_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            phone_number: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            date_of_birth: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            role: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+        });
+        this.educationForm = this.fb.group({
+            certificate_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", {
+                validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            }),
+            institute: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            passing_year: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+        });
+        this.educationSubscriber = this.educationService
+            .educationSubscriber()
+            .subscribe(function (data) {
+            _this.educationData = data ? data.data : undefined;
+            console.log(_this.educationData);
+        });
+        this.workexperienceForm = this.fb.group({
+            job_title: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            company_name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            description: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            start_date: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            end_date: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+        });
+        this.workexperienceSubscriber = this.workexperienceService
+            .workexperienceSubscriber()
+            .subscribe(function (data) {
+            _this.workexperienceData = data ? data.data : undefined;
+            console.log(_this.workexperienceData);
+        });
+    }
+    CandidateProfileComponent.prototype.ngOnInit = function () { };
+    CandidateProfileComponent.prototype.ngOnDestroy = function () {
+        if (this.sub) {
+            this.sub.unsubscribe();
+        }
+        if (this.subCan) {
+            this.subCan.unsubscribe();
+        }
+    };
+    CandidateProfileComponent.prototype.submitForm = function () {
+        var _this = this;
+        var candidateDetails = this.candidateForm.value;
+        Object.assign(candidateDetails, {
+            skills: this.candidateData.candidateDetails.skills,
+        });
+        this.subCan = this.candidateService
+            .updateCandidate(candidateDetails, this.candidateData.candidateDetails._id)
+            .subscribe(function (response) {
+            if (response.status == "success") {
+                _this.router.navigate([
+                    "/" + _this.userInfo.user.role.toLowerCase() + "/candidates",
+                ]);
+            }
+            else {
+                alert("Something went wrong");
+            }
+        });
+    };
+    CandidateProfileComponent.prototype.submitEducationForm = function () {
+        var _this = this;
+        var educationDetails = this.educationForm.value;
+        this.educationService
+            .addEducation(this.candidateid, educationDetails)
+            .subscribe(function (data) {
+            if (data && data.status == "success") {
+                _this.educationForm.reset();
+                _this.educationService.fetchEducation(_this.candidateid);
+            }
+        });
+    };
+    CandidateProfileComponent.prototype.deleteEducation = function (educationID) {
+        this.educationService.removeEducation(educationID, this.candidateid);
+    };
+    CandidateProfileComponent.prototype.submitWorkExperienceForm = function () {
+        var _this = this;
+        var workexperienceDetails = this.workexperienceForm.value;
+        this.workexperienceService
+            .addWorkExperience(this.candidateid, workexperienceDetails)
+            .subscribe(function (data) {
+            if (data && data.status == "success") {
+                _this.workexperienceForm.reset();
+                _this.workexperienceService.fetchWorkExperience(_this.candidateid);
+            }
+        });
+    };
+    CandidateProfileComponent.prototype.deleteWorkExperience = function (workexperienceID) {
+        this.workexperienceService.removeWorkExperience(workexperienceID, this.candidateid);
+    };
+    CandidateProfileComponent.prototype.addSkill = function () {
+        this.candidateData.candidateDetails.skills.push(this.newSkill);
+        this.newSkill = "";
+    };
+    CandidateProfileComponent.prototype.removeSkill = function (removeSkill) {
+        this.candidateData.candidateDetails.skills = this.candidateData.candidateDetails.skills.filter(function (skill) {
+            if (skill != removeSkill) {
+                return true;
+            }
+        });
+    };
+    CandidateProfileComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
+        { type: app_data_candidate_candidate_service__WEBPACK_IMPORTED_MODULE_2__["CandidateService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] },
+        { type: app_data_education_education_service__WEBPACK_IMPORTED_MODULE_5__["EducationService"] },
+        { type: app_data_workexperience_workexperience_service__WEBPACK_IMPORTED_MODULE_6__["WorkexperienceService"] }
+    ]; };
+    CandidateProfileComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "candidate-profile",
+            template: __importDefault(__webpack_require__(/*! raw-loader!./candidate-profile.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/candidate/candidate-profile/candidate-profile.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./candidate-profile.component.css */ "./src/app/components/candidate/candidate-profile/candidate-profile.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            app_data_candidate_candidate_service__WEBPACK_IMPORTED_MODULE_2__["CandidateService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+            app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"],
+            app_data_education_education_service__WEBPACK_IMPORTED_MODULE_5__["EducationService"],
+            app_data_workexperience_workexperience_service__WEBPACK_IMPORTED_MODULE_6__["WorkexperienceService"]])
+    ], CandidateProfileComponent);
+    return CandidateProfileComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/candidate/candidate.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/components/candidate/candidate.component.css ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2FuZGlkYXRlL2NhbmRpZGF0ZS5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/candidate/candidate.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/components/candidate/candidate.component.ts ***!
+  \*************************************************************/
+/*! exports provided: CandidateComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CandidateComponent", function() { return CandidateComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var app_data_candidate_candidate_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/candidate/candidate.service */ "./src/app/data/candidate/candidate.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+var CandidateComponent = /** @class */ (function () {
+    function CandidateComponent(candidateService, router) {
+        var _this = this;
+        this.candidateService = candidateService;
+        this.router = router;
+        this.candidateSubscribe = this.candidateService.candidatesSubscriber().subscribe(function (data) {
+            _this.candidateData = data ? data.data : undefined;
+        });
+        this.candidateService.fetchCandidates();
+    }
+    CandidateComponent.prototype.ngOnInit = function () {
+    };
+    CandidateComponent.prototype.onClickMe = function (id) {
+        this.candidateService.removeCandidate(id);
+    };
+    CandidateComponent.prototype.ngOnDestroy = function () {
+        this.candidateSubscribe.unsubscribe();
+    };
+    CandidateComponent.prototype.editCandidate = function (candidateID) {
+        console.log(candidateID);
+        this.router.navigate(['admin/candidate-profile', candidateID]);
+    };
+    CandidateComponent.ctorParameters = function () { return [
+        { type: app_data_candidate_candidate_service__WEBPACK_IMPORTED_MODULE_1__["CandidateService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+    ]; };
+    CandidateComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-candidate',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./candidate.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/candidate/candidate.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./candidate.component.css */ "./src/app/components/candidate/candidate.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [app_data_candidate_candidate_service__WEBPACK_IMPORTED_MODULE_1__["CandidateService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], CandidateComponent);
+    return CandidateComponent;
 }());
 
 
@@ -1375,31 +1939,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./register/register.component */ "./src/app/components/register/register.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login/login.component */ "./src/app/components/login/login.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm5/forms.js");
-/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/components/dashboard/dashboard.component.ts");
-/* harmony import */ var _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./table-list/table-list.component */ "./src/app/components/table-list/table-list.component.ts");
-/* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./user-profile/user-profile.component */ "./src/app/components/user-profile/user-profile.component.ts");
-/* harmony import */ var _typography_typography_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./typography/typography.component */ "./src/app/components/typography/typography.component.ts");
-/* harmony import */ var _icons_icons_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./icons/icons.component */ "./src/app/components/icons/icons.component.ts");
-/* harmony import */ var _maps_maps_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./maps/maps.component */ "./src/app/components/maps/maps.component.ts");
-/* harmony import */ var _notifications_notifications_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./notifications/notifications.component */ "./src/app/components/notifications/notifications.component.ts");
-/* harmony import */ var _upgrade_upgrade_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./upgrade/upgrade.component */ "./src/app/components/upgrade/upgrade.component.ts");
-/* harmony import */ var _users_users_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./users/users.component */ "./src/app/components/users/users.component.ts");
-/* harmony import */ var _assessment_assessment_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./assessment/assessment.component */ "./src/app/components/assessment/assessment.component.ts");
-/* harmony import */ var _employer_employer_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./employer/employer.component */ "./src/app/components/employer/employer.component.ts");
-/* harmony import */ var _job_post_job_post_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./job-post/job-post.component */ "./src/app/components/job-post/job-post.component.ts");
-/* harmony import */ var _assessment_addassessment_addassessment_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./assessment/addassessment/addassessment.component */ "./src/app/components/assessment/addassessment/addassessment.component.ts");
-/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/__ivy_ngcc__/fesm5/ng2-file-upload.js");
-/* harmony import */ var _jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./jobApplication/add-job-application/add-job-application.component */ "./src/app/components/jobApplication/add-job-application/add-job-application.component.ts");
-/* harmony import */ var _jobApplication_jobApplication_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./jobApplication/jobApplication.component */ "./src/app/components/jobApplication/jobApplication.component.ts");
-/* harmony import */ var _employer_employer_profile_employer_profile_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./employer/employer-profile/employer-profile.component */ "./src/app/components/employer/employer-profile/employer-profile.component.ts");
-/* harmony import */ var _job_post_add_job_post_add_job_post_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./job-post/add-job-post/add-job-post.component */ "./src/app/components/job-post/add-job-post/add-job-post.component.ts");
-/* harmony import */ var _Resume_resume_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./Resume/resume.component */ "./src/app/components/Resume/resume.component.ts");
-/* harmony import */ var _jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./jobApplication/my-applications/my-applications.component */ "./src/app/components/jobApplication/my-applications/my-applications.component.ts");
-/* harmony import */ var _assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./assessment/updateassessment/updateassessment.component */ "./src/app/components/assessment/updateassessment/updateassessment.component.ts");
-/* harmony import */ var _assessment_viewassessment_viewassessment_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./assessment/viewassessment/viewassessment.component */ "./src/app/components/assessment/viewassessment/viewassessment.component.ts");
-/* harmony import */ var angularx_qrcode__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! angularx-qrcode */ "./node_modules/angularx-qrcode/__ivy_ngcc__/fesm5/angularx-qrcode.js");
-/* harmony import */ var _assessment_submitassessment_submitassessment_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./assessment/submitassessment/submitassessment.component */ "./src/app/components/assessment/submitassessment/submitassessment.component.ts");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm5/platform-browser.js");
+/* harmony import */ var _jobApplication_all_applications_all_applications_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./jobApplication/all-applications/all-applications.component */ "./src/app/components/jobApplication/all-applications/all-applications.component.ts");
+/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/components/dashboard/dashboard.component.ts");
+/* harmony import */ var _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./table-list/table-list.component */ "./src/app/components/table-list/table-list.component.ts");
+/* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./user-profile/user-profile.component */ "./src/app/components/user-profile/user-profile.component.ts");
+/* harmony import */ var _typography_typography_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./typography/typography.component */ "./src/app/components/typography/typography.component.ts");
+/* harmony import */ var _icons_icons_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./icons/icons.component */ "./src/app/components/icons/icons.component.ts");
+/* harmony import */ var _maps_maps_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./maps/maps.component */ "./src/app/components/maps/maps.component.ts");
+/* harmony import */ var _notifications_notifications_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./notifications/notifications.component */ "./src/app/components/notifications/notifications.component.ts");
+/* harmony import */ var _upgrade_upgrade_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./upgrade/upgrade.component */ "./src/app/components/upgrade/upgrade.component.ts");
+/* harmony import */ var _users_users_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./users/users.component */ "./src/app/components/users/users.component.ts");
+/* harmony import */ var _assessment_assessment_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./assessment/assessment.component */ "./src/app/components/assessment/assessment.component.ts");
+/* harmony import */ var _employer_employer_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./employer/employer.component */ "./src/app/components/employer/employer.component.ts");
+/* harmony import */ var _job_post_job_post_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./job-post/job-post.component */ "./src/app/components/job-post/job-post.component.ts");
+/* harmony import */ var _assessment_addassessment_addassessment_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./assessment/addassessment/addassessment.component */ "./src/app/components/assessment/addassessment/addassessment.component.ts");
+/* harmony import */ var ng2_file_upload__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ng2-file-upload */ "./node_modules/ng2-file-upload/__ivy_ngcc__/fesm5/ng2-file-upload.js");
+/* harmony import */ var _jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./jobApplication/add-job-application/add-job-application.component */ "./src/app/components/jobApplication/add-job-application/add-job-application.component.ts");
+/* harmony import */ var _jobApplication_jobApplication_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./jobApplication/jobApplication.component */ "./src/app/components/jobApplication/jobApplication.component.ts");
+/* harmony import */ var _employer_employer_profile_employer_profile_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./employer/employer-profile/employer-profile.component */ "./src/app/components/employer/employer-profile/employer-profile.component.ts");
+/* harmony import */ var _job_post_add_job_post_add_job_post_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./job-post/add-job-post/add-job-post.component */ "./src/app/components/job-post/add-job-post/add-job-post.component.ts");
+/* harmony import */ var _Resume_resume_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./Resume/resume.component */ "./src/app/components/Resume/resume.component.ts");
+/* harmony import */ var _jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./jobApplication/my-applications/my-applications.component */ "./src/app/components/jobApplication/my-applications/my-applications.component.ts");
+/* harmony import */ var _assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./assessment/updateassessment/updateassessment.component */ "./src/app/components/assessment/updateassessment/updateassessment.component.ts");
+/* harmony import */ var _assessment_viewassessment_viewassessment_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./assessment/viewassessment/viewassessment.component */ "./src/app/components/assessment/viewassessment/viewassessment.component.ts");
+/* harmony import */ var angularx_qrcode__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! angularx-qrcode */ "./node_modules/angularx-qrcode/__ivy_ngcc__/fesm5/angularx-qrcode.js");
+/* harmony import */ var _assessment_submitassessment_submitassessment_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./assessment/submitassessment/submitassessment.component */ "./src/app/components/assessment/submitassessment/submitassessment.component.ts");
+/* harmony import */ var _candidate_candidate_profile_candidate_profile_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./candidate/candidate-profile/candidate-profile.component */ "./src/app/components/candidate/candidate-profile/candidate-profile.component.ts");
+/* harmony import */ var _candidate_candidate_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./candidate/candidate.component */ "./src/app/components/candidate/candidate.component.ts");
+/* harmony import */ var _assessment_reviewassessment_reviewassessment_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./assessment/reviewassessment/reviewassessment.component */ "./src/app/components/assessment/reviewassessment/reviewassessment.component.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm5/platform-browser.js");
+/* harmony import */ var _job_post_view_job_post_view_job_post_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./job-post/view-job-post/view-job-post.component */ "./src/app/components/job-post/view-job-post/view-job-post.component.ts");
+/* harmony import */ var _job_post_update_job_post_update_job_post_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./job-post/update-job-post/update-job-post.component */ "./src/app/components/job-post/update-job-post/update-job-post.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1416,6 +1986,18 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+
+
+
+// import { ResumeComponent } from './resume/resume/resume.component';
+// import { MyApplicationsComponent } from './jobApplication/my-applications/my-applications.component';
+// import { ViewassessmentComponent } from './assessment/viewassessment/viewassessment.component';
+// import { AddJobPostComponent } from './job-post/add-job-post/add-job-post.component';
+// import { UpdateJobPostComponent } from './job-post/update-job-post/update-job-post.component';
+//import { AddemployerComponent } from './employer/addemployer/addemployer.component';
 
 
 
@@ -1458,8 +2040,8 @@ var ComponentsModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_14__["ReactiveFormsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_14__["FormsModule"],
-                angularx_qrcode__WEBPACK_IMPORTED_MODULE_37__["QRCodeModule"],
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_39__["BrowserModule"]
+                angularx_qrcode__WEBPACK_IMPORTED_MODULE_38__["QRCodeModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_43__["BrowserModule"]
             ],
             declarations: [
                 _footer_footer_component__WEBPACK_IMPORTED_MODULE_3__["FooterComponent"],
@@ -1470,29 +2052,42 @@ var ComponentsModule = /** @class */ (function () {
                 _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
                 _register_register_component__WEBPACK_IMPORTED_MODULE_12__["RegisterComponent"],
                 _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"],
-                _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_17__["UserProfileComponent"],
-                _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_16__["TableListComponent"],
-                _typography_typography_component__WEBPACK_IMPORTED_MODULE_18__["TypographyComponent"],
-                _icons_icons_component__WEBPACK_IMPORTED_MODULE_19__["IconsComponent"],
-                _maps_maps_component__WEBPACK_IMPORTED_MODULE_20__["MapsComponent"],
-                _notifications_notifications_component__WEBPACK_IMPORTED_MODULE_21__["NotificationsComponent"],
-                _upgrade_upgrade_component__WEBPACK_IMPORTED_MODULE_22__["UpgradeComponent"],
-                _users_users_component__WEBPACK_IMPORTED_MODULE_23__["UsersComponent"],
-                _assessment_assessment_component__WEBPACK_IMPORTED_MODULE_24__["AssessmentComponent"],
-                _employer_employer_component__WEBPACK_IMPORTED_MODULE_25__["EmployerComponent"],
-                _job_post_job_post_component__WEBPACK_IMPORTED_MODULE_26__["JobPostComponent"],
-                _assessment_addassessment_addassessment_component__WEBPACK_IMPORTED_MODULE_27__["AddassessmentComponent"],
-                ng2_file_upload__WEBPACK_IMPORTED_MODULE_28__["FileSelectDirective"],
-                _jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_29__["AddJobApplicationComponent"],
-                _jobApplication_jobApplication_component__WEBPACK_IMPORTED_MODULE_30__["JobApplicationComponent"],
-                _employer_employer_profile_employer_profile_component__WEBPACK_IMPORTED_MODULE_31__["EmployerProfileComponent"],
-                _job_post_add_job_post_add_job_post_component__WEBPACK_IMPORTED_MODULE_32__["AddJobPostComponent"],
-                _Resume_resume_component__WEBPACK_IMPORTED_MODULE_33__["ResumeComponent"],
-                _jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_34__["MyApplicationsComponent"],
-                _assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_35__["UpdateassessmentComponent"],
-                _assessment_viewassessment_viewassessment_component__WEBPACK_IMPORTED_MODULE_36__["ViewassessmentComponent"],
-                _assessment_submitassessment_submitassessment_component__WEBPACK_IMPORTED_MODULE_38__["SubmitassessmentComponent"]
+                _jobApplication_all_applications_all_applications_component__WEBPACK_IMPORTED_MODULE_15__["AllApplicationsComponent"],
+                // ResumeComponent,
+                // MyApplicationsComponent,
+                // ViewassessmentComponent,
+                // AddJobPostComponent,
+                // UpdateJobPostComponent,
+                // //AddemployerComponent,
+                // AddJobPostComponent,
+                _job_post_update_job_post_update_job_post_component__WEBPACK_IMPORTED_MODULE_45__["UpdateJobPostComponent"],
+                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_16__["DashboardComponent"],
+                _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_18__["UserProfileComponent"],
+                _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_17__["TableListComponent"],
+                _typography_typography_component__WEBPACK_IMPORTED_MODULE_19__["TypographyComponent"],
+                _icons_icons_component__WEBPACK_IMPORTED_MODULE_20__["IconsComponent"],
+                _maps_maps_component__WEBPACK_IMPORTED_MODULE_21__["MapsComponent"],
+                _notifications_notifications_component__WEBPACK_IMPORTED_MODULE_22__["NotificationsComponent"],
+                _upgrade_upgrade_component__WEBPACK_IMPORTED_MODULE_23__["UpgradeComponent"],
+                _users_users_component__WEBPACK_IMPORTED_MODULE_24__["UsersComponent"],
+                _assessment_assessment_component__WEBPACK_IMPORTED_MODULE_25__["AssessmentComponent"],
+                _employer_employer_component__WEBPACK_IMPORTED_MODULE_26__["EmployerComponent"],
+                _job_post_job_post_component__WEBPACK_IMPORTED_MODULE_27__["JobPostComponent"],
+                _assessment_addassessment_addassessment_component__WEBPACK_IMPORTED_MODULE_28__["AddassessmentComponent"],
+                ng2_file_upload__WEBPACK_IMPORTED_MODULE_29__["FileSelectDirective"],
+                _jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_30__["AddJobApplicationComponent"],
+                _jobApplication_jobApplication_component__WEBPACK_IMPORTED_MODULE_31__["JobApplicationComponent"],
+                _employer_employer_profile_employer_profile_component__WEBPACK_IMPORTED_MODULE_32__["EmployerProfileComponent"],
+                _job_post_add_job_post_add_job_post_component__WEBPACK_IMPORTED_MODULE_33__["AddJobPostComponent"],
+                _Resume_resume_component__WEBPACK_IMPORTED_MODULE_34__["ResumeComponent"],
+                _jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_35__["MyApplicationsComponent"],
+                _assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_36__["UpdateassessmentComponent"],
+                _assessment_viewassessment_viewassessment_component__WEBPACK_IMPORTED_MODULE_37__["ViewassessmentComponent"],
+                _assessment_submitassessment_submitassessment_component__WEBPACK_IMPORTED_MODULE_39__["SubmitassessmentComponent"],
+                _candidate_candidate_profile_candidate_profile_component__WEBPACK_IMPORTED_MODULE_40__["CandidateProfileComponent"],
+                _candidate_candidate_component__WEBPACK_IMPORTED_MODULE_41__["CandidateComponent"],
+                _assessment_reviewassessment_reviewassessment_component__WEBPACK_IMPORTED_MODULE_42__["ReviewassessmentComponent"],
+                _job_post_view_job_post_view_job_post_component__WEBPACK_IMPORTED_MODULE_44__["ViewJobPostComponent"]
             ],
             exports: [
                 _footer_footer_component__WEBPACK_IMPORTED_MODULE_3__["FooterComponent"],
@@ -1761,6 +2356,7 @@ var EmployerProfileComponent = /** @class */ (function () {
         this.router = router;
         this.route = route;
         this.storageServive = storageServive;
+        this.messageClass = 'text-error';
         this.employerid = undefined;
         this.userInfo = this.storageServive.get('userInfo');
         this.sub = this.route.params.subscribe(function (params) {
@@ -1800,14 +2396,21 @@ var EmployerProfileComponent = /** @class */ (function () {
     EmployerProfileComponent.prototype.ngOnInit = function () {
     };
     EmployerProfileComponent.prototype.ngOnDestroy = function () {
-        this.sub.unsubscribe();
+        if (this.sub)
+            this.sub.unsubscribe();
+        if (this.subEmp)
+            this.subEmp.unsubscribe();
     };
     EmployerProfileComponent.prototype.submitForm = function () {
         var _this = this;
-        this.employerService.updateEmployer(this.employerForm.value, this.employersData.employerDetails._id).subscribe(function (response) {
-            console.log(response);
+        this.subEmp = this.employerService.updateEmployer(this.employerForm.value, this.employersData.employerDetails._id).subscribe(function (response) {
             if (response.status == "success") {
-                _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/employers']);
+                if (_this.userInfo.user.role == 'Admin')
+                    _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/employers']);
+                else {
+                    _this.message = response.message;
+                    _this.messageClass = 'text-success';
+                }
             }
             else {
                 alert('Something went wrong');
@@ -1829,7 +2432,8 @@ var EmployerProfileComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
             app_data_employer_employer_service__WEBPACK_IMPORTED_MODULE_2__["EmployerService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+            app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
     ], EmployerProfileComponent);
     return EmployerProfileComponent;
 }());
@@ -2183,7 +2787,7 @@ var AddJobPostComponent = /** @class */ (function () {
         });
         this.assessmentService.fetchAssessments();
         // ==== fetch employer ====
-        this.employerSubsciber = this.employerService.employerSubscriber().subscribe(function (data) {
+        this.employerSubscriber = this.employerService.employerSubscriber().subscribe(function (data) {
             _this.employerData = data ? data.data : undefined;
         });
         this.employerService.fetchEmployers();
@@ -2197,6 +2801,7 @@ var AddJobPostComponent = /** @class */ (function () {
             post_date: [''],
             post_expiry: [''],
             job_id: [''],
+            requirement: [''],
             assessment_id: [''],
             employer_id: ['']
         });
@@ -2262,6 +2867,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobPostComponent", function() { return JobPostComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
 /* harmony import */ var app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/job-post/job-post.service */ "./src/app/data/job-post/job-post.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2276,14 +2883,15 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 };
 
 
+
+
 var JobPostComponent = /** @class */ (function () {
-    // private assessmentData: any;
-    // private assessmentSubscriber: any;
-    // private employerData: any;
-    // private employerSubsciber: any;
-    function JobPostComponent(jobPostService) {
+    function JobPostComponent(jobPostService, router, storage) {
         var _this = this;
         this.jobPostService = jobPostService;
+        this.router = router;
+        this.storage = storage;
+        this.userInfo = this.storage.get('userInfo');
         this.jobPostSubscriber = this.jobPostService.jobPostSubsciber().subscribe(function (data) {
             console.log(data);
             _this.jobPostData = data ? data.data : undefined;
@@ -2301,11 +2909,17 @@ var JobPostComponent = /** @class */ (function () {
     JobPostComponent.prototype.onClickMe = function (id) {
         this.jobPostService.deleteJobPost(id);
     };
+    JobPostComponent.prototype.editJobPost = function (jobPostID) {
+        console.log(jobPostID);
+        this.router.navigate(['/' + this.userInfo.user.role.toLowerCase() + '/update-job-post', jobPostID]);
+    };
     JobPostComponent.prototype.ngOnDestroy = function () {
         this.jobPostSubscriber.unsubscribe();
     };
     JobPostComponent.ctorParameters = function () { return [
-        { type: app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__["JobPostService"] }
+        { type: app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__["JobPostService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] }
     ]; };
     JobPostComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -2313,9 +2927,248 @@ var JobPostComponent = /** @class */ (function () {
             template: __importDefault(__webpack_require__(/*! raw-loader!./job-post.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/job-post.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./job-post.component.css */ "./src/app/components/job-post/job-post.component.css")).default]
         }),
-        __metadata("design:paramtypes", [app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__["JobPostService"]])
+        __metadata("design:paramtypes", [app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__["JobPostService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
     ], JobPostComponent);
     return JobPostComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/job-post/update-job-post/update-job-post.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/job-post/update-job-post/update-job-post.component.css ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvam9iLXBvc3QvdXBkYXRlLWpvYi1wb3N0L3VwZGF0ZS1qb2ItcG9zdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/job-post/update-job-post/update-job-post.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/job-post/update-job-post/update-job-post.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: UpdateJobPostComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpdateJobPostComponent", function() { return UpdateJobPostComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
+/* harmony import */ var app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! app/data/job-post/job-post.service */ "./src/app/data/job-post/job-post.service.ts");
+/* harmony import */ var app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! app/data/assessment/assessment.service */ "./src/app/data/assessment/assessment.service.ts");
+/* harmony import */ var app_data_employer_employer_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! app/data/employer/employer.service */ "./src/app/data/employer/employer.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+
+
+
+var UpdateJobPostComponent = /** @class */ (function () {
+    function UpdateJobPostComponent(fb, jobPostService, assessmentService, employerService, router, route, storageService) {
+        var _this = this;
+        this.fb = fb;
+        this.jobPostService = jobPostService;
+        this.assessmentService = assessmentService;
+        this.employerService = employerService;
+        this.router = router;
+        this.route = route;
+        this.storageService = storageService;
+        this.jobPostId = undefined;
+        this.assessmentSubscriber = this.assessmentService.assessmentSubscriber().subscribe(function (data) {
+            _this.assessmentData = data ? data.data : undefined;
+            console.log(_this.jobPostData);
+        });
+        this.assessmentService.fetchAssessments();
+        this.employerSubscriber = this.employerService.employerSubscriber().subscribe(function (data) {
+            _this.employerData = data ? data.data : undefined;
+        });
+        this.employerService.fetchEmployers();
+        this.userInfo = this.storageService.get('userInfo');
+        this.sub = this.route.params.subscribe(function (params) {
+            _this.jobPostId = params['id'];
+            if (_this.jobPostId) {
+                _this.jobPostService.fetchJobPost(_this.jobPostId).subscribe(function (response) {
+                    _this.jobPostData = response.data;
+                    _this.updateJobPostForm = _this.fb.group({
+                        title: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.title, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        additional_info: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.additional_info, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        position: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.position, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        post_date: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.post_date, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        post_expiry: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.post_expiry, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        requirement: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.requirement, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        job_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.job_id, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        assessment_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.assessment_id, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+                        employer_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](_this.jobPostData.jobPostDetails.employer_id, { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] })
+                    });
+                });
+            }
+        });
+        this.updateJobPostForm = this.fb.group({
+            title: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            additional_info: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            position: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            post_date: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            post_expiry: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            requirement: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            job_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            assessment_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+            employer_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', { validators: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required] }),
+        });
+    }
+    UpdateJobPostComponent.prototype.ngOnInit = function () {
+    };
+    UpdateJobPostComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
+    };
+    UpdateJobPostComponent.prototype.updateForm = function () {
+        var _this = this;
+        this.jobPostService.updateJobPost(this.updateJobPostForm.value, this.jobPostData.jobPostDetails._id).subscribe(function (response) {
+            console.log(response);
+            if (response.status == "success") {
+                _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/job-posts']);
+            }
+            else {
+                alert("Something went wrong");
+            }
+        });
+    };
+    UpdateJobPostComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
+        { type: app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_4__["JobPostService"] },
+        { type: app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_5__["AssessmentService"] },
+        { type: app_data_employer_employer_service__WEBPACK_IMPORTED_MODULE_6__["EmployerService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] }
+    ]; };
+    UpdateJobPostComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-update-job-post',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./update-job-post.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/update-job-post/update-job-post.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./update-job-post.component.css */ "./src/app/components/job-post/update-job-post/update-job-post.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_4__["JobPostService"],
+            app_data_assessment_assessment_service__WEBPACK_IMPORTED_MODULE_5__["AssessmentService"],
+            app_data_employer_employer_service__WEBPACK_IMPORTED_MODULE_6__["EmployerService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
+    ], UpdateJobPostComponent);
+    return UpdateJobPostComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/job-post/view-job-post/view-job-post.component.css":
+/*!*******************************************************************************!*\
+  !*** ./src/app/components/job-post/view-job-post/view-job-post.component.css ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvam9iLXBvc3Qvdmlldy1qb2ItcG9zdC92aWV3LWpvYi1wb3N0LmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/job-post/view-job-post/view-job-post.component.ts":
+/*!******************************************************************************!*\
+  !*** ./src/app/components/job-post/view-job-post/view-job-post.component.ts ***!
+  \******************************************************************************/
+/*! exports provided: ViewJobPostComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewJobPostComponent", function() { return ViewJobPostComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/job-post/job-post.service */ "./src/app/data/job-post/job-post.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/providers/storage/storage.service */ "./src/app/providers/storage/storage.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+var ViewJobPostComponent = /** @class */ (function () {
+    function ViewJobPostComponent(jobPostService, router, activeRoute, storageService) {
+        // this.jobPostSubscriber = this.jobPostService.jobPostSubsciber().subscribe((data: any) => {
+        //   console.log(data)
+        //   this.jobPostData = data ? data.data : undefined;
+        // })
+        this.jobPostService = jobPostService;
+        this.router = router;
+        this.activeRoute = activeRoute;
+        this.storageService = storageService;
+        this.userInfo = this.storageService.get("userInfo");
+    }
+    ViewJobPostComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        //fetching data from job post
+        this.activeRoute.paramMap.subscribe(function (params) {
+            _this.id = params.get('id');
+            _this.jobPostService.fetchJobPost(_this.id).subscribe(function (jobPostData) {
+                if (jobPostData && jobPostData.status == 'success' && jobPostData.data) {
+                    _this.jobPostData = jobPostData.data.jobPostDetails;
+                }
+            });
+        });
+    };
+    ViewJobPostComponent.prototype.ngOnDestory = function () {
+        this.jobPostSubscriber.unsubscribe();
+    };
+    ViewJobPostComponent.ctorParameters = function () { return [
+        { type: app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__["JobPostService"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+        { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] }
+    ]; };
+    ViewJobPostComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-view-job-post',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./view-job-post.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/job-post/view-job-post/view-job-post.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./view-job-post.component.css */ "./src/app/components/job-post/view-job-post/view-job-post.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [app_data_job_post_job_post_service__WEBPACK_IMPORTED_MODULE_1__["JobPostService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
+    ], ViewJobPostComponent);
+    return ViewJobPostComponent;
 }());
 
 
@@ -2381,12 +3234,6 @@ var AddJobApplicationComponent = /** @class */ (function () {
             // console.log(data)
             _this.jobpostdata = data ? data.data : undefined;
         });
-        this.userInfo = this.storageServive.get('userInfo');
-        // console.log(this.userInfo.user._id);
-        this.jobApplicationService.findCandidate(this.userInfo.user._id).subscribe(function (data) {
-            _this.candidate_id = data[0]._id;
-            // console.log(Object.keys(data));
-        });
     }
     AddJobApplicationComponent.prototype.ngOnInit = function () {
         this.form = this.fb.group({
@@ -2396,12 +3243,20 @@ var AddJobApplicationComponent = /** @class */ (function () {
     };
     AddJobApplicationComponent.prototype.submitForm = function () {
         var _this = this;
-        // const id = this.route.snapshot.paramMap.get('id');
-        this.form.value.candidate_id = this.candidate_id;
-        // this.form.value.jobPost_id = id;
-        console.log(this.form.value);
-        this.jobApplicationService.addJobApplication(this.form.value).subscribe(function (jobApplication) {
-            _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/my-applications']);
+        this.userInfo = this.storageServive.get('userInfo');
+        // console.log(this.userInfo.user._id);
+        this.jobApplicationService.findCandidate(this.userInfo.user._id).subscribe(function (data) {
+            console.log("fetch canddate");
+            console.log(data[0]._id);
+            _this.candidate_id = data[0]._id;
+            // console.log(this.candidate_id);
+            // const id = this.route.snapshot.paramMap.get('id');
+            _this.form.value.candidate_id = _this.candidate_id;
+            // this.form.value.jobPost_id = id;
+            console.log(_this.form.value);
+            _this.jobApplicationService.addJobApplication(_this.form.value).subscribe(function (jobApplication) {
+                _this.router.navigate(['/' + _this.userInfo.user.role.toLowerCase() + '/my-applications']);
+            });
         });
     };
     AddJobApplicationComponent.prototype.ngOnDestroy = function () {
@@ -2423,6 +3278,81 @@ var AddJobApplicationComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [app_data_jobApplication_jobApplication_service__WEBPACK_IMPORTED_MODULE_3__["JobApplicationService"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_4__["StorageService"]])
     ], AddJobApplicationComponent);
     return AddJobApplicationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/jobApplication/all-applications/all-applications.component.css":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/components/jobApplication/all-applications/all-applications.component.css ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvam9iQXBwbGljYXRpb24vYWxsLWFwcGxpY2F0aW9ucy9hbGwtYXBwbGljYXRpb25zLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/jobApplication/all-applications/all-applications.component.ts":
+/*!******************************************************************************************!*\
+  !*** ./src/app/components/jobApplication/all-applications/all-applications.component.ts ***!
+  \******************************************************************************************/
+/*! exports provided: AllApplicationsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllApplicationsComponent", function() { return AllApplicationsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var app_data_jobApplication_jobApplication_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/data/jobApplication/jobApplication.service */ "./src/app/data/jobApplication/jobApplication.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+var AllApplicationsComponent = /** @class */ (function () {
+    function AllApplicationsComponent(JobApplicationService) {
+        // this.status = ["waiting","confirm","rejected"];
+        var _this = this;
+        this.JobApplicationService = JobApplicationService;
+        this.jobApplicationSubscriber = this.JobApplicationService.jobApplicationSubscriber().subscribe(function (data) {
+            _this.jobApplicationData = data ? data.data : undefined;
+            // this.name = this.JobApplicationService.getUserName(this.jobApplicationData.candidate_id.user_id)
+            console.log(_this.jobApplicationData);
+        });
+        this.JobApplicationService.fetchJobApplications();
+        // this.JobApplicationService.getUserName(user_id);
+    }
+    //  getuser(user_id){
+    //   this.name = this.JobApplicationService.getUserName(user_id);
+    //   //  return this.JobApplicationService.getUserName(user_id);
+    //  }
+    AllApplicationsComponent.prototype.ngOnInit = function () { };
+    AllApplicationsComponent.ctorParameters = function () { return [
+        { type: app_data_jobApplication_jobApplication_service__WEBPACK_IMPORTED_MODULE_1__["JobApplicationService"] }
+    ]; };
+    AllApplicationsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-all-applications',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./all-applications.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/jobApplication/all-applications/all-applications.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./all-applications.component.css */ "./src/app/components/jobApplication/all-applications/all-applications.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [app_data_jobApplication_jobApplication_service__WEBPACK_IMPORTED_MODULE_1__["JobApplicationService"]])
+    ], AllApplicationsComponent);
+    return AllApplicationsComponent;
 }());
 
 
@@ -3241,16 +4171,7 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
-var ROUTES = [
-    // { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    // { path: './users', title: 'Users',  icon: 'supervised_user_circle', class: '' },
-    // { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
-    // { path: './assessment', title: 'Assessment',  icon:'question_answer', class: '' },
-    // { path: './employers', title: 'Employers',  icon:'question_answer', class: '' },
-    { path: './jobApplication', title: 'Job Application', icon: 'library_books', class: '' },
-    { path: './job-posts', title: 'Job Posts', icon: 'question_answer', class: '' },
-    { path: './resume', title: 'Resume', icon: 'assignment', class: '' }
-];
+var ROUTES;
 // { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
 // { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
 // { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
@@ -3260,6 +4181,18 @@ var SidebarCandidateComponent = /** @class */ (function () {
     function SidebarCandidateComponent(storage, router) {
         this.storage = storage;
         this.router = router;
+        var userInfo = this.storage.get('userInfo');
+        ROUTES = [
+            // { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
+            // { path: './users', title: 'Users',  icon: 'supervised_user_circle', class: '' },
+            // { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
+            // { path: './assessment', title: 'Assessment',  icon:'question_answer', class: '' },
+            // { path: './employers', title: 'Employers',  icon:'question_answer', class: '' },
+            { path: './jobApplication', title: 'Job Application', icon: 'library_books', class: '' },
+            { path: './job-posts', title: 'Job Posts', icon: 'question_answer', class: '' },
+            { path: './resume', title: 'Resume', icon: 'assignment', class: '' },
+            { path: './candidate-profile/' + userInfo.candidate._id, title: 'Profile', icon: 'assignment', class: '' }
+        ];
     }
     SidebarCandidateComponent.prototype.ngOnInit = function () {
         this.menuItems = ROUTES.filter(function (menuItem) { return menuItem; });
@@ -3336,16 +4269,7 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
-var ROUTES = [
-    // { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    // { path: './users', title: 'Users',  icon: 'supervised_user_circle', class: '' },
-    // { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
-    { path: './assessment', title: 'Assessment', icon: 'question_answer', class: '' },
-    // { path: './employers', title: 'Employers',  icon:'question_answer', class: '' },
-    // { path: './jobApplication', title: 'Job Application',  icon:'library_books', class: '' },
-    { path: './job-posts', title: 'Job Posts', icon: 'question_answer', class: '' },
-    { path: './resume', title: 'Resume', icon: 'assignment', class: '' }
-];
+var ROUTES;
 // { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
 // { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
 // { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
@@ -3355,6 +4279,18 @@ var SidebarEmployerComponent = /** @class */ (function () {
     function SidebarEmployerComponent(storage, router) {
         this.storage = storage;
         this.router = router;
+        var userInfo = this.storage.get('userInfo');
+        ROUTES = [
+            // { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
+            // { path: './users', title: 'Users',  icon: 'supervised_user_circle', class: '' },
+            // { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
+            { path: './assessment', title: 'Assessment', icon: 'question_answer', class: '' },
+            // { path: './employers', title: 'Employers',  icon:'question_answer', class: '' },
+            // { path: './jobApplication', title: 'Job Application',  icon:'library_books', class: '' },
+            { path: './job-posts', title: 'Job Posts', icon: 'question_answer', class: '' },
+            // { path: './resume', title: 'Resume',  icon:'assignment', class: '' },
+            { path: './employer-profile/' + userInfo.employer._id, title: 'Profile', icon: 'assignment', class: '' }
+        ];
     }
     SidebarEmployerComponent.prototype.ngOnInit = function () {
         this.menuItems = ROUTES.filter(function (menuItem) { return menuItem; });
@@ -3436,7 +4372,8 @@ var ROUTES = [
     { path: './users', title: 'Users', icon: 'supervised_user_circle', class: '' },
     // { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
     { path: './assessment', title: 'Assessment', icon: 'question_answer', class: '' },
-    { path: './employers', title: 'Employers', icon: 'question_answer', class: '' },
+    { path: './employers', title: 'Employers', icon: 'supervised_user_circle', class: '' },
+    { path: './candidates', title: 'Candidates', icon: 'supervised_user_circle', class: '' },
     { path: './job-posts', title: 'Job Posts', icon: 'question_answer', class: '' },
     { path: './jobApplication', title: 'Job Application', icon: 'library_books', class: '' }
 ];
@@ -3835,6 +4772,7 @@ var AssessmentService = /** @class */ (function () {
         this.storageService = storageService;
         this.assessments = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
         this.assessment = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
+        this.submittedassessment = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
     }
     AssessmentService.prototype.fetchAssessments = function () {
         var _this = this;
@@ -3846,6 +4784,12 @@ var AssessmentService = /** @class */ (function () {
         var _this = this;
         this.httpService.get('assessment/' + id).subscribe(function (data) {
             _this.assessment.next(data);
+        });
+    };
+    AssessmentService.prototype.fetchSubmittedAssessment = function (id) {
+        var _this = this;
+        this.httpService.get('candidateassessment/' + id).subscribe(function (data) {
+            _this.submittedassessment.next(data);
         });
     };
     AssessmentService.prototype.removeAssessments = function (id) {
@@ -3869,6 +4813,14 @@ var AssessmentService = /** @class */ (function () {
         var userInfo = this.storageService.get('userInfo');
         console.log(userInfo);
         return this.httpService.post('assessment/', formData, this.httpService.getFileUploadHeaders());
+    };
+    AssessmentService.prototype.submitAssessment = function (assessment_id, candidate_id, assessement_file, other_notes) {
+        var formData = new FormData();
+        formData.append("assessment_id", assessment_id);
+        formData.append("candidate_id", candidate_id);
+        formData.append("other_notes", other_notes);
+        formData.append("assessement_file", assessement_file);
+        return this.httpService.post('candidateassessment/', formData, this.httpService.getFileUploadHeaders());
     };
     AssessmentService.prototype.UpdateAssessment = function (id, title, description, additional_files, employer_id, filesTodelete) {
         var formData = new FormData();
@@ -3899,6 +4851,9 @@ var AssessmentService = /** @class */ (function () {
     AssessmentService.prototype.assessmentOneSubscriber = function () {
         return this.assessment;
     };
+    AssessmentService.prototype.submittedAssessmentSubscriber = function () {
+        return this.submittedassessment;
+    };
     AssessmentService.ctorParameters = function () { return [
         { type: app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] },
         { type: app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"] }
@@ -3910,6 +4865,150 @@ var AssessmentService = /** @class */ (function () {
         __metadata("design:paramtypes", [app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"], app_providers_storage_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"]])
     ], AssessmentService);
     return AssessmentService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/data/candidate/candidate.service.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/data/candidate/candidate.service.ts ***!
+  \*****************************************************/
+/*! exports provided: CandidateService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CandidateService", function() { return CandidateService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/providers/http/http.service */ "./src/app/providers/http/http.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CandidateService = /** @class */ (function () {
+    function CandidateService(httpService) {
+        this.httpService = httpService;
+        this.candidates = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
+    }
+    CandidateService.prototype.fetchCandidates = function () {
+        var _this = this;
+        this.httpService.get('candidate/lists').subscribe(function (data) {
+            _this.candidates.next(data);
+        });
+    };
+    CandidateService.prototype.fetchCandidate = function (id) {
+        return this.httpService.get('candidate/fetch/' + id);
+    };
+    CandidateService.prototype.updateCandidate = function (candidateData, id) {
+        return this.httpService.post('candidate/update/' + id, candidateData);
+    };
+    CandidateService.prototype.removeCandidate = function (id) {
+        var _this = this;
+        var confirmed = confirm('Are you sure?');
+        if (confirmed) {
+            this.httpService.delete('candidate/delete/' + id).subscribe(function (data) {
+                _this.fetchCandidates();
+            });
+        }
+    };
+    CandidateService.prototype.clearcandidates = function () {
+        this.candidates.next(undefined);
+        ///candidates = undefined     --same as assigning
+    };
+    CandidateService.prototype.candidatesSubscriber = function () {
+        return this.candidates;
+    };
+    CandidateService.ctorParameters = function () { return [
+        { type: app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] }
+    ]; };
+    CandidateService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]])
+    ], CandidateService);
+    return CandidateService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/data/education/education.service.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/data/education/education.service.ts ***!
+  \*****************************************************/
+/*! exports provided: EducationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EducationService", function() { return EducationService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/providers/http/http.service */ "./src/app/providers/http/http.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var EducationService = /** @class */ (function () {
+    function EducationService(httpService) {
+        this.httpService = httpService;
+        this.education = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
+    }
+    EducationService.prototype.fetchEducation = function (candidateid) {
+        var _this = this;
+        this.httpService.get('education/list/' + candidateid).subscribe(function (data) {
+            _this.education.next(data);
+        });
+    };
+    EducationService.prototype.addEducation = function (candidateid, educationData) {
+        return this.httpService.post('education/add/' + candidateid, educationData);
+    };
+    EducationService.prototype.removeEducation = function (id, candidateid) {
+        var _this = this;
+        var confirmed = confirm('Are you sure?');
+        if (confirmed) {
+            this.httpService.delete('education/delete/' + id).subscribe(function (data) {
+                _this.fetchEducation(candidateid);
+            });
+        }
+    };
+    EducationService.prototype.clearEducation = function () {
+        this.education.next(undefined);
+    };
+    EducationService.prototype.educationSubscriber = function () {
+        return this.education;
+    };
+    EducationService.ctorParameters = function () { return [
+        { type: app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] }
+    ]; };
+    EducationService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]])
+    ], EducationService);
+    return EducationService;
 }());
 
 
@@ -4018,6 +5117,7 @@ var JobPostService = /** @class */ (function () {
     function JobPostService(httpService) {
         this.httpService = httpService;
         this.jobPosts = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
+        this.jobPost = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
     }
     //get all job posts
     JobPostService.prototype.fetchJobPosts = function () {
@@ -4026,18 +5126,21 @@ var JobPostService = /** @class */ (function () {
             _this.jobPosts.next(data);
         });
     };
+    JobPostService.prototype.fetchJobPost = function (id) {
+        return this.httpService.get('job-post/fetch/' + id);
+    };
     JobPostService.prototype.clearJobPosts = function () {
         this.jobPosts.next(undefined);
     };
     JobPostService.prototype.jobPostSubsciber = function () {
         return this.jobPosts;
     };
-    // public removeJobPosts(id: string) {
-    //   this.httpService.delete('job-post/' + id).subscribe((data) => {
-    //     console.log(data);
-    //     this.fetchJobPosts();
-    //   })
-    // }
+    JobPostService.prototype.fetchModel = function () {
+        return this.httpService.get('job-post/lists');
+    };
+    JobPostService.prototype.updateJobPost = function (jobPostData, id) {
+        return this.httpService.post('job-post/update/' + id, jobPostData);
+    };
     JobPostService.prototype.addJobPost = function (jobPosts) {
         return this.httpService.post('job-post/', jobPosts);
     };
@@ -4049,6 +5152,15 @@ var JobPostService = /** @class */ (function () {
                 _this.fetchJobPosts();
             });
         }
+    };
+    JobPostService.prototype.getJobPost = function (id) {
+        return this.httpService.get('job-post/lists/' + id);
+    };
+    JobPostService.prototype.getAssessment = function (id) {
+        return this.httpService.get('assessment/lists/' + id);
+    };
+    JobPostService.prototype.getEmployer = function (id) {
+        return this.httpService.get('employer/lists/' + id);
     };
     JobPostService.ctorParameters = function () { return [
         { type: app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] }
@@ -4110,7 +5222,15 @@ var JobApplicationService = /** @class */ (function () {
         return this.httpService.get('jobApplication/lists/myapp/' + user_id);
     };
     JobApplicationService.prototype.findCandidate = function (user_id) {
-        return this.httpService.get('candidate/' + user_id);
+        // console.log(user_id);
+        return this.httpService.get('jobApplication/candidate/' + user_id);
+    };
+    JobApplicationService.prototype.getUserName = function (user_id) {
+        var _this = this;
+        return this.httpService.get('jobApplication/user/' + user_id).subscribe(function (data) {
+            _this.jobApplications.next(data);
+            // console.log(data.first_name);
+        });
     };
     JobApplicationService.prototype.fetchJobPosts = function () {
         var _this = this;
@@ -4226,6 +5346,76 @@ var UserService = /** @class */ (function () {
         __metadata("design:paramtypes", [app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]])
     ], UserService);
     return UserService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/data/workexperience/workexperience.service.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/data/workexperience/workexperience.service.ts ***!
+  \***************************************************************/
+/*! exports provided: WorkexperienceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WorkexperienceService", function() { return WorkexperienceService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/providers/http/http.service */ "./src/app/providers/http/http.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var WorkexperienceService = /** @class */ (function () {
+    function WorkexperienceService(httpService) {
+        this.httpService = httpService;
+        this.workexperience = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](undefined);
+    }
+    WorkexperienceService.prototype.fetchWorkExperience = function (candidateid) {
+        var _this = this;
+        this.httpService.get('workexperience/list/' + candidateid).subscribe(function (data) {
+            _this.workexperience.next(data);
+        });
+    };
+    WorkexperienceService.prototype.addWorkExperience = function (candidateid, workexperienceData) {
+        return this.httpService.post('workexperience/add/' + candidateid, workexperienceData);
+    };
+    WorkexperienceService.prototype.removeWorkExperience = function (id, candidateid) {
+        var _this = this;
+        var confirmed = confirm('Are you sure?');
+        if (confirmed) {
+            this.httpService.delete('workexperience/delete/' + id).subscribe(function (data) {
+                _this.fetchWorkExperience(candidateid);
+            });
+        }
+    };
+    WorkexperienceService.prototype.clearWorkExperience = function () {
+        this.workexperience.next(undefined);
+    };
+    WorkexperienceService.prototype.workexperienceSubscriber = function () {
+        return this.workexperience;
+    };
+    WorkexperienceService.ctorParameters = function () { return [
+        { type: app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] }
+    ]; };
+    WorkexperienceService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [app_providers_http_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"]])
+    ], WorkexperienceService);
+    return WorkexperienceService;
 }());
 
 
@@ -4892,7 +6082,8 @@ var HttpService = /** @class */ (function () {
     function HttpService(http, storage) {
         this.http = http;
         this.storage = storage;
-        // private host:string = "http://localhost:3000/";
+        //  private host:string = "http://localhost:3000/";
+        //private host:string = "https://upstaffed-humber.herokuapp.com/"; Priyanka
         this.host = "https://upstaffed.herokuapp.com/";
         // private httpOptions: HttpParams;
         this.httpOptions = {

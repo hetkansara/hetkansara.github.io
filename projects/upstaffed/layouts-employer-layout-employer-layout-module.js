@@ -85,10 +85,24 @@ var EmployerLayoutModule = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployerLayoutRoutes", function() { return EmployerLayoutRoutes; });
 /* harmony import */ var _components_assessment_assessment_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/assessment/assessment.component */ "./src/app/components/assessment/assessment.component.ts");
-/* harmony import */ var app_components_jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! app/components/jobApplication/add-job-application/add-job-application.component */ "./src/app/components/jobApplication/add-job-application/add-job-application.component.ts");
-/* harmony import */ var app_components_jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! app/components/jobApplication/my-applications/my-applications.component */ "./src/app/components/jobApplication/my-applications/my-applications.component.ts");
-/* harmony import */ var app_components_job_post_job_post_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/components/job-post/job-post.component */ "./src/app/components/job-post/job-post.component.ts");
-/* harmony import */ var app_components_Resume_resume_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! app/components/Resume/resume.component */ "./src/app/components/Resume/resume.component.ts");
+/* harmony import */ var _components_jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/jobApplication/add-job-application/add-job-application.component */ "./src/app/components/jobApplication/add-job-application/add-job-application.component.ts");
+/* harmony import */ var _components_jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/jobApplication/my-applications/my-applications.component */ "./src/app/components/jobApplication/my-applications/my-applications.component.ts");
+/* harmony import */ var _components_job_post_job_post_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/job-post/job-post.component */ "./src/app/components/job-post/job-post.component.ts");
+/* harmony import */ var _components_job_post_update_job_post_update_job_post_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/job-post/update-job-post/update-job-post.component */ "./src/app/components/job-post/update-job-post/update-job-post.component.ts");
+/* harmony import */ var _components_job_post_view_job_post_view_job_post_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/job-post/view-job-post/view-job-post.component */ "./src/app/components/job-post/view-job-post/view-job-post.component.ts");
+/* harmony import */ var _components_assessment_addassessment_addassessment_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/assessment/addassessment/addassessment.component */ "./src/app/components/assessment/addassessment/addassessment.component.ts");
+/* harmony import */ var _components_Resume_resume_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Resume/resume.component */ "./src/app/components/Resume/resume.component.ts");
+/* harmony import */ var _components_employer_employer_profile_employer_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/employer/employer-profile/employer-profile.component */ "./src/app/components/employer/employer-profile/employer-profile.component.ts");
+/* harmony import */ var app_components_assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! app/components/assessment/updateassessment/updateassessment.component */ "./src/app/components/assessment/updateassessment/updateassessment.component.ts");
+/* harmony import */ var app_components_assessment_reviewassessment_reviewassessment_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! app/components/assessment/reviewassessment/reviewassessment.component */ "./src/app/components/assessment/reviewassessment/reviewassessment.component.ts");
+/* harmony import */ var app_components_assessment_viewassessment_viewassessment_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! app/components/assessment/viewassessment/viewassessment.component */ "./src/app/components/assessment/viewassessment/viewassessment.component.ts");
+
+
+
+
+
+
+
 
 
 
@@ -103,15 +117,23 @@ var EmployerLayoutRoutes = [
     // { path: 'dashboard',    component: DashboardComponent },
     { path: 'assessment', component: _components_assessment_assessment_component__WEBPACK_IMPORTED_MODULE_0__["AssessmentComponent"] },
     // { path: 'jobApplication',  component: JobApplicationComponent},
-    { path: 'resume', component: app_components_Resume_resume_component__WEBPACK_IMPORTED_MODULE_4__["ResumeComponent"] },
-    { path: 'my-applications', component: app_components_jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_2__["MyApplicationsComponent"] },
-    { path: 'addjobApplication/:id', component: app_components_jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_1__["AddJobApplicationComponent"] },
+    { path: 'resume', component: _components_Resume_resume_component__WEBPACK_IMPORTED_MODULE_7__["ResumeComponent"] },
+    { path: 'my-applications', component: _components_jobApplication_my_applications_my_applications_component__WEBPACK_IMPORTED_MODULE_2__["MyApplicationsComponent"] },
+    { path: 'addjobApplication/:id', component: _components_jobApplication_add_job_application_add_job_application_component__WEBPACK_IMPORTED_MODULE_1__["AddJobApplicationComponent"] },
     // { path: 'updateJobApplication/:id',  component: UpdateJobApplicationComponent},
     // { path: 'addassessment',      component: AddassessmentComponent },
     // { path: 'addemployer', component: AddemployerComponent },
     // { path: 'users',      component: UsersComponent },
     // { path: 'employers',      component: EmployerComponent },
-    { path: 'job-posts', component: app_components_job_post_job_post_component__WEBPACK_IMPORTED_MODULE_3__["JobPostComponent"] },
+    { path: 'job-posts', component: _components_job_post_job_post_component__WEBPACK_IMPORTED_MODULE_3__["JobPostComponent"] },
+    { path: 'update-job-post/:id', component: _components_job_post_update_job_post_update_job_post_component__WEBPACK_IMPORTED_MODULE_4__["UpdateJobPostComponent"] },
+    { path: 'view-job-post/:id', component: _components_job_post_view_job_post_view_job_post_component__WEBPACK_IMPORTED_MODULE_5__["ViewJobPostComponent"] },
+    { path: 'employer-profile/:id', component: _components_employer_employer_profile_employer_profile_component__WEBPACK_IMPORTED_MODULE_8__["EmployerProfileComponent"] },
+    { path: 'addassessment', component: _components_assessment_addassessment_addassessment_component__WEBPACK_IMPORTED_MODULE_6__["AddassessmentComponent"], pathMatch: 'full' },
+    { path: 'updateassessment', component: app_components_assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_9__["UpdateassessmentComponent"] },
+    { path: 'reviewassessment/:id', component: app_components_assessment_reviewassessment_reviewassessment_component__WEBPACK_IMPORTED_MODULE_10__["ReviewassessmentComponent"] },
+    { path: 'viewassessment/:id', component: app_components_assessment_viewassessment_viewassessment_component__WEBPACK_IMPORTED_MODULE_11__["ViewassessmentComponent"] },
+    { path: 'updateassessment/:id', component: app_components_assessment_updateassessment_updateassessment_component__WEBPACK_IMPORTED_MODULE_9__["UpdateassessmentComponent"] },
 ];
 
 
