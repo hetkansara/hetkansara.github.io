@@ -93,12 +93,12 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <!-- Logo -->
-                            <div class="col-xl-3 col-lg-3 col-md-3">
+                            <div class="col-xl-2 col-lg-2 col-md-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/HK9.png" class="hk-logo logo-nav" alt="logo"> <span class="nav-header-text hidden">Het Kansara</span></a>
+                                    <a href="index.html"><img src="assets/img/HK9.png" class="hk-logo logo-nav" alt="logo"></a>
                                 </div>
                             </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9">
+                            <div class="col-xl-10 col-lg-10 col-md-10">
                                 <!-- Main-menu -->
                                 <div class="main-menu float-right d-none d-lg-block">
                                     <nav>
@@ -300,7 +300,7 @@
                 <div class="row mb-50">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <h2>My Work</h2>
+                            <h2>Projects</h2>
                         </div>
                     </div>
                 </div>
@@ -375,9 +375,9 @@
                                     <span class="icon-graduation"></span>
                                 </div>
                                 <div class="text pl-3">
-                                    <span class="date">{{education.year}}</span>
+                                    <span class="date">{{education.degree}}</span>
                                     <h4>{{education.university}}</h4>
-                                    <span class="position">{{education.degree}}</span>
+                                    <span class="position">{{education.year}}</span>
                                     <ul><li v-for="achievement in education.achievements">{{achievement}}</li></ul>
                                 </div>
                             </div>
@@ -907,7 +907,7 @@
                                 <!-- <a href="#"><i class="fa fa-dribbble transition"></i></a>
                                 <a href="#"><i class="fa fa-behance transition"></i></a> -->
                                 <!-- <br><br> -->
-                                <!-- <p v-if="total_count" class="views-container"><span class="views-text">Portfolio Views: <span class="views-count">{{total_count}} </span></span></p> -->
+                                <p v-if="total_count" class="views-container"><span class="views-text">Portfolio Views: <span class="views-count">{{total_count}} </span></span></p>
                             </div>
                         </div>
                     </div>
@@ -932,7 +932,8 @@
         
         <!-- Essential jQuery Plugins
         ================================================== -->
-        
+        <script src="assets/js/custom.js"></script>
+
         <!-- Main jQuery -->
         <script src="assets/js/jquery-3.2.0.min.js"></script>
 
@@ -957,7 +958,7 @@
         <!-- Scroll Up js -->
         <script src="assets/js/jquery.scrollUp.min.js"></script>
         
-        <script src="assets/js/custom.js"></script>
+        
         
         <!-- Custom Function js -->
         <!-- <script src="assets/js/main.js"></script> -->

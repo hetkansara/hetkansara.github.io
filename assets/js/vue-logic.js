@@ -1,1 +1,132 @@
-var _0x13e6=["\x61\x73\x73\x65\x74\x73\x2F\x6A\x73\x6F\x6E\x2F\x75\x73\x65\x72\x5F\x70\x72\x6F\x66\x69\x6C\x65\x2E\x6A\x73\x6F\x6E\x3F","\x72\x61\x6E\x64\x6F\x6D","\x75\x73\x65\x72\x50\x72\x6F\x66\x69\x6C\x65","\x67\x65\x74\x4A\x53\x4F\x4E","\x70\x75\x73\x68","\x61\x73\x73\x65\x74\x73\x2F\x6A\x73\x6F\x6E\x2F\x74\x65\x63\x68\x6E\x6F\x6C\x6F\x67\x69\x65\x73\x2E\x6A\x73\x6F\x6E\x3F","\x74\x65\x63\x68\x6E\x6F\x6C\x6F\x67\x69\x65\x73","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x65\x74\x6B\x61\x6E\x73\x61\x72\x61\x2E\x30\x30\x30\x77\x65\x62\x68\x6F\x73\x74\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x72\x65\x73\x74\x2D\x61\x70\x69\x2F\x68\x61\x6E\x64\x6C\x65\x2E\x70\x68\x70\x3F\x67\x65\x74\x43\x6F\x75\x6E\x74","\x74\x6F\x74\x61\x6C\x5F\x63\x6F\x75\x6E\x74","\x23\x70\x6F\x72\x74\x66\x6F\x6C\x69\x6F\x2D\x63\x6F\x75\x6E\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x63\x6C\x6F\x75\x64\x66\x6C\x61\x72\x65\x2E\x63\x6F\x6D\x2F\x63\x64\x6E\x2D\x63\x67\x69\x2F\x74\x72\x61\x63\x65","\x0A","\x73\x70\x6C\x69\x74","\x3D","\x69\x70","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x65\x74\x6B\x61\x6E\x73\x61\x72\x61\x2E\x30\x30\x30\x77\x65\x62\x68\x6F\x73\x74\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x72\x65\x73\x74\x2D\x61\x70\x69\x2F\x68\x61\x6E\x64\x6C\x65\x2E\x70\x68\x70\x3F\x69\x70\x3D","\x26\x73\x65\x74\x43\x6F\x75\x6E\x74","\x67\x65\x74","\x61\x73\x73\x65\x74\x73\x2F\x6A\x73\x6F\x6E\x2F\x74\x69\x6D\x65\x6C\x69\x6E\x65\x2E\x6A\x73\x6F\x6E\x3F","\x74\x69\x6D\x65\x6C\x69\x6E\x65","\x69\x64","\x73\x6F\x72\x74","\x23\x68\x65\x72\x6F\x2D\x61\x72\x65\x61","\x6E\x61\x6D\x65","\x69\x6E\x69\x74\x69\x61\x6C\x5F\x69\x6E\x74\x72\x6F","\x72\x65\x73\x75\x6D\x65\x5F\x6C\x69\x6E\x6B","\x23\x73\x65\x72\x76\x69\x63\x65\x2D\x61\x72\x65\x61","\x73\x65\x72\x76\x69\x63\x65\x73","\x23\x61\x62\x6F\x75\x74\x2D\x61\x72\x65\x61","\x23\x65\x64\x75\x63\x61\x74\x69\x6F\x6E\x2D\x61\x72\x65\x61","\x65\x64\x75\x63\x61\x74\x69\x6F\x6E","\x23\x65\x78\x70\x65\x72\x69\x65\x6E\x63\x65\x2D\x61\x72\x65\x61","\x65\x78\x70\x65\x72\x69\x65\x6E\x63\x65","\x23\x73\x6B\x69\x6C\x6C\x73\x2D\x61\x72\x65\x61","\x23\x61\x77\x61\x72\x64\x73\x2D\x61\x72\x65\x61","\x74\x79\x70\x65","\x61\x63\x68\x69\x65\x76\x65\x6D\x65\x6E\x74","\x66\x69\x6C\x74\x65\x72","\x23\x77\x6F\x72\x6B\x73\x2D\x61\x72\x65\x61","\x23\x68\x69\x72\x65\x2D\x6D\x65\x2D\x61\x72\x65\x61","\x23\x74\x65\x73\x74\x69\x6D\x6F\x6E\x69\x61\x6C\x2D\x61\x72\x65\x61","\x74\x65\x73\x74\x69\x6D\x6F\x6E\x69\x61\x6C\x73","\x23\x63\x6F\x6E\x74\x61\x63\x74\x2D\x61\x72\x65\x61","\x23\x66\x6F\x6F\x74\x65\x72\x2D\x61\x72\x65\x61","\x23\x73\x63\x72\x69\x70\x74\x73","\x77\x6F\x72\x6B\x2D\x6D\x6F\x64\x61\x6C","\x23\x6D\x6F\x64\x61\x6C\x2D\x74\x65\x6D\x70\x6C\x61\x74\x65","\x63\x6F\x6D\x70\x6F\x6E\x65\x6E\x74","\x74\x69\x74\x6C\x65\x73","\x61\x64\x64\x52\x6F\x74\x61\x74\x65\x73\x46\x72\x6F\x6D\x56\x69\x65\x77\x4A\x53","\x74\x68\x65\x6E","\x61\x6C\x6C"];let promiseArray=[];let portfolioData={};promiseArray[_0x13e6[4]]( new Promise((_0xab7cx3,_0xab7cx4)=>{$[_0x13e6[3]](_0x13e6[0]+ Math[_0x13e6[1]](),function(_0xab7cx5){portfolioData[_0x13e6[2]]= _0xab7cx5;_0xab7cx3(true)})}));promiseArray[_0x13e6[4]]( new Promise((_0xab7cx3,_0xab7cx4)=>{$[_0x13e6[3]](_0x13e6[5]+ Math[_0x13e6[1]](),function(_0xab7cx5){portfolioData[_0x13e6[6]]= _0xab7cx5[_0x13e6[6]];_0xab7cx3(true)})}));$[_0x13e6[3]](_0x13e6[7],function(_0xab7cx5){if(_0xab7cx5&& _0xab7cx5[_0x13e6[8]]){portfolioData[_0x13e6[8]]= _0xab7cx5[_0x13e6[8]];var _0xab7cx6=createViewComponent(_0x13e6[9],{total_count:portfolioData[_0x13e6[8]]})};$[_0x13e6[17]](_0x13e6[10],function(_0xab7cx5){for(let _0xab7cx7 of _0xab7cx5[_0x13e6[12]](_0x13e6[11])){let _0xab7cx8=_0xab7cx7[_0x13e6[12]](_0x13e6[13]);if(_0xab7cx8[0]== _0x13e6[14]){$[_0x13e6[3]](_0x13e6[15]+ _0xab7cx8[1]+ _0x13e6[16])}}})});promiseArray[_0x13e6[4]]( new Promise((_0xab7cx3,_0xab7cx4)=>{$[_0x13e6[3]](_0x13e6[18]+ Math[_0x13e6[1]](),function(_0xab7cx5){_0xab7cx5[_0x13e6[19]]= _0xab7cx5[_0x13e6[19]][_0x13e6[21]]((_0xab7cx9,_0xab7cxa)=>{if( new Date(_0xab7cx9[_0x13e6[20]])>  new Date(_0xab7cxa[_0x13e6[20]])){return -1}else {if( new Date(_0xab7cx9[_0x13e6[20]])<  new Date(_0xab7cxa[_0x13e6[20]])){return 1}else {return 0}}});portfolioData[_0x13e6[19]]= _0xab7cx5[_0x13e6[19]];_0xab7cx3(true)})}));Promise[_0x13e6[51]](promiseArray)[_0x13e6[50]](()=>{var _0xab7cxb= new Vue({el:_0x13e6[22],data:{heroTitle:portfolioData[_0x13e6[2]][_0x13e6[23]],initial_intro:portfolioData[_0x13e6[2]][_0x13e6[24]],resume_link:portfolioData[_0x13e6[2]][_0x13e6[25]]}});var _0xab7cxc=createViewComponent(_0x13e6[26],{services:portfolioData[_0x13e6[2]][_0x13e6[27]]});var _0xab7cxd=createViewComponent(_0x13e6[28],{user_profile:portfolioData[_0x13e6[2]]});var _0xab7cxe=createViewComponent(_0x13e6[29],{educations:portfolioData[_0x13e6[2]][_0x13e6[30]]});var _0xab7cxf=createViewComponent(_0x13e6[31],{experiences:portfolioData[_0x13e6[2]][_0x13e6[32]]});var _0xab7cx10=createViewComponent(_0x13e6[33],{skills:portfolioData[_0x13e6[6]]});var _0xab7cx11=createViewComponent(_0x13e6[34],{awards:portfolioData[_0x13e6[19]][_0x13e6[37]]((_0xab7cx5)=>{if(_0xab7cx5[_0x13e6[35]]== _0x13e6[36]){return _0xab7cx5}})});var _0xab7cx12=createViewComponent(_0x13e6[38],{timeline:portfolioData[_0x13e6[19]],showModal:false,selectedWork:undefined});var _0xab7cx13=createViewComponent(_0x13e6[39],{user_profile:portfolioData[_0x13e6[2]]});var _0xab7cx14=createViewComponent(_0x13e6[40],{testimonials:portfolioData[_0x13e6[2]][_0x13e6[41]]});var _0xab7cx15=createViewComponent(_0x13e6[42],{user_profile:portfolioData[_0x13e6[2]]});var _0xab7cx16=createViewComponent(_0x13e6[43],{user_profile:portfolioData[_0x13e6[2]],total_count:portfolioData[_0x13e6[8]]});var _0xab7cx17=createViewComponent(_0x13e6[44],{scriptId:Math[_0x13e6[1]]()});Vue[_0x13e6[47]](_0x13e6[45],{template:_0x13e6[46]});accessMains[_0x13e6[49]](portfolioData[_0x13e6[2]][_0x13e6[48]])});function createViewComponent(_0xab7cx19,_0xab7cx5){return  new Vue({el:_0xab7cx19,data:_0xab7cx5})}
+let promiseArray = [];
+let portfolioData = {};
+
+promiseArray.push(new Promise((resolve, reject) => {
+  
+  $.getJSON( "assets/json/user_profile.json?"+Math.random(), function( data ) {
+    portfolioData.userProfile = data;
+    resolve(true);
+  });
+}));
+
+promiseArray.push(new Promise((resolve, reject) => {
+  $.getJSON( "assets/json/technologies.json?"+Math.random(), function( data ) {
+    portfolioData.technologies = data.technologies;
+    resolve(true);
+  });
+}));
+
+
+// $.getJSON( "https://hetkansara.000webhostapp.com/rest-api/handle.php?getCount", function( data ) {
+//   if(data && data.total_count) {
+//     portfolioData.total_count = data.total_count;
+//     var portfolioCount = createViewComponent('#portfolio-count',{
+//       total_count: portfolioData.total_count
+//     })
+//   }
+//   $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+//     for(let eachLine of data.split('\n')) {
+//       let ipData = eachLine.split('=');
+//       if(ipData[0] == 'ip') {
+//         $.getJSON( "https://hetkansara.000webhostapp.com/rest-api/handle.php?ip="+ipData[1]+"&setCount");
+//       }
+//     }
+//   });
+// });
+
+promiseArray.push(new Promise((resolve, reject) => {
+  $.getJSON( "assets/json/timeline.json?"+Math.random(), function( data ) {
+    data.timeline = data.timeline.sort((a, b) => {
+      if (new Date(a.id) > new Date(b.id)) {
+        return -1;
+      } else if (new Date(a.id) < new Date(b.id)) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    portfolioData.timeline = data.timeline;
+    resolve(true);
+  });
+}));
+
+
+Promise.all(promiseArray).then(()=>{
+   var heroArea = new Vue({
+    el: '#hero-area',
+    data:{
+      heroTitle: portfolioData.userProfile.name,
+      initial_intro: portfolioData.userProfile.initial_intro,
+      resume_link: portfolioData.userProfile.resume_link,
+    }
+  });
+
+  var serviceArea = createViewComponent('#service-area', {
+    services: portfolioData.userProfile.services
+  });
+
+  var aboutArea = createViewComponent('#about-area', {
+    user_profile: portfolioData.userProfile
+  });
+  
+  var educationArea = createViewComponent('#education-area', {
+    educations: portfolioData.userProfile.education
+  });
+
+  var experienceArea = createViewComponent('#experience-area', {
+    experiences: portfolioData.userProfile.experience
+  });
+
+  var skillsArea = createViewComponent('#skills-area', {
+    skills: portfolioData.technologies
+  });
+
+  var awardsArea = createViewComponent('#awards-area', {
+    awards: portfolioData.timeline.filter((data)=>{
+      if(data.type == "achievement") {
+        return data;
+      }
+    })
+  });
+
+  var worksArea = createViewComponent('#works-area', {
+    timeline: portfolioData.timeline,
+    showModal: false,
+    selectedWork: undefined
+  });
+
+  var hireMeArea = createViewComponent('#hire-me-area',{
+    user_profile: portfolioData.userProfile
+  })
+
+  var testimonialArea = createViewComponent('#testimonial-area',{
+    testimonials: portfolioData.userProfile.testimonials
+  })
+
+  var contactArea = createViewComponent('#contact-area',{
+    user_profile: portfolioData.userProfile
+  })
+
+  var footerArea = createViewComponent('#footer-area',{
+    user_profile: portfolioData.userProfile,
+    total_count: portfolioData.total_count
+  })
+
+  var scripts = createViewComponent("#scripts", {
+    scriptId: Math.random()
+  })
+  
+  // register modal component
+  Vue.component("work-modal", {
+    template: "#modal-template"
+  });
+
+  accessMains.addRotatesFromViewJS(portfolioData.userProfile.titles);
+})
+
+function createViewComponent(element, data){
+  return new Vue({
+    el: element,
+    data: data
+  });
+}

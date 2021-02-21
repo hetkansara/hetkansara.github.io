@@ -1,7 +1,7 @@
 ﻿{
     "name": "Het Kansara",
     "titles": ["Web Developer.", "Web Designer.", "Mobile Application Developer.", "Freelancer."],
-    "initial_intro": "Het Kansara is a Web & Mobile Application Developer located in Toronto, Ontario, Canada. He mainly works with front-end frameworks liks Angular, Ionic, Vue, React and (Any technology that you want him to work)! 😜",
+    "initial_intro": "Het Kansara is a Web & Mobile Application Developer located in Toronto, Ontario, Canada. He mainly works with front-end fameworks liks Angular, Ionic, Vue, React and (Any technology that you want him to work)! 😜",
     "designation": "Web & Mobile Application Developer",
     "profile_img": "assets/imgs/img/profile.jpg",
     "born": "19th June, 1996",
@@ -27,6 +27,13 @@
     "rss_link":"",
     "experience": [
         {
+            "designation": "Jr. Software Developer - Part time Permanent",
+            "company": "MYANT INC.",
+            "duration": "JULY 2020 - PRESENT",
+            "description": "Working on React native IOT project as a front-end developer and designer. (https://skiin.com/pages/app)",
+            "achievements": []
+        },
+        {
             "designation": "JUNIOR IONIC/ANGULAR DEVELOPER",
             "company": "BIZTECH CONSULTANCY PVT LTD",
             "duration": "JUNE 2018 - JUNE 2019",
@@ -44,10 +51,20 @@
     ],
     "education": [
         {
+            "degree": "Mobile Application Development & Strategy - George Brown College Graduate Certificate",
+            "university": "George Brown COLLEGE",
+            "year": "EXPECTED GRADUATION - AUG 2021",
+            "achievements": [
+                "Honours degree for excellent academic performance for first semester"
+            ]
+        },
+        {
             "degree": "Web Development - Ontario College Graduate Certificate",
             "university": "HUMBER COLLEGE",
-            "year": "EXPECTED GRADUATION - AUG 2020",
-            "achievements": []
+            "year": "GRADUATED IN AUG 2020",
+            "achievements": [
+                "Honours degree for excellent academic performance throughout the program"
+            ]
         },
         {
             "degree": "MASTER OF COMPUTER APPLICATIONS",
@@ -102,6 +119,15 @@
         "note": "A complete software development solution for business"
     }],
     "testimonials": [
+        
+        {
+            "author_name": "Vedang Yagnik",
+            "profile_image": "assets/img/hk-imgs/img/vedang.jpeg",
+            "testomonial_message": "I always get fascinated by his true passion and dedication for development. It is always joyful to work with him. He is like a one stop shop for any front-end development and I admire him for his love for JavaScript. Definitely recommend for any JavaScript/Front-End Solution.👍🏻",
+            "position": "Software Engineer at BiztechCS",
+            "relation": "Het worked with Bharat in the same group",
+            "linkedin_url": "https://ca.linkedin.com/in/vedangyagnik"
+        },
         {
             "author_name": "Dhaval Darji",
             "profile_image": "assets/img/hk-imgs/img/dhaval_darji.jpg",

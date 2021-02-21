@@ -1,6 +1,12 @@
 {
     "technologies": [
         {
+            "title": "React",
+            "confidence": 95,
+            "color": "#61dbfb",
+            "icon": "assets/img/hk-imgs/icons/react.png"
+        },
+        {
             "title": "Ionic",
             "confidence": 95,
             "color": "#2F72E1",
@@ -55,6 +61,24 @@
             "icon": "assets/img/hk-imgs/icons/compressed/css.png"
         },
         {
+            "title": "Photoshop",
+            "confidence": 75,
+            "color": "#08004d",
+            "icon": "assets/img/hk-imgs/icons/compressed/photoshop.png"
+        },
+        {
+            "title": "Android",
+            "confidence": 85,
+            "color": "#90a64e",
+            "icon": "assets/img/hk-imgs/icons/compressed/android.png"
+        },
+        {
+            "title": "Swift",
+            "confidence": 95,
+            "color": "#f26c39",
+            "icon": "assets/img/hk-imgs/icons/swift.png"
+        },
+        {
             "title": "PHP",
             "confidence": 85,
             "color": "#8892be",
@@ -71,12 +95,6 @@
             "confidence": 85,
             "color": "#3770a1",
             "icon": "assets/img/hk-imgs/icons/compressed/python.png"
-        },
-        {
-            "title": "Android",
-            "confidence": 85,
-            "color": "#90a64e",
-            "icon": "assets/img/hk-imgs/icons/compressed/android.png"
         },
         {
             "title": "C Language",
@@ -101,12 +119,6 @@
             "confidence": 75,
             "color": "#37008f",
             "icon": "assets/img/hk-imgs/icons/compressed/CSharp.png"
-        },
-        {
-            "title": "Photoshop",
-            "confidence": 75,
-            "color": "#08004d",
-            "icon": "assets/img/hk-imgs/icons/compressed/photoshop.png"
         },
         {
             "title": "XML",

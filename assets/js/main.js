@@ -1,1 +1,297 @@
-var _0x2440=["\x6A\x51\x75\x65\x72\x79","\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x6C\x6F\x61\x64","\x66\x61\x64\x65\x4F\x75\x74","\x64\x65\x6C\x61\x79","\x2E\x70\x72\x65\x6C\x6F\x61\x64\x65\x72\x2D\x61\x72\x65\x61","\x6F\x6E","\x75\x6C\x23\x6E\x61\x76\x69\x67\x61\x74\x69\x6F\x6E","\x6C\x65\x6E\x67\x74\x68","\x2E\x6D\x6F\x62\x69\x6C\x65\x5F\x6D\x65\x6E\x75","\x2B","\x2D","\x73\x6C\x69\x63\x6B\x6E\x61\x76","\x63\x6C\x69\x63\x6B","\x74\x6F\x70","\x6F\x66\x66\x73\x65\x74","\x68\x72\x65\x66","\x61\x74\x74\x72","\x61\x6E\x69\x6D\x61\x74\x65","\x68\x74\x6D\x6C\x2C\x62\x6F\x64\x79","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x2E\x6E\x61\x76\x2D\x6C\x69\x6E\x6B\x5B\x68\x72\x65\x66\x2A\x3D\x22\x23\x22\x5D","\x73\x63\x72\x6F\x6C\x6C","\x73\x63\x72\x6F\x6C\x6C\x54\x6F\x70","\x73\x74\x69\x63\x6B\x79\x2D\x62\x61\x72","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x2E\x68\x65\x61\x64\x65\x72\x2D\x73\x74\x69\x63\x6B\x79","\x68\x69\x64\x64\x65\x6E","\x61\x64\x64\x43\x6C\x61\x73\x73","\x2E\x6E\x61\x76\x2D\x68\x65\x61\x64\x65\x72\x2D\x74\x65\x78\x74","\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65","\x63\x6F\x6D\x70\x6C\x65\x74\x65","\x61\x63\x74\x69\x76\x65","\x2E\x66\x69\x6C\x74\x65\x72\x73\x20\x75\x6C\x20\x6C\x69","\x64\x61\x74\x61\x2D\x66\x69\x6C\x74\x65\x72","\x69\x73\x6F\x74\x6F\x70\x65","\x77\x6F\x72\x6B\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x2E\x61\x6C\x6C","\x2E\x67\x72\x69\x64","\x2E\x74\x65\x73\x74\x2D\x73\x6C\x69\x64\x65\x72","\x73\x6C\x69\x63\x6B","\x2E\x62\x6C\x6F\x67\x2D\x73\x6C\x69\x64\x65\x72","\x2E\x62\x6C\x6F\x67\x2D\x74\x65\x78\x74\x2D\x69\x6E\x6E\x65\x72","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x63\x6F\x6E\x2D\x61\x72\x72\x6F\x77\x2D\x6C\x65\x66\x74\x22\x3E\x3C\x2F\x69\x3E","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x63\x6F\x6E\x2D\x61\x72\x72\x6F\x77\x2D\x72\x69\x67\x68\x74\x22\x3E\x3C\x2F\x69\x3E","\x6F\x77\x6C\x43\x61\x72\x6F\x75\x73\x65\x6C","\x73\x63\x72\x6F\x6C\x6C\x55\x70","\x33\x30\x30","\x66\x61\x64\x65","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x63\x6F\x6E\x2D\x61\x72\x72\x6F\x77\x2D\x75\x70\x22\x3E\x3C\x2F\x69\x3E","\x74\x6F\x52\x6F\x74\x61\x74\x65","\x65\x6C","\x6C\x6F\x6F\x70\x4E\x75\x6D","\x70\x65\x72\x69\x6F\x64","\x74\x78\x74","","\x74\x69\x63\x6B","\x69\x73\x44\x65\x6C\x65\x74\x69\x6E\x67","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x22\x77\x72\x61\x70\x22\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E","\x72\x61\x6E\x64\x6F\x6D","\x61\x64\x64\x52\x6F\x74\x61\x74\x65\x73\x46\x72\x6F\x6D\x56\x69\x65\x77\x4A\x53","\x74\x78\x74\x2D\x72\x6F\x74\x61\x74\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x64\x61\x74\x61\x2D\x70\x65\x72\x69\x6F\x64","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x73\x74\x79\x6C\x65","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x74\x79\x70\x65","\x74\x65\x78\x74\x2F\x63\x73\x73","\x2E\x74\x78\x74\x2D\x72\x6F\x74\x61\x74\x65\x20\x3E\x20\x2E\x77\x72\x61\x70\x20\x7B\x70\x61\x64\x64\x69\x6E\x67\x2D\x72\x69\x67\x68\x74\x3A\x20\x32\x70\x78\x3B\x20\x62\x6F\x72\x64\x65\x72\x2D\x72\x69\x67\x68\x74\x3A\x20\x30\x2E\x30\x38\x65\x6D\x20\x73\x6F\x6C\x69\x64\x20\x23\x65\x34\x35\x34\x34\x37\x20\x7D","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x62\x6F\x64\x79","\x23\x6E\x61\x76\x69\x20\x61","\x68\x74\x6D\x6C\x2C\x20\x62\x6F\x64\x79","\x70\x75\x73\x68","\x65\x61\x63\x68","\x68\x65\x69\x67\x68\x74","\x69\x64","\x2E\x70\x61\x67\x65","\x63\x75\x72\x72\x65\x6E\x74","\x23\x6E\x61\x76\x69\x20\x61\x5B\x68\x72\x65\x66\x3D\x22\x23","\x22\x5D","\x70\x75\x73\x68\x53\x74\x61\x74\x65","\x68\x61\x73\x68"];let accessMains={};(function(_0x2afcx2,accessMains){_0x2440[1];_0x2afcx2(window)[_0x2440[6]](_0x2440[2],function(){_0x2afcx2(_0x2440[5])[_0x2440[4]](200)[_0x2440[3]](500)});var _0x2afcx3=_0x2afcx2(_0x2440[7]);if(_0x2afcx3[_0x2440[8]]){_0x2afcx3[_0x2440[12]]({prependTo:_0x2440[9],closedSymbol:_0x2440[10],openedSymbol:_0x2440[11],closeOnClick:true})};_0x2afcx2(_0x2440[21])[_0x2440[6]](_0x2440[13],function(_0x2afcx4){_0x2afcx2(_0x2440[19])[_0x2440[18]]({scrollTop:_0x2afcx2(_0x2afcx2(this)[_0x2440[17]](_0x2440[16]))[_0x2440[15]]()[_0x2440[14]]- 70},500);_0x2afcx4[_0x2440[20]]()});_0x2afcx2(window)[_0x2440[6]](_0x2440[22],function(){var _0x2afcx5=_0x2afcx2(window)[_0x2440[23]]();if(_0x2afcx5< 245){_0x2afcx2(_0x2440[26])[_0x2440[25]](_0x2440[24]);_0x2afcx2(_0x2440[29])[_0x2440[28]](_0x2440[27])}else {_0x2afcx2(_0x2440[26])[_0x2440[28]](_0x2440[24]);_0x2afcx2(_0x2440[29])[_0x2440[25]](_0x2440[27])}});let _0x2afcx6=setInterval(()=>{if(document[_0x2440[30]]=== _0x2440[31]){var _0x2afcx7;_0x2afcx2(_0x2440[33])[_0x2440[6]](_0x2440[13],function(){_0x2afcx2(_0x2440[33])[_0x2440[25]](_0x2440[32]);_0x2afcx2(this)[_0x2440[28]](_0x2440[32]);var _0x2afcx8=_0x2afcx2(this)[_0x2440[17]](_0x2440[34]);_0x2afcx7[_0x2440[35]]({filter:_0x2afcx8})});let _0x2afcx9=setInterval(()=>{if(document[_0x2440[37]](_0x2440[36])){_0x2afcx7= _0x2afcx2(_0x2440[39])[_0x2440[35]]({itemSelector:_0x2440[38],percentPosition:true,masonry:{columnWidth:_0x2440[38]}});clearInterval(_0x2afcx9)}},200);let _0x2afcxa=setInterval(()=>{if(_0x2afcx2(_0x2440[40])[_0x2440[8]]){_0x2afcx2(_0x2440[40])[_0x2440[41]]({dots:true,autoplay:true,autoplaySpeed:3000,arrows:false})};clearInterval(_0x2afcxa)},200);clearInterval(_0x2afcx6)}},200);function _0x2afcxb(){if(_0x2afcx2(_0x2440[42])[_0x2440[8]]){_0x2afcx2(_0x2440[42])[_0x2440[46]]({loop:true,margin:0,items:1,nav:true,autoplay:true,smartSpeed:1500,dots:true,navContainer:_0x2440[43],navText:[_0x2440[44],_0x2440[45]],responsiveClass:true})}}_0x2afcxb();_0x2afcx2[_0x2440[47]]({scrollName:_0x2440[47],topDistance:_0x2440[48],topSpeed:300,animation:_0x2440[49],animationInSpeed:200,animationOutSpeed:200,scrollText:_0x2440[50],activeOverlay:false});var _0x2afcxc=function(_0x2afcxd,_0x2afcxe,_0x2afcxf){this[_0x2440[51]]= _0x2afcxe;this[_0x2440[52]]= _0x2afcxd;this[_0x2440[53]]= 0;this[_0x2440[54]]= parseInt(_0x2afcxf,10)|| 2000;this[_0x2440[55]]= _0x2440[56];this[_0x2440[57]]();this[_0x2440[58]]= false};_0x2afcxc[_0x2440[59]][_0x2440[57]]= function(){var _0x2afcx10=this[_0x2440[53]]% this[_0x2440[51]][_0x2440[8]];var _0x2afcx11=this[_0x2440[51]][_0x2afcx10];if(this[_0x2440[58]]){this[_0x2440[55]]= _0x2afcx11[_0x2440[60]](0,this[_0x2440[55]][_0x2440[8]]- 1)}else {this[_0x2440[55]]= _0x2afcx11[_0x2440[60]](0,this[_0x2440[55]][_0x2440[8]]+ 1)};this[_0x2440[52]][_0x2440[61]]= _0x2440[62]+ this[_0x2440[55]]+ _0x2440[63];var _0x2afcx12=this;var _0x2afcx13=300- Math[_0x2440[64]]()* 100;if(this[_0x2440[58]]){_0x2afcx13/= 2};if(!this[_0x2440[58]]&& this[_0x2440[55]]=== _0x2afcx11){_0x2afcx13= this[_0x2440[54]];this[_0x2440[58]]= true}else {if(this[_0x2440[58]]&& this[_0x2440[55]]=== _0x2440[56]){this[_0x2440[58]]= false;this[_0x2440[53]]++;_0x2afcx13= 500}};setTimeout(function(){_0x2afcx12[_0x2440[57]]()},_0x2afcx13)};accessMains[_0x2440[65]]= (_0x2afcxe)=>{let _0x2afcx6=setInterval(()=>{if(document[_0x2440[30]]=== _0x2440[31]){var _0x2afcx14=document[_0x2440[67]](_0x2440[66]);for(var _0x2afcx10=0;_0x2afcx10< _0x2afcx14[_0x2440[8]];_0x2afcx10++){var _0x2afcxf=_0x2afcx14[_0x2afcx10][_0x2440[69]](_0x2440[68]);if(_0x2afcxe){ new _0x2afcxc(_0x2afcx14[_0x2afcx10],_0x2afcxe,_0x2afcxf)}};var _0x2afcx15=document[_0x2440[71]](_0x2440[70]);_0x2afcx15[_0x2440[72]]= _0x2440[73];_0x2afcx15[_0x2440[61]]= _0x2440[74];document[_0x2440[76]][_0x2440[75]](_0x2afcx15);clearInterval(_0x2afcx6)}})}})(window[_0x2440[0]],accessMains);(function(_0x2afcx2){var _0x2afcx16=[];var _0x2afcx17=false;var _0x2afcx18=_0x2afcx2(_0x2440[77]);_0x2afcx18[_0x2440[6]](_0x2440[13],function(_0x2afcx4){_0x2afcx4[_0x2440[20]]();_0x2afcx2(_0x2440[78])[_0x2440[18]]({scrollTop:_0x2afcx2(_0x2afcx2(this)[_0x2440[17]](_0x2440[16]))[_0x2440[15]]()[_0x2440[14]]- 180},500);hash(_0x2afcx2(this)[_0x2440[17]](_0x2440[16]))});_0x2afcx18[_0x2440[80]](function(){_0x2afcx16[_0x2440[79]](_0x2afcx2(_0x2afcx2(this)[_0x2440[17]](_0x2440[16])))});_0x2afcx2(window)[_0x2440[6]](_0x2440[22],function(_0x2afcx4){var _0x2afcx19=_0x2afcx2(this)[_0x2440[23]]()+ (_0x2afcx2(window)[_0x2440[81]]()/ 2);var _0x2afcx1a=_0x2440[56];_0x2afcx2(_0x2440[83])[_0x2440[80]]((_0x2afcx1b,_0x2afcx1c)=>{if(_0x2afcx19> _0x2afcx2(_0x2afcx1c)[_0x2440[15]]()[_0x2440[14]]){_0x2afcx1a= _0x2afcx2(_0x2afcx1c)[_0x2440[17]](_0x2440[82])}});if(_0x2afcx1a!== _0x2afcx17){_0x2afcx17= _0x2afcx1a;_0x2afcx2(_0x2afcx18)[_0x2440[25]](_0x2440[84]);_0x2afcx2(_0x2440[85]+ _0x2afcx17+ _0x2440[86])[_0x2440[28]](_0x2440[84])}});hash= function(_0x2afcx1d){if(history[_0x2440[87]]){history[_0x2440[87]](null,null,_0x2afcx1d)}else {location[_0x2440[88]]= _0x2afcx1d}}})(jQuery)
+let accessMains = {};
+
+(function ($, accessMains) {
+    "use strict";
+
+     /** ------- Pre Loader **/
+    $(window).on('load', function () {
+        $(".preloader-area").delay(200).fadeOut(500);
+    });
+    
+    /* ================================================= */
+    /*	slick Nav
+     /* ================================================= */
+
+    /* mobile_menu */
+
+    var menu = $("ul#navigation");
+    if (menu.length) {
+        menu.slicknav({
+            prependTo: ".mobile_menu",
+            closedSymbol: "+",
+            openedSymbol: "-",
+            closeOnClick: true
+        });
+    }
+
+    /* Smooth Scrolling Using Navigation Menu */
+
+    $('.nav-link[href*="#"]').on("click", function (e) {
+        $("html,body").animate({
+            scrollTop: $($(this).attr("href")).offset().top - 70
+        },500);
+        e.preventDefault();
+    });
+
+    /*  Custom Sticky Menu  */
+
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 245) {
+            $(".header-sticky").removeClass("sticky-bar");
+        } else {
+            $(".header-sticky").addClass("sticky-bar");
+        }
+    });
+
+
+    /* ================================================= */
+    /*	Works Area Filter js
+    /* ================================================= */
+    // $(window).on("load", function () {
+        
+    // });
+
+    let stateCheck = setInterval(() => {
+        if (document.readyState === 'complete') {
+            var $grid;
+            $(".filters ul li").on("click", function () {
+                $(".filters ul li").removeClass("active");
+                $(this).addClass("active");
+    
+                var data = $(this).attr("data-filter");
+                $grid.isotope({
+                    filter: data
+                });
+            });
+    
+            let workStateCheck = setInterval(() => {
+                if (document.getElementById("works")) {
+                    $grid = $(".grid").isotope({
+                        itemSelector: ".all",
+                        percentPosition: true,
+                        masonry: {
+                            columnWidth: ".all"
+                        }
+                    });
+                    clearInterval(workStateCheck);
+                }
+            }, 200);
+    
+            /* ================================================= */
+            /*	Testimonial Slider
+             /* ================================================= */
+    
+            let testSliderStateCheck = setInterval(() => {
+                if($(".test-slider").length) {
+                    $(".test-slider").slick({
+                        dots: true,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        arrows: false
+                    });
+                }
+                clearInterval(testSliderStateCheck);
+            }, 200)
+            
+            clearInterval(stateCheck);
+            // document ready
+        }
+    }, 200);
+    
+    /* ================================================= */
+    /*	Blog Slider
+     /* ================================================= */
+
+    function blog_slider() {
+        if ($(".blog-slider").length) {
+            $(".blog-slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 1,
+                nav: true,
+                autoplay: true,
+                smartSpeed: 1500,
+                dots: true,
+                navContainer: ".blog-text-inner",
+                navText: [
+                    '<i class="icon-arrow-left"></i>',
+                    '<i class="icon-arrow-right"></i>'
+                ],
+                responsiveClass: true
+            });
+        }
+    }
+    blog_slider();
+
+    /* ================================================= */
+    /*    sildeBar scroll
+     /* ================================================= */
+    $.scrollUp({
+        scrollName: "scrollUp", 
+        topDistance: "300", 
+        topSpeed: 300, 
+        animation: "fade", 
+        animationInSpeed: 200, 
+        animationOutSpeed: 200, 
+        scrollText: '<i class="icon-arrow-up"></i>',
+        activeOverlay: false 
+    });
+    
+    /* ================================================= */
+    /*    Hero Area Text Animate
+     /* ================================================= */
+
+    var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    // Added in addRotatesFromViewJS() function. Removed from here
+    // window.onload = function () {
+    //     var elements = document.getElementsByClassName('txt-rotate');
+    //     for (var i = 0; i < elements.length; i++) {
+    //         var toRotate = elements[i].getAttribute('data-rotate');
+    //         var period = elements[i].getAttribute('data-period');
+    //         if (toRotate) {
+    //             new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    //         }
+    //     }
+    //     // INJECT CSS
+    //     var css = document.createElement("style");
+    //     css.type = "text/css";
+    //     css.innerHTML = ".txt-rotate > .wrap {padding-right: 2px; border-right: 0.08em solid #e45447 }";
+    //     document.body.appendChild(css);
+    // };
+
+    // Call rotate with dynamic data
+    accessMains.addRotatesFromViewJS = (toRotate) => {
+        // Added in view-logic. Removed from here
+        let stateCheck = setInterval(() => {
+            if (document.readyState === 'complete') {
+            // window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                // var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], toRotate, period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap {padding-right: 2px; border-right: 0.08em solid #e45447 }";
+            document.body.appendChild(css);
+            clearInterval(stateCheck);
+            // };
+            }
+        })
+    }
+
+
+})(window.jQuery, accessMains);
+
+
+// Resume Navigation
+
+(function ($) {
+    //variable that will hold the href attr of the links in the menu
+    var sections = [];
+    //variable that stores the id of the section
+    var id = false;
+    //variable for the selection of the anchors in the navbar
+    var $navbara = $('#navi a');
+
+    $navbara.on('click', function (e) {
+        //prevent the page from refreshing
+        e.preventDefault();
+        //set the top offset animation and speed
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 180
+        }, 500);
+        hash($(this).attr('href'));
+    });
+
+
+
+    //select all the anchors in the navbar one after another
+    $navbara.each(function () {
+        // and adds them in the sections variable
+        sections.push($($(this).attr('href')));
+
+    })
+    $(window).on('scroll', function (e) {
+        // scrollTop retains the value of the scroll top with the reference at the middle of the page
+        var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
+        
+        //cycle through the values in sections array
+        var scrolled_id = "";
+        $('.page').each((index, element)=>{
+            if (scrollTop > $(element).offset().top) {
+                scrolled_id = $(element).attr('id');
+            }
+        });
+        
+        // for (var i in sections) {
+        //     var section = sections[i];
+        //     // console.log(section)
+        //     //if scrollTop variable is bigger than the top offset of a section in the sections array then 
+        //     if (scrollTop > section.offset().top) {
+        //         var scrolled_id = section.attr('id');
+        //         // break;
+        //     }
+        // }
+        
+        if (scrolled_id !== id) {
+            id = scrolled_id;
+            $($navbara).removeClass('current');
+            $('#navi a[href="#' + id + '"]').addClass('current');
+        }
+    })
+    hash = function (h) {
+        if (history.pushState) {
+            history.pushState(null, null, h);
+        } else {
+            location.hash = h;
+        }
+    }
+})(jQuery);
