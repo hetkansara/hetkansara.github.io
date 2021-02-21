@@ -1,6 +1,23 @@
 {
     "timeline":[
         {
+            "id": "08/2020",
+            "selected": false,
+            "type": "achievement",
+            "display_date":"August, 2020",
+            "image":{
+                "title": "Web Development with Honours",
+                "paragraph": "",
+                "img_url": "assets/img/hk-imgs/My Certificates/compressed/Humber - Web Development.jpg",
+                "thumbnail_url": "assets/img/hk-imgs/My Certificates/compressed/Humber - Web Development.jpg"
+            },
+            "title":"Web Development with Honours - Humber College",
+            "date":"August, 2020",
+            "paragraphs":[
+                "Honours degree for excellent academic performance throughout the program."
+            ]
+        },
+        {
             "id": "12/16/2018",
             "selected": false,
             "type": "achievement",
